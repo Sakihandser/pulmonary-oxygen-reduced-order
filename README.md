@@ -27,8 +27,10 @@ The scan scripts import `build_lung_model.py` from the same `code/` directory. R
 
 ```text
 python code/phase2_scans.py --no-plots
-python code/phase3_scans.py --no-plots
+python code/phase3_scans.py
 ```
+
+`phase2_scans.py` accepts `--no-plots`. `phase3_scans.py` writes the result tables only.
 
 Result tables already saved:
 
