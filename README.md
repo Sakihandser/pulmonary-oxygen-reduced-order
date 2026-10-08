@@ -27,3 +27,7 @@ Result tables already saved:
 - `data/goal12_ordering.csv`
 
 No patient data are included.
+
+## License
+
+Code and the saved result tables are released under the MIT License. See `LICENSE`.
