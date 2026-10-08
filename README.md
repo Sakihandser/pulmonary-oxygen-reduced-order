@@ -15,7 +15,7 @@ The generation-12 root count is calibrated so that healthy pulmonary vascular re
 
 ## Reproduce
 
-The scripts import one another by a local path. Run them from a checkout that keeps `code/build_lung_model.py` importable as in the original project layout, with Python 3 and NumPy, pandas and Matplotlib.
+The scan scripts import `build_lung_model.py` from the same `code/` directory. Run them with Python 3, NumPy, pandas and Matplotlib.
 
 Result tables already saved:
 
