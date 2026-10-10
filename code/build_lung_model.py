@@ -262,7 +262,7 @@ def oxygen(
     rv_power_scale=False, ref_power=None, vc_mode="flow",
     tolerance=1e-9, max_iterations=200, exchange_mode="saturation",
     dl_o2=25.0, lobe_va_L_min=None, pio2=150.0,
-    diffusion_steps=512, ventilation_tolerance_mmHg=0.005,
+    diffusion_steps=1024, ventilation_tolerance_mmHg=0.005,
     ventilation_max_iterations=100, shunt=None,
 ):
     """Solve a closed oxygen-content balance for lung and organ compartments.
