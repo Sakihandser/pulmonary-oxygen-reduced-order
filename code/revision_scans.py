@@ -469,6 +469,100 @@ def draw_core_figure(frame: pd.DataFrame, path: Path):
     image.save(path, dpi=(300, 300))
 
 
+def draw_vq_figure(frame: pd.DataFrame, path: Path):
+    labels = list("ABCDEFGH")
+    width, height = 1800, 720
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    font_path = Path("C:/Windows/Fonts/arial.ttf")
+    bold_path = Path("C:/Windows/Fonts/arialbd.ttf")
+    font = ImageFont.truetype(str(font_path), 24)
+    small = ImageFont.truetype(str(font_path), 20)
+    bold = ImageFont.truetype(str(bold_path), 28)
+    panels = [
+        ("SaO2", 0.90, 0.97, "Arterial oxygen saturation"),
+        ("systemic_DO2_mL_min", 700.0, 1020.0, "Systemic oxygen delivery (mL/min)"),
+    ]
+    for panel_index, (column, y_min, y_max, title) in enumerate(panels):
+        x0 = 105 + panel_index * 860
+        y0, x1, y1 = 95, x0 + 730, 575
+        draw.rectangle((x0, y0, x1, y1), outline="#444444", width=2)
+        draw.text((x0 + 15, 32), title, fill="#111111", font=bold)
+        for tick_index in range(6):
+            value = y_min + tick_index * (y_max - y_min) / 5
+            y = y1 - tick_index * (y1 - y0) / 5
+            draw.line((x0, y, x1, y), fill="#E5E7EB", width=1)
+            label = f"{value:.2f}" if column == "SaO2" else f"{value:.0f}"
+            draw.text((x0 - 72, y - 12), label, fill="#333333", font=small)
+        bar_space = (x1 - x0 - 60) / len(frame)
+        for index, (_, row) in enumerate(frame.iterrows()):
+            value = float(row[column])
+            x_left = x0 + 35 + index * bar_space
+            x_right = x_left + bar_space * 0.62
+            y = y1 - (value - y_min) / (y_max - y_min) * (y1 - y0)
+            color = "#4C78A8" if index < 4 else "#E45756"
+            draw.rectangle((x_left, y, x_right, y1), fill=color)
+            draw.text((x_left + 4, y1 + 15), labels[index], fill="#111111", font=font)
+            value_label = f"{value:.3f}" if column == "SaO2" else f"{value:.0f}"
+            draw.text((x_left - 2, y - 30), value_label, fill="#333333", font=small)
+    draw.text((135, 640), "Blue: healthy-resistance scenarios    Red: PVR 4.19 WU background", fill="#333333", font=font)
+    image.save(path, dpi=(300, 300))
+
+
+def draw_sampling_figure(frame: pd.DataFrame, path: Path):
+    focus = frame[frame["sample_count"] == 1000].copy()
+    targets = sorted(focus["target_PVR_WU"].unique())
+    width, height = 1800, 700
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    font_path = Path("C:/Windows/Fonts/arial.ttf")
+    bold_path = Path("C:/Windows/Fonts/arialbd.ttf")
+    font = ImageFont.truetype(str(font_path), 24)
+    small = ImageFont.truetype(str(font_path), 20)
+    bold = ImageFont.truetype(str(bold_path), 28)
+    panels = [
+        ("SaO2_not_lower_fraction_tol_1e-6", 0.50, 0.72, "SaO2 did not decrease"),
+        ("SvO2_lower_fraction_tol_1e-4", 0.95, 1.005, "SvO2 decreased"),
+    ]
+    seed_colors = {20261008: "#1f77b4", 20261009: "#d62728", 20261010: "#2ca02c"}
+    for panel_index, (column, y_min, y_max, title) in enumerate(panels):
+        x0 = 105 + panel_index * 860
+        y0, x1, y1 = 95, x0 + 730, 565
+        draw.rectangle((x0, y0, x1, y1), outline="#444444", width=2)
+        draw.text((x0 + 15, 32), title, fill="#111111", font=bold)
+        for tick_index in range(6):
+            value = y_min + tick_index * (y_max - y_min) / 5
+            y = y1 - tick_index * (y1 - y0) / 5
+            draw.line((x0, y, x1, y), fill="#E5E7EB", width=1)
+            draw.text((x0 - 70, y - 12), f"{value:.2f}", fill="#333333", font=small)
+        x_positions = {
+            target: x0 + 55 + index * (x1 - x0 - 110) / (len(targets) - 1)
+            for index, target in enumerate(targets)
+        }
+        for target, x in x_positions.items():
+            draw.line((x, y1, x, y1 + 8), fill="#333333", width=2)
+            label = f"{target:g}"
+            draw.text((x - 14, y1 + 15), label, fill="#333333", font=small)
+        for seed, color in seed_colors.items():
+            subset = focus[focus["seed"] == seed].sort_values("target_PVR_WU")
+            points = []
+            for _, row in subset.iterrows():
+                x = x_positions[row["target_PVR_WU"]]
+                value = float(row[column])
+                y = y1 - (value - y_min) / (y_max - y_min) * (y1 - y0)
+                points.append((x, y))
+            draw.line(points, fill=color, width=4)
+            for point in points:
+                draw.ellipse((point[0] - 6, point[1] - 6, point[0] + 6, point[1] + 6), fill=color, outline="white", width=2)
+        draw.text((x0 + 265, height - 55), "Target PVR (WU)", fill="#111111", font=font)
+    legend_x = 680
+    for index, (seed, color) in enumerate(seed_colors.items()):
+        x = legend_x + index * 235
+        draw.line((x, 625, x + 45, 625), fill=color, width=4)
+        draw.text((x + 55, 612), str(seed), fill="#111111", font=small)
+    image.save(path, dpi=(300, 300))
+
+
 def main():
     case = lung.build_cases()
     oxygen_conservation(case)
@@ -476,9 +570,11 @@ def main():
     core_sensitivity(case)
     exchange_calibration(case)
     numerical_convergence(case)
-    sampling_stability()
+    sampling = sampling_stability()
     parameter_tables(case)
     validation_benchmarks(case)
+    draw_vq_figure(pd.read_csv(DATA / "goal10_vq.csv"), DATA / "fig_revision_vq.png")
+    draw_sampling_figure(sampling, DATA / "fig_revision_sampling_stability.png")
     print("Revision analyses completed")
 
 
