@@ -2,7 +2,7 @@
 
 Steady reduced-order resistance network used to separate distal arterial resistance, perfusion heterogeneity, capillary transit time, alveolar ventilation and right-ventricular oxygen supply.
 
-This repository accompanies the English manuscript *Distal arterial resistance, perfusion heterogeneity and blood oxygenation: a steady reduced-order model of the pulmonary circulation* (Hong and Yang, Sichuan University). Mingze Hong is the corresponding author.
+This repository accompanies the English manuscript *Perfusion redistribution and oxygen exchange at matched pulmonary vascular resistance in a reduced-order model* (Hong and Yang, Sichuan University). Mingze Hong is the corresponding author.
 
 ## Layout
 
@@ -34,7 +34,10 @@ python code/phase3_scans.py
 
 Result tables already saved:
 
+- `data/goal3_pao2.csv`
+- `data/goal3_shunt.csv`
 - `data/goal4_ladder.csv`
+- `data/goal6_rv_power.csv`
 - `data/goal9_transit.csv`
 - `data/goal10_vq.csv`
 - `data/goal11_coronary.csv`
