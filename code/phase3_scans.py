@@ -5,6 +5,7 @@ coronary driving pressure, exchange form, and the PVR-ladder ordering.
 
 from __future__ import annotations
 
+import argparse
 import importlib.util
 import json
 from pathlib import Path
@@ -82,6 +83,9 @@ def pack_lobe(name, result, ox, **extra):
         "SaO2": ox["SaO2"],
         "SvO2": ox["SvO2"],
         "PaO2": ox["PaO2"],
+        "CaO2_mL_dL": ox["CaO2"],
+        "systemic_DO2_mL_min": 10.0 * result["CO_L_min"] * ox["CaO2"],
+        "actual_VO2_mL_min": ox["total_VO2_used_mL_min"],
         "S_end_range": ox["S_end_range"],
         "tau_min_s": min(taus),
         "tau_max_s": max(taus),
@@ -90,6 +94,11 @@ def pack_lobe(name, result, ox, **extra):
         "effective_vc_ml": ox["effective_vc_ml"],
         "converged": ox["converged"],
         "mass_error": ox["oxygen_mass_balance_error_mL_min"],
+        "pulmonary_systemic_mass_error": ox["pulmonary_systemic_balance_error_mL_min"],
+        "outer_iterations": ox["iterations"],
+        "ventilation_converged": ox["ventilation_converged"],
+        "ventilation_iterations": ox["ventilation_iterations"],
+        "ventilation_residual_mmHg": ox["ventilation_residual_mmHg"],
     }
     row.update(extra)
     for lobe in LOBE:
@@ -151,7 +160,10 @@ def ventilation_map(scale_rll=1.0, total=5.0, redistribute=False):
 def solve_vq(case, va, hpv_gain, arterial_multiplier, rematch=False):
     lobe_mult = {lobe: 1.0 for lobe in LOBE}
     result, ox = None, None
-    for _ in range(14):
+    hpv_converged = False
+    hpv_residual = 0.0
+    hpv_iterations = 0
+    for hpv_iterations in range(1, 61):
         result = lung.solve(
             case, arterial_multiplier=arterial_multiplier,
             lobe_arterial_multiplier=lobe_mult,
@@ -161,8 +173,12 @@ def solve_vq(case, va, hpv_gain, arterial_multiplier, rematch=False):
         for lobe in LOBE:
             stimulus = max(0.0, (100.0 - ox["lobes"][lobe]["PAO2"]) / 60.0)
             updated[lobe] = 1.0 + hpv_gain * stimulus
-        if max(abs(updated[lobe] - lobe_mult[lobe]) for lobe in LOBE) < 0.03:
+        hpv_residual = max(
+            abs(updated[lobe] - lobe_mult[lobe]) for lobe in LOBE
+        )
+        if hpv_residual < 0.003:
             lobe_mult = updated
+            hpv_converged = True
             break
         lobe_mult = {
             lobe: 0.5 * lobe_mult[lobe] + 0.5 * updated[lobe] for lobe in LOBE
@@ -178,7 +194,11 @@ def solve_vq(case, va, hpv_gain, arterial_multiplier, rematch=False):
                 lobe_arterial_multiplier=lobe_mult,
             )
             ox = lung.oxygen(result, lobe_va_L_min=va, pio2=150.0, vc_mode="fixed")
-    return result, ox, lobe_mult
+    return result, ox, lobe_mult, {
+        "hpv_converged": hpv_converged or hpv_gain == 0.0,
+        "hpv_iterations": hpv_iterations,
+        "hpv_residual": hpv_residual,
+    }
 
 
 def vq_rows(case):
@@ -197,7 +217,7 @@ def vq_rows(case):
     ]
     for name, scale, redistribute, gain, multiplier, rematch in specs:
         va = ventilation_map(scale, redistribute=redistribute)
-        result, ox, lobe_mult = solve_vq(
+        result, ox, lobe_mult, hpv_diagnostics = solve_vq(
             case, va, gain, multiplier, rematch=rematch,
         )
         rows.append(pack_lobe(
@@ -206,7 +226,9 @@ def vq_rows(case):
             rll_vent_scale=scale,
             ventilation_redistributed=redistribute,
             hpv_RLL=lobe_mult["RLL"],
-            VA_RLL=va["RLL"],
+            total_VA_L_min=sum(va.values()),
+            **{"VA_" + lobe: va[lobe] for lobe in LOBE},
+            **hpv_diagnostics,
         ))
     return rows
 
@@ -318,7 +340,7 @@ def ordering_rows(case):
                 "vc_ml": vc,
                 "tau_eq": tau,
                 "pao2": pao2,
-                "shunt": shunt,
+                "venous_admixture": shunt,
                 "reserve": reserve,
                 "viscosity": viscosity,
                 "SaO2": ox["SaO2"],
@@ -426,7 +448,22 @@ def make_figures(transit, vq, coronary, exchange, ordering):
     return summary
 
 
+def ordering_summary(ordering):
+    return pd.DataFrame(ordering).groupby("target_PVR").agg(
+        sao2_not_lower=("SaO2_not_lower", "mean"),
+        svo2_lower=("SvO2_lower", "mean"),
+        dsao2=("dSaO2", "median"),
+        dsvo2=("dSvO2", "median"),
+    ).reset_index()
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--plots", action="store_true",
+        help="also generate the legacy phase-3 figures (requires matplotlib)",
+    )
+    args = parser.parse_args()
     case = lung.build_cases()
     transit = transit_rows(case)
     vq = vq_rows(case)
@@ -438,7 +475,9 @@ def main():
     pd.DataFrame(coronary).to_csv(OUT / "goal11_coronary.csv", index=False)
     pd.DataFrame(exchange).to_csv(OUT / "goal12_exchange.csv", index=False)
     pd.DataFrame(ordering).to_csv(OUT / "goal12_ordering.csv", index=False)
-    summary = make_figures(transit, vq, coronary, exchange, ordering)
+    summary = ordering_summary(ordering)
+    if args.plots:
+        summary = make_figures(transit, vq, coronary, exchange, ordering)
     summary.to_csv(OUT / "goal12_ordering_summary.csv", index=False)
     print(json.dumps({
         "transit": transit,
@@ -451,3 +490,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
