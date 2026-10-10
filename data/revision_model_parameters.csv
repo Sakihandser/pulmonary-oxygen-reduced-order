@@ -1,0 +1,16 @@
+parameter,baseline,range_low,range_high,unit,provenance_class,interpretation
+Hemoglobin,15.0,12.0,18.0,g/dL,literature_direct,Oxygen-content equation
+Total capillary blood volume,86.0,43.0,172.0,mL,order_of_magnitude,Scenario value based on resting estimates
+Saturation exchange time constant,0.3,0.15,0.6,s,investigator_set,"Mechanism parameter, not measured transit time"
+Fixed alveolar oxygen tension,100.0,80.0,110.0,mmHg,investigator_set,Prescribed boundary
+Effective venous admixture fraction,0.03,0.02,0.08,fraction,investigator_set,"Post-exchange content mixing, not resolved anatomical shunt"
+Pressure reserve width,50.0,40.0,60.0,mmHg,investigator_set,Prescribed pressure-flow relation
+Dynamic viscosity,3.5,2.5,4.5,mPa s,literature_range,Newtonian model
+Whole-body oxygen demand,250.0,,,mL/min,literature_order,Not varied in sampling
+Capacity-control parameter,25.0,,,mL/min/mmHg,order_of_magnitude,Numerical structure control
+Total alveolar ventilation,5.0,,,L/min BTPS,investigator_set,Ventilation scenarios
+Inspired oxygen tension,150.0,,,mmHg,investigator_set,Ventilation scenarios
+Reference cardiac-output scale,5.0,,,L/min,investigator_set,"Scale parameter, not a hard maximum"
+Minimum cardiac output,1.2,,,L/min,investigator_set,Lower clamp
+Branching ratio,3.0,,,dimensionless,calibration,Symmetric structured tree
+
