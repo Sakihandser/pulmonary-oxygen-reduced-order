@@ -90,7 +90,6 @@ def oxygen_conservation(case):
 
 def contrast_definition(case):
     rows = []
-    lul_reference = None
     for contrast in CONTRASTS:
         result = contrast_result(case, contrast)
         multipliers = result["lobe_arterial_multiplier"]
@@ -108,12 +107,11 @@ def contrast_definition(case):
             row[f"multiplier_{lobe}"] = multipliers[lobe]
             row[f"lobe_R_WU_{lobe}"] = result["lobe_R_WU"][lobe]
             row[f"flow_fraction_{lobe}"] = result["flow_fraction"][lobe]
-        if contrast == 25.0:
-            lul_reference = result["lobe_R_WU"]["LUL"] * lung.LOBE_W["LUL"]
-            for lobe in lung.LOBE_ORDER:
-                row[f"weight_standardized_R_ratio_{lobe}_to_LUL"] = (
-                    (result["lobe_R_WU"][lobe] * lung.LOBE_W[lobe]) / lul_reference
-                )
+        lul_reference = result["lobe_R_WU"]["LUL"] * lung.LOBE_W["LUL"]
+        for lobe in lung.LOBE_ORDER:
+            row[f"weight_standardized_R_ratio_{lobe}_to_LUL"] = (
+                (result["lobe_R_WU"][lobe] * lung.LOBE_W[lobe]) / lul_reference
+            )
         rows.append(row)
     frame = pd.DataFrame(rows)
     frame.to_csv(DATA / "revision_contrast_definition.csv", index=False)
