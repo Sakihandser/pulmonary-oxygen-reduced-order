@@ -50,6 +50,56 @@ class ModelVerificationTests(unittest.TestCase):
             places=9,
         )
 
+    def test_pulmonary_and_systemic_oxygen_balance_across_admixture(self):
+        result = lung.solve(self.case, arterial_multiplier=8.4)
+        for fraction in (0.0, 0.03, 0.10, 0.20):
+            ox = lung.oxygen(result, venous_admixture=fraction)
+            self.assertTrue(ox["converged"])
+            self.assertAlmostEqual(
+                ox["pulmonary_oxygen_uptake_mL_min"],
+                ox["total_VO2_used_mL_min"],
+                places=6,
+            )
+            self.assertLess(
+                abs(ox["pulmonary_systemic_balance_error_mL_min"]), 1e-6
+            )
+
+    def test_low_ventilation_balance_and_inner_convergence(self):
+        result = lung.solve(self.case)
+        ventilation = {
+            lobe: 5.0 * lung.LOBE_W[lobe] for lobe in lung.LOBE_ORDER
+        }
+        ventilation["RLL"] *= 0.30
+        ox = lung.oxygen(
+            result,
+            venous_admixture=0.10,
+            lobe_va_L_min=ventilation,
+            vc_mode="fixed",
+        )
+        self.assertTrue(ox["converged"])
+        self.assertTrue(ox["ventilation_converged"])
+        self.assertLess(ox["ventilation_residual_mmHg"], 0.005)
+        self.assertLess(
+            abs(ox["pulmonary_systemic_balance_error_mL_min"]), 1e-6
+        )
+
+    def test_diffusion_step_convergence(self):
+        result = lung.solve(self.case, arterial_multiplier=8.4)
+        coarse = lung.oxygen(
+            result, exchange_mode="diffusion", vc_mode="fixed",
+            diffusion_steps=256,
+        )
+        fine = lung.oxygen(
+            result, exchange_mode="diffusion", vc_mode="fixed",
+            diffusion_steps=1024,
+        )
+        self.assertLess(abs(coarse["SaO2"] - fine["SaO2"]), 1e-4)
+
+    def test_reference_flow_parameter_is_not_a_hard_upper_bound(self):
+        result = lung.solve(self.case, co_ref=5.0)
+        self.assertEqual(result["CO_reference_L_min"], 5.0)
+        self.assertGreater(result["CO_L_min"], result["CO_reference_L_min"])
+
     def test_target_pvr_solver(self):
         multiplier = phase2.arterial_multiplier_for(self.case, 4.19)
         result = lung.solve(self.case, arterial_multiplier=multiplier)
@@ -95,3 +145,4 @@ class ModelVerificationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
