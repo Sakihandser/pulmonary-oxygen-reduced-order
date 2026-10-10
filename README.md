@@ -72,6 +72,9 @@ Result tables already saved:
 - `data/revision_organ_parameters.csv`
 - `data/revision_calibration_diagnostics.csv`
 - `data/revision_validation_benchmarks.csv`
+- `data/fig_revision_core_sensitivity.png`
+- `data/fig_revision_vq.png`
+- `data/fig_revision_sampling_stability.png`
 
 No patient data are included. The authors declare no competing interests.
 
