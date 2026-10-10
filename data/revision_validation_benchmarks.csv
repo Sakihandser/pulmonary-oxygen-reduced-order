@@ -1,0 +1,5 @@
+benchmark,observed,expected,absolute_error
+no_admixture_fast_exchange_upper_bound,0.9722202329967121,0.9722202329967121,0.0
+flow_proportional_volume_equal_transit,4.440892098500626e-16,0.0,4.440892098500626e-16
+pulmonary_systemic_oxygen_conservation,0.0,0.0,0.0
+
