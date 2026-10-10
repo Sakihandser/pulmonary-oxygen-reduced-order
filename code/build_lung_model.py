@@ -146,7 +146,7 @@ def build_cases(rb=RB, mu=MU, n_root_override=None):
 
 def solve(
     case, arterial_multiplier=1.0, venous_multiplier=1.0,
-    bed_open_fraction=1.0, focal=None, co_max=5.0, reserve=50.0,
+    bed_open_fraction=1.0, focal=None, co_ref=5.0, reserve=50.0,
     scale_cap=False, lobe_arterial_multiplier=None,
 ):
     """Solve the steady resistance network.
@@ -186,8 +186,8 @@ def solve(
     pvr_wu = pvr / WU
 
     mpap_ref, pawp = 14.0, 8.0
-    co = co_max * (1.0 - (pawp - mpap_ref) / reserve)
-    co /= 1.0 + co_max * pvr_wu / reserve
+    co = co_ref * (1.0 - (pawp - mpap_ref) / reserve)
+    co /= 1.0 + co_ref * pvr_wu / reserve
     co = max(1.2, co)
     mpap = pawp + co * pvr_wu
 
@@ -216,6 +216,7 @@ def solve(
         "open_fraction": lobe_open,
         "arterial_multiplier": arterial_multiplier,
         "venous_multiplier": venous_multiplier,
+        "CO_reference_L_min": co_ref,
         "lobe_arterial_multiplier": {
             lobe: arterial_multiplier * lobe_arterial_multiplier.get(lobe, 1.0)
             for lobe in LOBE_ORDER
@@ -256,24 +257,36 @@ def po2_from_saturation(value):
 
 
 def oxygen(
-    result, vc_ml=86.0, tau_eq=0.30, vo2=250.0, shunt=0.03,
+    result, vc_ml=86.0, tau_eq=0.30, vo2=250.0, venous_admixture=0.03,
     hb=15.0, pao2=100.0, lobe_pao2=None, organs=None,
     rv_power_scale=False, ref_power=None, vc_mode="flow",
     tolerance=1e-9, max_iterations=200, exchange_mode="saturation",
     dl_o2=25.0, lobe_va_L_min=None, pio2=150.0,
+    diffusion_steps=512, ventilation_tolerance_mmHg=0.005,
+    ventilation_max_iterations=100, shunt=None,
 ):
     """Solve a closed oxygen-content balance for lung and organ compartments.
 
     exchange_mode is saturation (baseline), content, or diffusion.
-    lobe_va_L_min turns on a lobe-wise alveolar mass balance.
-    vc_mode fixed keeps anatomical volume shares and ignores bed opening.
+    venous_admixture is an effective post-exchange content-mixing parameter,
+    not a separately resolved anatomical bypass.  The deprecated shunt alias
+    is retained so that older analysis scripts remain reproducible.
+    lobe_va_L_min turns on a lobe-wise alveolar mass balance.  The uptake in
+    that balance is the effective uptake delivered after venous admixture,
+    which closes pulmonary and systemic oxygen conservation.
+    vc_mode fixed keeps anatomical volume shares and ignores bed opening;
+    hybrid averages fixed anatomical and flow-proportional shares.
     """
-    if vc_mode not in {"flow", "anatomy", "fixed"}:
-        raise ValueError("vc_mode must be flow, anatomy, or fixed")
+    if shunt is not None:
+        venous_admixture = shunt
+    if vc_mode not in {"flow", "anatomy", "fixed", "hybrid"}:
+        raise ValueError("vc_mode must be flow, anatomy, fixed, or hybrid")
     if exchange_mode not in {"saturation", "content", "diffusion"}:
         raise ValueError("exchange_mode must be saturation, content, or diffusion")
-    if not 0.0 <= shunt < 1.0:
-        raise ValueError("shunt must be in [0, 1)")
+    if not 0.0 <= venous_admixture < 1.0:
+        raise ValueError("venous_admixture must be in [0, 1)")
+    if diffusion_steps < 1:
+        raise ValueError("diffusion_steps must be positive")
     organs = organs or DEFAULT_ORGANS
     if not math.isclose(sum(values[0] for values in organs.values()), 1.0, abs_tol=1e-9):
         raise ValueError("organ flow fractions must sum to 1")
@@ -293,6 +306,8 @@ def oxygen(
             return result["flow_fraction"][lobe]
         if vc_mode == "fixed":
             return LOBE_W[lobe]
+        if vc_mode == "hybrid":
+            return 0.5 * (LOBE_W[lobe] + result["flow_fraction"][lobe])
         return LOBE_W[lobe] * result["open_fraction"][lobe]
 
     def equilibrate(mixed_cv, pv, local_pao2, transit, local_vc):
@@ -311,7 +326,7 @@ def oxygen(
             return float(hill(po2_end)), po2_end, c_end
         c = mixed_cv
         pc = pv
-        steps = 16
+        steps = diffusion_steps
         dt = transit / steps
         c_alv = float(oxygen_content(local_pao2, hb))
         local_dl = dl_o2 * local_vc / vc_ml
@@ -345,8 +360,13 @@ def oxygen(
             lobe: (lobe_pao2.get(lobe, pao2) if lobe_pao2 else pao2)
             for lobe in flows
         }
+        ventilation_iterations = 0
+        ventilation_residual = 0.0
+        ventilation_converged = True
+        ventilation_bound_hits = 0
         if lobe_va_L_min:
-            for _ in range(18):
+            ventilation_converged = False
+            for ventilation_iterations in range(1, ventilation_max_iterations + 1):
                 trial = {}
                 for lobe, flow in flows.items():
                     local_vc = vc_ml * volume_share(lobe)
@@ -354,16 +374,27 @@ def oxygen(
                     _, _, c_end = equilibrate(
                         mixed_cv, pv, local_pao2[lobe], transit, local_vc,
                     )
-                    uptake = flow * 10.0 * (c_end - mixed_cv)
+                    uptake = (
+                        (1.0 - venous_admixture)
+                        * flow * 10.0 * (c_end - mixed_cv)
+                    )
                     updated = pio2 - 0.863 * uptake / lobe_va_L_min[lobe]
                     trial[lobe] = float(np.clip(updated, 15.0, pio2))
-                if max(abs(trial[lobe] - local_pao2[lobe]) for lobe in trial) < 0.05:
+                ventilation_residual = max(
+                    abs(trial[lobe] - local_pao2[lobe]) for lobe in trial
+                )
+                if ventilation_residual < ventilation_tolerance_mmHg:
                     local_pao2 = trial
+                    ventilation_converged = True
                     break
                 local_pao2 = {
                     lobe: 0.55 * local_pao2[lobe] + 0.45 * trial[lobe]
                     for lobe in trial
                 }
+            ventilation_bound_hits = sum(
+                abs(value - 15.0) < 1e-12 or abs(value - pio2) < 1e-12
+                for value in local_pao2.values()
+            )
 
         ends, endcap_content = {}, 0.0
         for lobe, flow in flows.items():
@@ -380,8 +411,19 @@ def oxygen(
                 "vc_share": volume_share(lobe), "vc_ml": local_vc,
                 "VA_L_min": None if not lobe_va_L_min else lobe_va_L_min[lobe],
             }
-        ca_new = (1.0 - shunt) * endcap_content + shunt * mixed_cv
-        return ca_new, mixed_cv, organ_output, ends, total_demand, total_used, endcap_content
+        ca_new = (
+            (1.0 - venous_admixture) * endcap_content
+            + venous_admixture * mixed_cv
+        )
+        pulmonary_uptake = (1.0 - venous_admixture) * sum(
+            flow * 10.0 * (ends[lobe]["C_end_mL_dL"] - mixed_cv)
+            for lobe, flow in flows.items()
+        )
+        return (
+            ca_new, mixed_cv, organ_output, ends, total_demand, total_used,
+            endcap_content, pulmonary_uptake, ventilation_converged,
+            ventilation_iterations, ventilation_residual, ventilation_bound_hits,
+        )
 
     ca = float(oxygen_content(min(pao2, 100.0), hb))
     converged = False
@@ -393,7 +435,11 @@ def oxygen(
             break
         ca = 0.5 * (ca + ca_new)
 
-    ca, cv, organ_output, ends, total_demand, total_used, endcap_content = evaluate(ca)
+    (
+        ca, cv, organ_output, ends, total_demand, total_used, endcap_content,
+        pulmonary_uptake, ventilation_converged, ventilation_iterations,
+        ventilation_residual, ventilation_bound_hits,
+    ) = evaluate(ca)
     pa, pv = po2_from_content(ca, hb), po2_from_content(cv, hb)
     s_values = [ends[lobe]["S_end"] for lobe in LOBE_ORDER]
     systemic_extraction = co * 10.0 * (ca - cv)
@@ -408,9 +454,20 @@ def oxygen(
         "total_VO2_used_mL_min": total_used,
         "total_deficit_mL_min": total_demand - total_used,
         "oxygen_mass_balance_error_mL_min": systemic_extraction - total_used,
+        "pulmonary_oxygen_uptake_mL_min": pulmonary_uptake,
+        "pulmonary_systemic_balance_error_mL_min": (
+            pulmonary_uptake - systemic_extraction
+        ),
         "converged": converged, "iterations": iterations,
+        "ventilation_converged": ventilation_converged,
+        "ventilation_iterations": ventilation_iterations,
+        "ventilation_residual_mmHg": ventilation_residual,
+        "ventilation_bound_hits": ventilation_bound_hits,
+        "diffusion_steps": diffusion_steps,
         "effective_vc_ml": sum(item["vc_ml"] for item in ends.values()),
         "mixing_basis": "oxygen_content",
+        "venous_admixture_fraction": venous_admixture,
+        "admixture_definition": "effective_post_exchange_content_mixing",
     }
 
 
@@ -489,3 +546,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+
