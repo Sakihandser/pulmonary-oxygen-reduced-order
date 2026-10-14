@@ -302,5 +302,11 @@
       "source_sha256": "3e453f8581f7d56c03cfd313282365811c51c48f6fda0f5bdd79f35ffeb6bd95",
       "published_sha256": "129bfde3e4ad3457df29df247791a5884d5cbd407b7a886aca4057745ec2e8ee"
     }
+  ],
+  "csv_encoding_note": "UTF-8 BOM added to CSV files containing mathematical symbols; decoded contents unchanged.",
+  "csv_encoding_files": [
+    "06_data_constrained_microcirculation/data/source_cells.csv",
+    "07_observation_mapping/data/published_operational_oxygen_benchmark.csv",
+    "10_diagnostic_revision/results/source_cells_reextracted.csv"
   ]
 }

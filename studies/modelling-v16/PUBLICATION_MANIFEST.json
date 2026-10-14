@@ -7,7 +7,7 @@
   "source_archives": [
     {
       "name": "Modelling_S2_Numerical_Data_v16.zip",
-      "sha256": "3d1e7200382adf4036f391c35fa812133243a05c0661b5993d0160a6e2c10815"
+      "sha256": "3a5ddcfa0f13822bc69e27cd96bd268a54887c108c8ea2f685eac92fa39cfcdb"
     },
     {
       "name": "Modelling_S3_Reporting_and_Figures_v16.zip",
@@ -52,8 +52,8 @@
     },
     {
       "path": "studies/modelling-v16/numerical/06_data_constrained_microcirculation/data/source_cells.csv",
-      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a",
-      "bytes": 6905
+      "sha256": "3e656946c2b4262d6dd8ec3736e3340ed79ca6f33181d30ab9343fd5d8637c11",
+      "bytes": 6908
     },
     {
       "path": "studies/modelling-v16/numerical/06_data_constrained_microcirculation/data/source_snapshot_manifest.json",
@@ -127,8 +127,8 @@
     },
     {
       "path": "studies/modelling-v16/numerical/07_observation_mapping/data/published_operational_oxygen_benchmark.csv",
-      "sha256": "193d894aea593541f5d87a7e2b5a531128ff43295cabf0f020f0c29b43dbbf51",
-      "bytes": 1908
+      "sha256": "b0bb0ebbd52c9deaedf3428f2d03572bfac392e66ada274e5e34cc5cf40a8b92",
+      "bytes": 1911
     },
     {
       "path": "studies/modelling-v16/numerical/07_observation_mapping/results/additional_observation_rank.csv",
@@ -247,8 +247,8 @@
     },
     {
       "path": "studies/modelling-v16/numerical/10_diagnostic_revision/results/source_cells_reextracted.csv",
-      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a",
-      "bytes": 6905
+      "sha256": "3e656946c2b4262d6dd8ec3736e3340ed79ca6f33181d30ab9343fd5d8637c11",
+      "bytes": 6908
     },
     {
       "path": "studies/modelling-v16/numerical/11_diagnostic_reproduction/code/controlled_exchange_frozen.py",
@@ -367,13 +367,13 @@
     },
     {
       "path": "studies/modelling-v16/numerical/README_REPRODUCE.md",
-      "sha256": "e22a851517f0352540ebd6be2bf5bc306eaba7626c89f8f8d1344e2616bf44f1",
-      "bytes": 2100
+      "sha256": "0d6ce1b528c49312758e4a2a4a7c666e23de636351471b2a6540ca467e6166eb",
+      "bytes": 2322
     },
     {
       "path": "studies/modelling-v16/numerical/release_sha256.json",
-      "sha256": "56cbd8cc41ef5af371d9e2781a16c5e83983e021123522478b9e17c27dc91aa8",
-      "bytes": 14150
+      "sha256": "0752adf7bbeb4a581a29ec624254810b0029daed9d81bd87e05daba9e5713127",
+      "bytes": 14534
     },
     {
       "path": "studies/modelling-v16/numerical/reproduce.py",
@@ -392,8 +392,8 @@
     },
     {
       "path": "studies/modelling-v16/numerical/translation_provenance.json",
-      "sha256": "92b6131a8943aa8ed0e02d227f7013f76b27b68a70f928e053e1b3748a854063",
-      "bytes": 16611
+      "sha256": "8b7d6b67a4652f76256a250a3ab20d4421a46a1a7a8ae94da9402aa3aefe9efe",
+      "bytes": 17280
     },
     {
       "path": "studies/modelling-v16/README.md",

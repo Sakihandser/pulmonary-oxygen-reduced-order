@@ -1,4 +1,4 @@
-study,group,stage,variable,unit,cell,value,spread,spread_type,location
+﻿study,group,stage,variable,unit,cell,value,spread,spread_type,location
 Fermoyle2021,control,rest,rer,dimensionless,0.80±0.02,0.8,0.02,SEM,Table 2
 Fermoyle2021,HFpEF,rest,rer,dimensionless,0.82±0.03,0.82,0.03,SEM,Table 2
 Fermoyle2021,control,20W,rer,dimensionless,0.82±0.04,0.82,0.04,SEM,Table 2
