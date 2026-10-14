@@ -377,8 +377,8 @@
     },
     {
       "path": "translation_provenance.json",
-      "bytes": 17280,
-      "sha256": "8b7d6b67a4652f76256a250a3ab20d4421a46a1a7a8ae94da9402aa3aefe9efe"
+      "bytes": 11815,
+      "sha256": "d622088f4fd0d1182fda66744cc2782f986d9821438395b347a1b51c591b77e2"
     }
   ]
 }
