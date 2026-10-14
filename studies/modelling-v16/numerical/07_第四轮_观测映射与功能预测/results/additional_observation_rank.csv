@@ -1,6 +1,0 @@
-﻿observations,rows,rank,mechanism_parameters,null_dimension,smallest_singular_value,condition
-base,2,2,3,1,0.9152717300515847,fixed_length_and_known_observation_coefficients_only
-plus_oxygen,3,2,3,1,2.378879463794549e-17,fixed_length_and_known_observation_coefficients_only
-plus_transit,3,2,3,1,8.000008346030677e-17,fixed_length_and_known_observation_coefficients_only
-plus_hydraulics,3,3,3,0,0.34824593694178546,fixed_length_and_known_observation_coefficients_only
-plus_area,3,3,3,0,0.35986769829062776,fixed_length_and_known_observation_coefficients_only

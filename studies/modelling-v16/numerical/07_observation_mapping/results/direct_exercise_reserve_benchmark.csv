@@ -1,0 +1,3 @@
+group,ratio_dlco_over_q,dlco_over_q_change_percent,rest_spo2,peak_spo2,q_ratio,inference
+UT,0.5509355509355509,-44.90644490644491,98,97,3.1016129032258064,descriptive_no_paired_statistical_test_and_not_DL_O2
+T,0.4620689655172414,-53.79310344827586,98,96,3.4238505747126435,descriptive_no_paired_statistical_test_and_not_DL_O2

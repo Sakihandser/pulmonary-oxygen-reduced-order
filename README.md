@@ -8,7 +8,7 @@ The study compares three exchange laws and four constructions under matched tota
 
 Start in [`studies/modelling-v16/`](studies/modelling-v16/README.md).
 
-- [`numerical/`](studies/modelling-v16/numerical/): exact extracted contents of the frozen numerical supplement, including production code, independent endpoint functions, archived mathematical checks, source-cell provenance, inputs, outputs, and the offline runner.
+- [`numerical/`](studies/modelling-v16/numerical/): English distribution of the numerical supplement, with translated paths and labels and unchanged numerical cells, including production code, independent endpoint functions, archived mathematical checks, source-cell provenance, inputs, outputs, and the offline runner.
 - [`reporting/`](studies/modelling-v16/reporting/): v16 allocation and systemic-use tables, retained figure-source CSV files, provenance and the portable 600 dpi figure export script.
 - [`PUBLICATION_MANIFEST.json`](studies/modelling-v16/PUBLICATION_MANIFEST.json): byte hashes and archive origins for the published snapshot.
 - [`CITATION.cff`](CITATION.cff): citation metadata for this code and data snapshot. No manuscript DOI or journal publication is claimed.
@@ -23,7 +23,7 @@ python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-The runner checks the frozen archive hashes, recomputes the original production matrix and independently checks endpoints. The exact locked dependencies preserve the previously recorded environment; this publication update did not rerun the models, tests or numerical verification, and did not establish a fresh-environment reproduction.
+The runner checks the English-distribution hashes, recomputes the original production matrix and independently checks endpoints. The exact locked dependencies preserve the previously recorded environment; this publication update did not rerun the models, tests or numerical verification, and did not establish a fresh-environment reproduction.
 
 For figures only, from the repository root:
 
@@ -42,7 +42,7 @@ Independent physiological oxygenation and PAH validation remain absent. The futu
 
 ## Earlier studies
 
-The original `code/`, `data/`, `tests/` and root `requirements.txt` remain for historical continuity. They belong to earlier manuscript development and are not the current v16 reproduction entry point. Current numerical files retain their original Chinese phase-directory names and internal v14/v15 labels to preserve relative imports, bytes and provenance. Historical descriptions of archives as unpublished record their preparation state; the current public snapshot is the directory documented above.
+The original `code/`, `data/`, `tests/` and root `requirements.txt` remain for historical continuity. They belong to earlier manuscript development and are not the current v16 reproduction entry point. The current numerical distribution uses English directory names, category labels and documentation. Imports, data filters and manifests use the same English paths and labels. Original numerical cells and model arithmetic were preserved; historical run hashes are retained as provenance. The previous untranslated snapshot remains in Git history, not in the current manuscript directory. Language editing did not rerun the models or tests.
 
 ## License and citation
 

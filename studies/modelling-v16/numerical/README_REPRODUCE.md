@@ -1,30 +1,16 @@
-# Diagnostic article v15 offline reproducibility
+# Modelling v16 numerical supplement
 
-S2 Data supplies the exact article inputs and every row of the 128-condition
-diagnostic matrix, observation analyses, current figure files and source data.
-Run from the extracted root:
+This English distribution supplies the article inputs, complete 128-condition matrix, observation analyses, production code, independent endpoint functions, previously recorded mathematical checks and source provenance. Numerical results derive from the frozen v14/v15 study. Only paths, labels and documentation were translated; numerical cells and model arithmetic were preserved.
+
+From the extracted supplement root:
 
 ```
 python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-The runner verifies all archived file hashes before recomputing the production
-matrix, reconstructing hydraulics and independently checking every endpoint.
-No network, participant records or third-party article text is required.
-Observation results retain the original phase directories for provenance.
-Figure source SVG/PNG/TIFF files are supplied. To redraw the final article figures,
-run python tools/redraw_figures_v14.py after installing the locked dependencies.
-Use Arial for the publication layout; font substitution may change pixels on
-other machines. The numerical runner does not typeset manuscript DOCX.
+The runner checks the current English-distribution hashes before recomputing the production matrix, reconstructing hydraulics and independently checking endpoints. It needs no network access, participant records or third-party article full text. Run in a disposable copy because reproduction changes outputs. Use stored numerical values and recorded integration tolerances for comparisons; output hashes containing runtime metadata are not numerical agreement tests. The earlier reproduction was performed in the recorded environment, not a newly isolated dependency environment. No model, test or numerical verification was rerun during this language revision.
 
-源代码目录与输入路径保持相对结构。解压后从根目录运行 reproduce.py。
-哈希校验在重算前执行；重算改变输出后，再次验证归档应重新解压。
-保存的精确值和独立积分容差用于核对，勿以含运行时间的输出哈希比较结果。
-本机同一环境下独立解压重跑；未另建全新依赖环境。
+The relative English phase directories must remain intact. The current entry point is 11_diagnostic_reproduction/code/reproduce_diagnostic.py. The historical figure script tools/redraw_figures_v14.py reads 10_diagnostic_revision/results and exports its historical figure layout. For the current 600 dpi article figures, use the portable script and CSV files in S3; the four submission TIFF files are supplied separately. Arial is used and font substitution may change pixels.
 
-
-The v15 manuscript targets Modelling. All numerical inputs, algorithms, outputs,
-figure pixels and the 128-condition matrix are unchanged from the frozen v14
-numerical release. Legacy script and figure directory names retain v14 for
-provenance. The future research agenda introduces no new validated outcomes.
+Public repository: https://github.com/Sakihandser/pulmonary-oxygen-reduced-order. The manuscript identifies the fixed publication snapshot. release_sha256.json covers this translated distribution; translation_provenance.json retains source hashes and explains the revision. Old run manifests are historical records, not current distribution hash lists. Independent physiological oxygenation and PAH validation remain absent.

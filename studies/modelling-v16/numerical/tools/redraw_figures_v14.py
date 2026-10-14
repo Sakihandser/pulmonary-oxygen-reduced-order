@@ -12,7 +12,7 @@ def read(p):
  with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 # Regenerate submission figures from retained data at native 300 dpi.
 plt.rcParams.update({'font.family':'Arial','font.size':9,'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'path'})
-DATA=ROOT/'10_第七轮_v12修订与耦合预研/results';FIG=OUT/'Figures_v14'
+DATA=ROOT/'10_diagnostic_revision/results';FIG=OUT/'Figures_v14'
 def savefig(fig,n):
  from PIL import Image
  fig.savefig(FIG/f'Fig{n}.png',dpi=300)

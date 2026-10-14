@@ -1,0 +1,5 @@
+study,group,drug,stage,cohort_n,q,q_SD,published_mean_dlco_over_q,dlco_over_q_SD,spo2_percent,spo2_SD,source_doi,location,q_method_status,endpoint,role
+Ehnes2026,UT,placebo,rest,12,6.2,1.35,4.81,0.82,98,1,10.1113/JP290438,Table 2,not_reextracted_here,pulse_oximetry_not_arterial_cooximetry,exercise_reserve_benchmark_not_diffusion_validation
+Ehnes2026,UT,placebo,90percent_peak_VO2,12,19.23,6.27,2.65,0.79,97,1,10.1113/JP290438,Table 2,not_reextracted_here,pulse_oximetry_not_arterial_cooximetry,exercise_reserve_benchmark_not_diffusion_validation
+Ehnes2026,T,placebo,rest,12,6.96,3.85,5.8,2.05,98,1,10.1113/JP290438,Table 2,not_reextracted_here,pulse_oximetry_not_arterial_cooximetry,exercise_reserve_benchmark_not_diffusion_validation
+Ehnes2026,T,placebo,90percent_peak_VO2,12,23.83,4.41,2.68,0.65,96,1,10.1113/JP290438,Table 2,not_reextracted_here,pulse_oximetry_not_arterial_cooximetry,exercise_reserve_benchmark_not_diffusion_validation

@@ -1,288 +1,304 @@
 {
-  "version": "v15",
-  "numerical_source": "v14",
+  "version": "v16",
+  "numerical_source": "v14/v15 saved results",
+  "language": "English",
   "kind": "diagnostic_article",
-  "public_deposition": false,
+  "research_code_executed_during_language_revision": false,
   "files": [
     {
-      "path": "02_第一轮_基线四情景/代码与数据/build_lung_model.py",
-      "bytes": 20154,
-      "sha256": "449128e0c4213cba7598f642240ba6fb60a5dfb1e0e30454cc67789ad8ae4dd5"
+      "path": "02_baseline_network/code_and_data/build_lung_model.py",
+      "bytes": 20185,
+      "sha256": "aa49b9d408fcfc2e65a7c0e37c94935f69b5fdf8d442f2bc9995fba0c07e2b53"
     },
     {
-      "path": "03_第二轮_机制扫描/代码与数据/goal9_transit.csv",
-      "bytes": 8200,
-      "sha256": "971b6686c1e8e3c1835a829f59080764dff9160ec1b2bc7cf038d99b3159bd88"
+      "path": "03_mechanism_scans/code_and_data/goal9_transit.csv",
+      "bytes": 8325,
+      "sha256": "a0449e3100af795931536cb1cb09315b1e47691abf27b72edddded3f8b56b737"
     },
     {
-      "path": "06_第三轮_数据约束微循环/code/analyze.py",
+      "path": "06_data_constrained_microcirculation/code/analyze.py",
       "bytes": 11453,
       "sha256": "e6867e1b12391cf6845ed537510c71bf099f53146baae6d951f031b5f526d651"
     },
     {
-      "path": "06_第三轮_数据约束微循环/code/microcirculation.py",
+      "path": "06_data_constrained_microcirculation/code/microcirculation.py",
       "bytes": 7395,
       "sha256": "78a998d0d14207a658885fd1106347b0875fbea18bdfb08884ff2879aa0bc5b3"
     },
     {
-      "path": "06_第三轮_数据约束微循环/code/prepare_data.py",
+      "path": "06_data_constrained_microcirculation/code/prepare_data.py",
       "bytes": 6435,
       "sha256": "502f6be92fed1da68416a7c883aba1e43cfa6be3beafbdb50b447717dc660801"
     },
     {
-      "path": "06_第三轮_数据约束微循环/data/pressure_challenge_summaries.csv",
-      "bytes": 1029,
-      "sha256": "89f8b5374b63f39cdfa752c94356195f62df811333a4a470a939af2a1b093158"
+      "path": "06_data_constrained_microcirculation/data/pressure_challenge_summaries.csv",
+      "bytes": 1026,
+      "sha256": "632cf7f090c2f7aee66e769cbbe9e6b589476f17e91819563a30591e553aa551"
     },
     {
-      "path": "06_第三轮_数据约束微循环/data/published_groups.csv",
-      "bytes": 2339,
-      "sha256": "4d31dd153c555f647e70ba8d6a72ea73ccd807215e5ba8808b763b0afc5d2825"
+      "path": "06_data_constrained_microcirculation/data/published_groups.csv",
+      "bytes": 2336,
+      "sha256": "92d3a6585d9931810f3b6c07a9a7b32a41316506389de0dc3014b422651c309a"
     },
     {
-      "path": "06_第三轮_数据约束微循环/data/source_cells.csv",
-      "bytes": 6908,
-      "sha256": "3e656946c2b4262d6dd8ec3736e3340ed79ca6f33181d30ab9343fd5d8637c11"
+      "path": "06_data_constrained_microcirculation/data/source_cells.csv",
+      "bytes": 6905,
+      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a"
     },
     {
-      "path": "06_第三轮_数据约束微循环/data/source_snapshot_manifest.json",
-      "bytes": 795,
-      "sha256": "4ffe9dbae33edb05a92cbf1eb9b15fa23e3a822e7030df019bc6232b35cd7e04"
+      "path": "06_data_constrained_microcirculation/data/source_snapshot_manifest.json",
+      "bytes": 770,
+      "sha256": "fa3b727624c85d652940e6aef10a41d5c38a52735c8a57d33e22f4ec7144264f"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/external_response_checks.csv",
-      "bytes": 2448,
-      "sha256": "a94b6f69b7a7d9e21deb6d8bec5fb0cc441e808059aab1774672ab08a504d8a2"
+      "path": "06_data_constrained_microcirculation/results/external_response_checks.csv",
+      "bytes": 2445,
+      "sha256": "0687f35204bb52ed0621c8c8d9f0ec8c985ace5d4ac3bc208311e7371042dbb9"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/matched_pvr_pressure_counterexample.csv",
-      "bytes": 269,
-      "sha256": "fe6329ecfa03d3cce95623e9b722226f1674db52b31a2b5b9317274a55f35dfc"
+      "path": "06_data_constrained_microcirculation/results/matched_pvr_pressure_counterexample.csv",
+      "bytes": 266,
+      "sha256": "5a6b4681c228644576af8b9b84482233b65448a7ccb9d574b651608bdc00dddb"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/mechanism_equivalent_family.csv",
-      "bytes": 1378,
-      "sha256": "03167f1427a7b7ba5a65de2bb209a2a2573bc4d0244b05d33a77087dc98f4b1a"
+      "path": "06_data_constrained_microcirculation/results/mechanism_equivalent_family.csv",
+      "bytes": 1375,
+      "sha256": "dd15243155ce510ff0b694554c635d7b1e78f62d2972bee68884ac5dbe268448"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/numerical_checks.txt",
+      "path": "06_data_constrained_microcirculation/results/numerical_checks.txt",
       "bytes": 1466,
       "sha256": "771a0eab60f77783140cd09466ccd0e7970fae079ae74af39a1b7e4e42187b73"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/pilot_predictions.csv",
-      "bytes": 11320,
-      "sha256": "df3887432a6dde67cca8196425515f58c58354e0c6e5f9594f210813ed89a400"
+      "path": "06_data_constrained_microcirculation/results/pilot_predictions.csv",
+      "bytes": 11317,
+      "sha256": "dd029c15762c4b887ec1f318ea55c8d28186bed180db8064e78f29ae643f579c"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/pressure_partition_equivalent_fits.csv",
-      "bytes": 8856,
-      "sha256": "f0291bcadfdf91cb76efead6865a1ad4141786ac6d7302fca17f6e3276639c4b"
+      "path": "06_data_constrained_microcirculation/results/pressure_partition_equivalent_fits.csv",
+      "bytes": 8853,
+      "sha256": "683872a3c14767d833ad78a2b65bafaf539d0d6a3bf4b9415260b163e55be04f"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/run_manifest.json",
-      "bytes": 985,
-      "sha256": "dd12aedb3856053d23ebfee0f0c0adde97d5d5429940ddda0e2b6a7b9df9a940"
+      "path": "06_data_constrained_microcirculation/results/run_manifest.json",
+      "bytes": 1215,
+      "sha256": "eb8a22864eec0233acacd2d06d6cf8ef45a35267747f7f9bdc5f265d4c48fdc2"
     },
     {
-      "path": "06_第三轮_数据约束微循环/results/summary.json",
-      "bytes": 1209,
-      "sha256": "aee07ee6885f1588d2e62b392de8834395a57430fa52c948358d3f111f130134"
+      "path": "06_data_constrained_microcirculation/results/summary.json",
+      "bytes": 1153,
+      "sha256": "ef6dc0e3edc2b21a74d8b6414e5f8c6dd937cc47cd7fd7e082177bdac42eb169"
     },
     {
-      "path": "06_第三轮_数据约束微循环/tests/test_microcirculation.py",
+      "path": "06_data_constrained_microcirculation/tests/test_microcirculation.py",
       "bytes": 3982,
       "sha256": "a4ceedd628ba109f780354204f944eedaa9148f6519dadd72e72b8569dc39446"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/code/observations.py",
+      "path": "07_observation_mapping/code/observations.py",
       "bytes": 4297,
       "sha256": "f6c4211aa6c583f5b43f517289327bc58c3d3d2373dd31cec515957b72c108fa"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/code/phase4_analysis.py",
-      "bytes": 16286,
-      "sha256": "d90066761a9ccb1717d30ef1791ef3412406530a848bd0e5652ee858f76ac89e"
+      "path": "07_observation_mapping/code/phase4_analysis.py",
+      "bytes": 16288,
+      "sha256": "ddaa948a4da71a1234c171f20ed9ca9bb3a9a05c23ecd9b57b099e77de8c389b"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/data/Ehnes2026_selected_exercise_cells.csv",
-      "bytes": 950,
-      "sha256": "84d0170ac30e808c39ece9ff3f02d11931c54b5f886724d7d2039afe848aca0d"
+      "path": "07_observation_mapping/data/Ehnes2026_selected_exercise_cells.csv",
+      "bytes": 947,
+      "sha256": "322601b7f00e44e3343ef620e1104bde415bce4d0bc54a55e0b6e7773b0865f5"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/data/observation_constants.csv",
-      "bytes": 765,
-      "sha256": "d43b960dfaddefade24eb583a8227d69e0fba78344136fb48b1c0655a42c78ab"
+      "path": "07_observation_mapping/data/observation_constants.csv",
+      "bytes": 762,
+      "sha256": "1d4b093bce66036434cbdfd3e1232cca818b90af15a7edb5f6d040772c306858"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/data/published_operational_oxygen_benchmark.csv",
-      "bytes": 1911,
-      "sha256": "b0bb0ebbd52c9deaedf3428f2d03572bfac392e66ada274e5e34cc5cf40a8b92"
+      "path": "07_observation_mapping/data/published_operational_oxygen_benchmark.csv",
+      "bytes": 1908,
+      "sha256": "193d894aea593541f5d87a7e2b5a531128ff43295cabf0f020f0c29b43dbbf51"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/additional_observation_rank.csv",
-      "bytes": 566,
-      "sha256": "bd1b76ff79e38ecddf25d6c97822ea11fe50d2b1073a2375914fc4a11bcbd209"
+      "path": "07_observation_mapping/results/additional_observation_rank.csv",
+      "bytes": 563,
+      "sha256": "fd17415b7d66f78435178dcad203ba58797987bea84b1f8b578ce0a348f51a65"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/conditional_oxygen_estimates.csv",
-      "bytes": 4580,
-      "sha256": "6c5def9ebb1867aba2070f016d09e850ee419d387ca18496d33322d7f5ad5ab5"
+      "path": "07_observation_mapping/results/conditional_oxygen_estimates.csv",
+      "bytes": 4577,
+      "sha256": "473f622542d506bd8bb5705d4a68cc43ee72d91efe63474c0948073484f9de15"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/conditional_response_elasticities.csv",
-      "bytes": 381,
-      "sha256": "c6e16d25917921478ed4d73677de75cd48fd90e4a49a351482478cd272c3a7fd"
+      "path": "07_observation_mapping/results/conditional_response_elasticities.csv",
+      "bytes": 378,
+      "sha256": "2948d40b738575dd210ac990c988bffe59a6f229bb0bcff0289a0ce90e786991"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/direct_exercise_reserve_benchmark.csv",
-      "bytes": 332,
-      "sha256": "8a39cca15651efc8a398780965e7f3ccfe0766eac26e5741a15c5f8251e9b207"
+      "path": "07_observation_mapping/results/direct_exercise_reserve_benchmark.csv",
+      "bytes": 329,
+      "sha256": "ab5483edb3ef4320493eabfc7a2274c873a4bd90d15c9caac084165ca4680bed"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/finite_infinite_same_alpha_comparison.csv",
-      "bytes": 490,
-      "sha256": "3393195ea2e0a7d91ab413ce34e19fada9921cbb989e997a1b621d710412f905"
+      "path": "07_observation_mapping/results/finite_infinite_same_alpha_comparison.csv",
+      "bytes": 487,
+      "sha256": "7b1b80eac390f008cc987413c2a0bb86329c89497a396053f71492b491735b70"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/numerical_checks.txt",
+      "path": "07_observation_mapping/results/numerical_checks.txt",
       "bytes": 1916,
       "sha256": "1e07e058efa567e2fe990755f941eb40d9714ba926416dd522f9e02ecb677bb2"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/pressure_challenge_conditional_gain.json",
-      "bytes": 569,
-      "sha256": "fd631035a355cdef6f95cac88b78e4395bc124c900b458b85fb64c92a962a4b0"
+      "path": "07_observation_mapping/results/pressure_challenge_conditional_gain.json",
+      "bytes": 557,
+      "sha256": "b86cba2db9cff373b58120f1d3d29571898fd371e257dfdf97705b370660ce73"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/pressure_driver_discriminating_protocols.csv",
-      "bytes": 496,
-      "sha256": "9e2345cbfb7d399b602e96b707469e94ac503b56cf9f6f409ef6559ea01bf042"
+      "path": "07_observation_mapping/results/pressure_driver_discriminating_protocols.csv",
+      "bytes": 493,
+      "sha256": "33b85be2eaf803043ee59a32c1e1a6a6de902959744c83258f45956f9bb1aad8"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/run_manifest.json",
-      "bytes": 2950,
-      "sha256": "35d5788207eb619986f2aad88979b31b984c5040a75f00677c74cb4839eac542"
+      "path": "07_observation_mapping/results/run_manifest.json",
+      "bytes": 2394,
+      "sha256": "ce6393ff38a93c3a9211af73b794cd6679c38e64f535b6dba898591afa832997"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/same_gas_observation_profiles.csv",
-      "bytes": 46763,
-      "sha256": "d4b5909534c5189e6517e8c77258d3a85b1c4de419c27412f62e1f2c90ce90cb"
+      "path": "07_observation_mapping/results/same_gas_observation_profiles.csv",
+      "bytes": 46760,
+      "sha256": "a3eaf8cd06ee97371a4169904eacd510f43db21ad8ecb16db94c32fa4fa96906"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/results/summary.json",
-      "bytes": 1116,
-      "sha256": "fb06d1cd39b4234b08e9e91f23966342830e5cc4bf8f00f99be47caa66db7b9b"
+      "path": "07_observation_mapping/results/summary.json",
+      "bytes": 1085,
+      "sha256": "112775018811c27b0f534df2a99960e7c9396be902a91ec3ee9d1ad1921b497a"
     },
     {
-      "path": "07_第四轮_观测映射与功能预测/tests/test_observations.py",
+      "path": "07_observation_mapping/tests/test_observations.py",
       "bytes": 5506,
       "sha256": "0dd9dca7ca163fd2ad87290dd859880a8b30ae35fef9ef54f4f2cefba8c0eb7e"
     },
     {
-      "path": "08_第五轮_v08_v09联合研究/code/joint_identifiability.py",
-      "bytes": 10009,
-      "sha256": "6e06fd94baaaeef887a9a5fd718cef29a93fc7bd6a64d0b0496a3f2e231729af"
+      "path": "08_joint_identifiability/code/joint_identifiability.py",
+      "bytes": 9992,
+      "sha256": "52c654a1a3039dfbae85935c69474b129a126cfc083263f71bb7392f99c45e4b"
     },
     {
-      "path": "08_第五轮_v08_v09联合研究/results/audit_and_manifest.json",
-      "bytes": 9270,
-      "sha256": "bc4b7a72e0ec9a8b5f6824d1f8ad3b9fb27a8fdf7ed9404800d0b5d814e053c9"
+      "path": "08_joint_identifiability/results/audit_and_manifest.json",
+      "bytes": 8935,
+      "sha256": "56ed04044be784024a10859f5be0d706df7702e0dcdc86ff0d2e0d16b139024a"
     },
     {
-      "path": "08_第五轮_v08_v09联合研究/results/joint_results.csv",
-      "bytes": 855,
-      "sha256": "ca74154eefa13a1087ab842b5da8ff1100e5bea5f3e2bae7d94b4d2bb3f08713"
+      "path": "08_joint_identifiability/results/joint_results.csv",
+      "bytes": 852,
+      "sha256": "4f48ea93d9846a5d3598d985c833d1984fb4ec85088e476588520e197e09a557"
     },
     {
-      "path": "08_第五轮_v08_v09联合研究/results/regional_witness.csv",
-      "bytes": 3040,
-      "sha256": "87c5802e47a1ccf40c5cdc2efebeb45500bb6547aa1ffe8f5ced77ffb7e7b343"
+      "path": "08_joint_identifiability/results/regional_witness.csv",
+      "bytes": 3037,
+      "sha256": "888b247253399e0bf66efbc9517386565e73a22c04bd7ffb3a406ed059623bb2"
     },
     {
-      "path": "09_第六轮_交换算子受控对照/results/ablation_matrix.csv",
-      "bytes": 30796,
-      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e"
+      "path": "09_controlled_exchange/results/ablation_matrix.csv",
+      "bytes": 30793,
+      "sha256": "b14075961c7590b605df1848a3a47a256a3aa0c9cfaec6454c40d66fd0927691"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/data/output_and_calibration_dictionary.md",
-      "bytes": 2935,
-      "sha256": "e19a64056b3f9ede17ef3ec2df50efe4344298c8b659b903dac63fb28abe3ad6"
+      "path": "10_diagnostic_revision/data/output_and_calibration_dictionary.md",
+      "bytes": 3639,
+      "sha256": "9303242b7fd794045503ff11cf1eb794b8d841d54ab4afb5a9eac4287f39a7b6"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/ablation_matrix.csv",
-      "bytes": 30796,
-      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e"
+      "path": "10_diagnostic_revision/results/ablation_matrix.csv",
+      "bytes": 30793,
+      "sha256": "b14075961c7590b605df1848a3a47a256a3aa0c9cfaec6454c40d66fd0927691"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/common_boundary_comparison.csv",
-      "bytes": 371,
-      "sha256": "21bcde6d67f3ed0b0d8e9de94a97838d399f62f2c284fc0eed2390941ec67070"
+      "path": "10_diagnostic_revision/results/common_boundary_comparison.csv",
+      "bytes": 368,
+      "sha256": "5bbdd0faa91fa86b081edc9a5c94c3d059e0e3772ef1df934b1e37110b97ac6b"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/equivalent_conductance.csv",
-      "bytes": 16531,
-      "sha256": "9c174b9eb38ddeac4d696e8f2f0e89e44db230b3f96fc4a0296c33a640e45e80"
+      "path": "10_diagnostic_revision/results/equivalent_conductance.csv",
+      "bytes": 16528,
+      "sha256": "329d86497c2b8a2a7270373ac4dd1ec6353a24d850bb45616658fc19236ee319"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/independent_endpoint_audit.csv",
-      "bytes": 7603,
-      "sha256": "2c3ca2f411409c3471de573966d6943dff2ac9b84ca3a303d208e55701b56881"
+      "path": "10_diagnostic_revision/results/independent_endpoint_audit.csv",
+      "bytes": 7600,
+      "sha256": "77fae272a4bd08a16b8d437bb65c7eb423caaf46bb5784f741b53cef00f129e3"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/sequential_decomposition.csv",
-      "bytes": 2607,
-      "sha256": "b1b068833e33532e2399c1f6b1fdedbe7594dc25e98cf6f4ace3c5bdedaa04b2"
+      "path": "10_diagnostic_revision/results/sequential_decomposition.csv",
+      "bytes": 2604,
+      "sha256": "8db756ca36d0f9b1f72d8a9e09d3a236b524ddcea70af28bc08d1df0c418dfe4"
     },
     {
-      "path": "10_第七轮_v12修订与耦合预研/results/source_cells_reextracted.csv",
-      "bytes": 6908,
-      "sha256": "3e656946c2b4262d6dd8ec3736e3340ed79ca6f33181d30ab9343fd5d8637c11"
+      "path": "10_diagnostic_revision/results/source_cells_reextracted.csv",
+      "bytes": 6905,
+      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/code/controlled_exchange_frozen.py",
-      "bytes": 11850,
-      "sha256": "c1ffbcb7d80176d644bbc497368c13df641524310c5489a16458e81e7764850d"
+      "path": "11_diagnostic_reproduction/LICENSE_AND_ARCHIVE_NOTES.md",
+      "bytes": 1647,
+      "sha256": "a2e607206bad785783452a58a68cd7fd9fa9b612094f7679d5fc10ba49d79988"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/code/independent_endpoint_functions.py",
+      "path": "11_diagnostic_reproduction/code/controlled_exchange_frozen.py",
+      "bytes": 11812,
+      "sha256": "00d7cb511cc0d7955aecf20600628162c86cdc9b661434187987d5b7ec8cde14"
+    },
+    {
+      "path": "11_diagnostic_reproduction/code/independent_endpoint_functions.py",
       "bytes": 955,
       "sha256": "cbf5392729dfeb583c06245838c288aa0fbe111fb3fca45f8838b6d432d11c18"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/code/reproduce_diagnostic.py",
-      "bytes": 2014,
-      "sha256": "a8aa46313f938889de28226bc1a477d53921d764482152ce0ccaa0e0002b4c56"
+      "path": "11_diagnostic_reproduction/code/reproduce_diagnostic.py",
+      "bytes": 1999,
+      "sha256": "be244da01f50f6ba3a8f091c51d80a887d5712bc6cf419552711c6bad236ccaa"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/results/ablation_matrix.csv",
-      "bytes": 30796,
-      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e"
+      "path": "11_diagnostic_reproduction/results/ablation_matrix.csv",
+      "bytes": 30793,
+      "sha256": "b14075961c7590b605df1848a3a47a256a3aa0c9cfaec6454c40d66fd0927691"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/results/boundary_interactions.csv",
-      "bytes": 467,
-      "sha256": "44ac0d0c96aaaed55e4e8504bcf27fee35977d3814a85fc3d44a1a366d59d5aa"
+      "path": "11_diagnostic_reproduction/results/boundary_interactions.csv",
+      "bytes": 464,
+      "sha256": "7f27583c3bd2df8903fd22038f997b0bb452d8679df31939e5d87898561fa277"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/results/diagnostic_rerun_audit.json",
-      "bytes": 287,
-      "sha256": "e6e78b8aba0e7075a6b27784f0381da59df5ab233c91203d25a2361a1489919c"
+      "path": "11_diagnostic_reproduction/results/diagnostic_rerun_audit.json",
+      "bytes": 280,
+      "sha256": "f04791235fa2cbf69aa35331a25c6ddff93c3593b2d200aa2762579647e528a2"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/results/equivalent_conductance.csv",
-      "bytes": 16531,
-      "sha256": "9c174b9eb38ddeac4d696e8f2f0e89e44db230b3f96fc4a0296c33a640e45e80"
+      "path": "11_diagnostic_reproduction/results/equivalent_conductance.csv",
+      "bytes": 16528,
+      "sha256": "329d86497c2b8a2a7270373ac4dd1ec6353a24d850bb45616658fc19236ee319"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/results/sequential_decomposition.csv",
-      "bytes": 2607,
-      "sha256": "b1b068833e33532e2399c1f6b1fdedbe7594dc25e98cf6f4ace3c5bdedaa04b2"
+      "path": "11_diagnostic_reproduction/results/sequential_decomposition.csv",
+      "bytes": 2604,
+      "sha256": "8db756ca36d0f9b1f72d8a9e09d3a236b524ddcea70af28bc08d1df0c418dfe4"
     },
     {
-      "path": "11_第八轮_公开数据与守恒耦合/文件许可与归档说明.md",
-      "bytes": 1747,
-      "sha256": "332a5fa7f76a1cbfc98c317b2664cab11f2e1328008fd6aa9383e6386a196cf0"
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "f09eb8c4213ff5e0e3414d1dd555f379ac254ddfe31ac5599686621755a5b075"
+    },
+    {
+      "path": "LICENSE_DATA.md",
+      "bytes": 1031,
+      "sha256": "9d4b2cb10a4b27a17a39adc1255485ae90722e7ac865f9592cf27bcf01dac79b"
+    },
+    {
+      "path": "README_REPRODUCE.md",
+      "bytes": 2100,
+      "sha256": "e22a851517f0352540ebd6be2bf5bc306eaba7626c89f8f8d1344e2616bf44f1"
     },
     {
       "path": "article_figures/Fig1.png",
@@ -345,24 +361,9 @@
       "sha256": "de9125765e47d697a75676b84ef6997d207babed3bf4abbae58359695b076a86"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1083,
-      "sha256": "f09eb8c4213ff5e0e3414d1dd555f379ac254ddfe31ac5599686621755a5b075"
-    },
-    {
-      "path": "LICENSE_DATA_中英说明.md",
-      "bytes": 1372,
-      "sha256": "369b3c0950d47fe1c973a95a4d87d0dbd46dca8cb2d6acd3c36d5f48e28527f9"
-    },
-    {
-      "path": "README_REPRODUCE.md",
-      "bytes": 1639,
-      "sha256": "5ce3b325b778871b5ddc37bdaef76f6f7a2b319bae7da896d86060f70ec88bb9"
-    },
-    {
       "path": "reproduce.py",
-      "bytes": 627,
-      "sha256": "6a3847e81b8c3461806c1959d31a1199ed02639954ba753314ffbabadb9a394a"
+      "bytes": 613,
+      "sha256": "8a961628457a91799ca29a4fe144f0a4be85cce6e514a1c08507a03c51bf7445"
     },
     {
       "path": "requirements-lock.txt",
@@ -371,8 +372,13 @@
     },
     {
       "path": "tools/redraw_figures_v14.py",
-      "bytes": 4845,
-      "sha256": "3e453f8581f7d56c03cfd313282365811c51c48f6fda0f5bdd79f35ffeb6bd95"
+      "bytes": 4830,
+      "sha256": "129bfde3e4ad3457df29df247791a5884d5cbd407b7a886aca4057745ec2e8ee"
+    },
+    {
+      "path": "translation_provenance.json",
+      "bytes": 16611,
+      "sha256": "92b6131a8943aa8ed0e02d227f7013f76b27b68a70f928e053e1b3748a854063"
     }
   ]
 }

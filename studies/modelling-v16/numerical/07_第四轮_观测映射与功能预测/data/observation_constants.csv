@@ -1,9 +1,0 @@
-﻿name,value,unit,source,status
-NO_CO_membrane_ratio,1.97,dimensionless,10.1183/13993003.00962-2016,method_constant_not_fitted
-theta_NO,4.5,mL_NO/mL_blood/min/mmHg,10.1183/13993003.00962-2016,method_constant_not_fitted
-O2_CO_membrane_ratio,1.23,dimensionless,10.1113/EP093578,operational_conversion
-normoxic_theta_O2_reference,1.8,mL_O2/mL_blood/min/mmHg,10.1113/EP093578,conditional_reference_not_hypoxaemic_law
-multi_FiO2_theta_CO_a,0.0058,inverse_theta/mmHg,10.1183/23120541.00889-2025,method_choice
-multi_FiO2_theta_CO_b,0.73,inverse_theta,10.1183/23120541.00889-2025,method_choice
-dual_gas_theta_CO_a,0.0062,inverse_theta/mmHg,10.1183/23120541.00889-2025,method_choice
-dual_gas_theta_CO_b,1.16,inverse_theta,10.1183/23120541.00889-2025,method_choice
