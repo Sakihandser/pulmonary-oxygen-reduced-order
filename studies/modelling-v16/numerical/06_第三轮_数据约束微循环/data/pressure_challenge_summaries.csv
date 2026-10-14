@@ -1,0 +1,11 @@
+﻿study,stage,variable,value,spread,n,unit,summary_type,source_doi,source_location
+DSouza2025,CON,q,12.1,1.9,14,L/min,mean_SD,10.1152/ajplung.00358.2024,Table 2
+DSouza2025,CUFF,q,13.0,2.3,14,L/min,mean_SD,10.1152/ajplung.00358.2024,Table 2
+DSouza2025,CON,rvsp,38.9,5.5,6,mmHg,mean_SD,10.1152/ajplung.00358.2024,Table 2
+DSouza2025,CUFF,rvsp,44.7,6.1,6,mmHg,mean_SD,10.1152/ajplung.00358.2024,Table 2
+DSouza2025,CON,dlco,38,6,15,mL/min/mmHg,mean_SD,10.1152/ajplung.00358.2024,Abstract
+DSouza2025,CUFF,dlco,41,6,15,mL/min/mmHg,mean_SD,10.1152/ajplung.00358.2024,Abstract
+DSouza2025,CON,dm,90,39,15,mL/min/mmHg,abstract_type_unresolved,10.1152/ajplung.00358.2024,Abstract
+DSouza2025,CUFF,dm,138,55,15,mL/min/mmHg,abstract_type_unresolved,10.1152/ajplung.00358.2024,Abstract
+DSouza2025,CON,vc,98,27,15,mL,abstract_type_unresolved,10.1152/ajplung.00358.2024,Abstract; units checked against Figure 1
+DSouza2025,CUFF,vc,85,18,15,mL,abstract_type_unresolved,10.1152/ajplung.00358.2024,Abstract; units checked against Figure 1

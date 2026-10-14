@@ -1,0 +1,16 @@
+test_bypass_mixing_mass_conservation (test_microcirculation.MechanismChecks.test_bypass_mixing_mass_conservation) ... ok
+test_capacity_flow_matching_is_null (test_microcirculation.MechanismChecks.test_capacity_flow_matching_is_null) ... ok
+test_exchange_convergence (test_microcirculation.MechanismChecks.test_exchange_convergence) ... ok
+test_fit_does_not_consume_holdout_or_oxygen (test_microcirculation.MechanismChecks.test_fit_does_not_consume_holdout_or_oxygen) ... ok
+test_geometry_null_changes_hydraulics (test_microcirculation.MechanismChecks.test_geometry_null_changes_hydraulics) ... ok
+test_heterogeneous_capacity_flow_reduces_oxygen_uptake (test_microcirculation.MechanismChecks.test_heterogeneous_capacity_flow_reduces_oxygen_uptake) ... ok
+test_invalid_pressure_regime_is_explicit (test_microcirculation.MechanismChecks.test_invalid_pressure_regime_is_explicit) ... ok
+test_pressure_and_flow_balance (test_microcirculation.MechanismChecks.test_pressure_and_flow_balance) ... ok
+test_reserve_is_finite (test_microcirculation.MechanismChecks.test_reserve_is_finite) ... ok
+test_stationary_data_cannot_select_time_constants (test_microcirculation.MechanismChecks.test_stationary_data_cannot_select_time_constants) ... ok
+test_zero_and_large_oxygen_capacity (test_microcirculation.MechanismChecks.test_zero_and_large_oxygen_capacity) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.078s
+
+OK

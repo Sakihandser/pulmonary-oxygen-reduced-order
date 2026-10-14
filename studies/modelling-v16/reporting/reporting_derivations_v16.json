@@ -1,0 +1,143 @@
+{
+  "allocation": [
+    {
+      "calibration": "Endpoint matched",
+      "k": 1,
+      "fixed_source_content": "19.782046358028655",
+      "flow_source_content": "19.782145319303176",
+      "gain": 9.89612745208035e-05
+    },
+    {
+      "calibration": "Endpoint matched",
+      "k": 25,
+      "fixed_source_content": "17.882791830985347",
+      "flow_source_content": "19.782145319303172",
+      "gain": 1.899353488317825
+    },
+    {
+      "calibration": "Gas mapped",
+      "k": 1,
+      "fixed_source_content": "19.851626683233913",
+      "flow_source_content": "19.851626683233913",
+      "gain": 0.0
+    },
+    {
+      "calibration": "Gas mapped",
+      "k": 25,
+      "fixed_source_content": "19.850981177913994",
+      "flow_source_content": "19.85162668323391",
+      "gain": 0.0006455053199161398
+    }
+  ],
+  "systemic": [
+    {
+      "source_row": {
+        "k": "1",
+        "allocation": "fixed",
+        "mode": "conductance_matched",
+        "hb": "15.0",
+        "feedback": "1",
+        "admixture": "1",
+        "d_total": "5.47329138964624",
+        "cv_ml_dl": "12.975229807412134",
+        "mixed_end_ml_dl": "19.483561749816914",
+        "ca_ml_dl": "19.28831179154477",
+        "sa_fraction": "0.9475452698037754",
+        "do2_ml_min": "761.2018747896457",
+        "uptake_ml_min": "249.14206561763763",
+        "systemic_used_ml_min": "249.1420656176376",
+        "balance_error": "5.684341886080802e-14",
+        "minimum_end_ml_dl": "19.473003106140123",
+        "maximum_end_ml_dl": "19.531891513915337",
+        "equilibrium_ml_dl": "19.851626683233913"
+      },
+      "unmet": 0.8579343823624015,
+      "limited": [
+        "Myocardial"
+      ]
+    },
+    {
+      "source_row": {
+        "k": "25",
+        "allocation": "fixed",
+        "mode": "conductance_matched",
+        "hb": "15.0",
+        "feedback": "1",
+        "admixture": "1",
+        "d_total": "5.47329138964624",
+        "cv_ml_dl": "7.64172064460131",
+        "mixed_end_ml_dl": "12.460100747490811",
+        "ca_ml_dl": "12.315549344404127",
+        "sa_fraction": "0.6078520687415724",
+        "do2_ml_min": "486.025907883461",
+        "uptake_ml_min": "184.44989935796883",
+        "systemic_used_ml_min": "184.4498993579689",
+        "balance_error": "5.684341886080802e-14",
+        "minimum_end_ml_dl": "10.837837744143187",
+        "maximum_end_ml_dl": "19.851626683233913",
+        "equilibrium_ml_dl": "19.851626683233913"
+      },
+      "unmet": 65.55010064203111,
+      "limited": [
+        "Brain",
+        "Myocardial",
+        "Gut",
+        "Skeletal muscle",
+        "Other"
+      ]
+    },
+    {
+      "source_row": {
+        "k": "1",
+        "allocation": "fixed",
+        "mode": "conductance_conditional",
+        "hb": "15.0",
+        "feedback": "1",
+        "admixture": "1",
+        "d_total": "28.091968830763413",
+        "cv_ml_dl": "13.330028407818997",
+        "mixed_end_ml_dl": "19.851626683233913",
+        "ca_ml_dl": "19.655978734971466",
+        "sa_fraction": "0.9639497820930951",
+        "do2_ml_min": "775.7116343611009",
+        "uptake_ml_min": "249.64990720263444",
+        "systemic_used_ml_min": "249.64990720263867",
+        "balance_error": "4.206412995699793e-12",
+        "minimum_end_ml_dl": "19.851626683233913",
+        "maximum_end_ml_dl": "19.851626683233913",
+        "equilibrium_ml_dl": "19.851626683233913"
+      },
+      "unmet": 0.35009279736132726,
+      "limited": [
+        "Myocardial"
+      ]
+    },
+    {
+      "source_row": {
+        "k": "25",
+        "allocation": "fixed",
+        "mode": "conductance_conditional",
+        "hb": "15.0",
+        "feedback": "1",
+        "admixture": "1",
+        "d_total": "28.091968830763413",
+        "cv_ml_dl": "13.326912291735146",
+        "mixed_end_ml_dl": "19.848394051930427",
+        "ca_ml_dl": "19.65274959912457",
+        "sa_fraction": "0.9638098879230419",
+        "do2_ml_min": "775.5841984150641",
+        "uptake_ml_min": "249.64544694419143",
+        "systemic_used_ml_min": "249.64544694453943",
+        "balance_error": "3.4799541026586667e-10",
+        "minimum_end_ml_dl": "19.847684566742565",
+        "maximum_end_ml_dl": "19.851626683233913",
+        "equilibrium_ml_dl": "19.851626683233913"
+      },
+      "unmet": 0.3545530554605705,
+      "limited": [
+        "Myocardial"
+      ]
+    }
+  ],
+  "scope": "Arithmetic reporting from existing matrix only; no new simulations or verification"
+}

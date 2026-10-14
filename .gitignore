@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+studies/modelling-v16/reporting/Figures_v16/
+studies/modelling-v16/numerical/figures_regenerated/
