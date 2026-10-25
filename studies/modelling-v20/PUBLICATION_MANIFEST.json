@@ -1,0 +1,1614 @@
+{
+  "manuscript_version": "v20",
+  "publication_date": "2026-10-26",
+  "repository": "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order",
+  "physiological_validation": false,
+  "source_archives": [
+    {
+      "name": "Modelling_S2_Numerical_Data_v20.zip",
+      "sha256": "4522ca98e6173b362ba53020547412382ccf4196e8e6056dfbc7de36f579e0bd"
+    },
+    {
+      "name": "Modelling_S3_Reporting_and_Figures_v20.zip",
+      "sha256": "c3076258c42ac0d864801eda6d32c6cba3fa7d28f865aaecd1a115462a357d41"
+    }
+  ],
+  "files": [
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/code/analyze.py",
+      "bytes": 11641,
+      "sha256": "936142b7fb0d9b51d18ab97735ade80d52f0a672ebbd70758cc3e05709b48f49",
+      "git_blob_sha": "645ab867971c3a7481b23d7f45d0fcf65fbd6a8b",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/code/analyze.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/code/data_inputs.py",
+      "bytes": 716,
+      "sha256": "d4641567d86b9d1ad3dd74dbf7cdae9bb47e10be62ebd17b9b3405a96015c8c6",
+      "git_blob_sha": "35e322aae1f2abb732d075505e0973dcdd3f70f0",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/code/data_inputs.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/code/microcirculation.py",
+      "bytes": 7550,
+      "sha256": "b25b04c4e7ab6d435c2a4a2e86eed7526f2ab19ea7784ebdd16257aaba869a6a",
+      "git_blob_sha": "b2645a34487afdbf07d4891e09cd1e33c3870326",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/code/microcirculation.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/data/pressure_challenge_summaries.csv",
+      "bytes": 1026,
+      "sha256": "632cf7f090c2f7aee66e769cbbe9e6b589476f17e91819563a30591e553aa551",
+      "git_blob_sha": "2494b6eacdd7c9239a72cfa82fb501f5f7549e14",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/data/pressure_challenge_summaries.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/data/published_groups.csv",
+      "bytes": 2336,
+      "sha256": "92d3a6585d9931810f3b6c07a9a7b32a41316506389de0dc3014b422651c309a",
+      "git_blob_sha": "51af17c58f46c0a892244988e1aed2355c12c520",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/data/published_groups.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/data/source_cells.csv",
+      "bytes": 6905,
+      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a",
+      "git_blob_sha": "5784b603b5d9f3a605f2d98402a09930b447f123",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/data/source_cells.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/data/source_snapshot_manifest.json",
+      "bytes": 795,
+      "sha256": "4ffe9dbae33edb05a92cbf1eb9b15fa23e3a822e7030df019bc6232b35cd7e04",
+      "git_blob_sha": "b61b85a005d97a88b581b034e6a201b484ed673f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/data/source_snapshot_manifest.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/cross_paper_response.svg",
+      "bytes": 65984,
+      "sha256": "aa283f900248393fcbea0fd544faf2f82dd21575c77bcd06871391c893158a14",
+      "git_blob_sha": "d926be7d6c5350fcd32a31cd4e1198562b7c3965",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/cross_paper_response.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/external_response_checks.csv",
+      "bytes": 2448,
+      "sha256": "a94b6f69b7a7d9e21deb6d8bec5fb0cc441e808059aab1774672ab08a504d8a2",
+      "git_blob_sha": "850c0c86fd0bed67802c6d53ef68294d4bb886fc",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/external_response_checks.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/identifiability.svg",
+      "bytes": 64600,
+      "sha256": "279313c95f815e5ebcfd0cf16f6af17b23c9245df4f2748670266dde60c2ef89",
+      "git_blob_sha": "f40a4c7b98b46c6e33a1492b11ef90305d78d6d0",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/identifiability.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/matched_pvr_pressure_counterexample.csv",
+      "bytes": 269,
+      "sha256": "fe6329ecfa03d3cce95623e9b722226f1674db52b31a2b5b9317274a55f35dfc",
+      "git_blob_sha": "52c5129143d12da26a286c2f407c6f1e5489f9d3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/matched_pvr_pressure_counterexample.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/mechanism_equivalent_family.csv",
+      "bytes": 1378,
+      "sha256": "03167f1427a7b7ba5a65de2bb209a2a2573bc4d0244b05d33a77087dc98f4b1a",
+      "git_blob_sha": "1791b9070b9f2bd881e75e3901f49ab0f4736c22",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/mechanism_equivalent_family.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/numerical_checks.txt",
+      "bytes": 1466,
+      "sha256": "771a0eab60f77783140cd09466ccd0e7970fae079ae74af39a1b7e4e42187b73",
+      "git_blob_sha": "ed79b4be22878cee1f76cd6d4f84ca363a005d21",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/numerical_checks.txt"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/pilot_calibration.svg",
+      "bytes": 61850,
+      "sha256": "3cd313a4f84c52c121cfc2cc2aa7fd7d71d775839906be3ef855e5f2ac0392f8",
+      "git_blob_sha": "8862d0647f91973a3473e1bf3530e7759ae60029",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/pilot_calibration.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/pilot_predictions.csv",
+      "bytes": 11320,
+      "sha256": "df3887432a6dde67cca8196425515f58c58354e0c6e5f9594f210813ed89a400",
+      "git_blob_sha": "c90aa56d7a5ed1c1dddc0ec6795067902fc16d9c",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/pilot_predictions.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/pressure_partition_equivalent_fits.csv",
+      "bytes": 8856,
+      "sha256": "f0291bcadfdf91cb76efead6865a1ad4141786ac6d7302fca17f6e3276639c4b",
+      "git_blob_sha": "0558912d8a1fc77cad629c2b2868742f0e84955e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/pressure_partition_equivalent_fits.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/run_manifest.json",
+      "bytes": 984,
+      "sha256": "2390a3284608cd1b5497405462f79341af4dcaa774f05becda0903316dd0ac74",
+      "git_blob_sha": "6b440e33bbc951896637a9569f4273daf993f68c",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/run_manifest.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/results/summary.json",
+      "bytes": 1209,
+      "sha256": "aee07ee6885f1588d2e62b392de8834395a57430fa52c948358d3f111f130134",
+      "git_blob_sha": "c2086407f932f2b3bc794eb3a2cb50d0618b66e8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/results/summary.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/aggregate_analysis/tests/test_microcirculation.py",
+      "bytes": 4067,
+      "sha256": "24bd97deff11518bccba1744f6845ceb1c89589b959713a757010ec6e6d9f91f",
+      "git_blob_sha": "5e92ae2f9c66103cfa174308f2b49e3269726919",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:aggregate_analysis/tests/test_microcirculation.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/CALIBRATION_CONVENTIONS.md",
+      "bytes": 982,
+      "sha256": "92ce213cd3de4c74b080d01ea4d2df57b4359271ff6c367ab74998eee09d9b55",
+      "git_blob_sha": "61c36d7494dfa8dc9db63e05526d76c2033686d9",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:CALIBRATION_CONVENTIONS.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/code/mechanism.py",
+      "bytes": 3908,
+      "sha256": "494ab993a2bdb21c2c9f1acf16ea4b32c6f6f11aad23abc24ea6a0e6a9f7a646",
+      "git_blob_sha": "252e2debe4fd6549728d215e3de9e52dc1c58133",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/code/mechanism.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/code/run.py",
+      "bytes": 6357,
+      "sha256": "b6b58cc341c2e510a6e1d174bd18ee9845ca5335c6cb083e398e3b4d2e385e44",
+      "git_blob_sha": "be8b39135cd30b2a1369f2bcb94d2766f4fa7591",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/code/run.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/allocation_scan.csv",
+      "bytes": 166647,
+      "sha256": "0f1559dafd7c2a426ecff9eb35f17ddde58a1f4342a0e7af2855f9ef800c4abe",
+      "git_blob_sha": "24f2afbae8eda3b51debf0e39f8a2772e1dd251c",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/allocation_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/calibration.csv",
+      "bytes": 578,
+      "sha256": "0a34d11e88780fb7409946075265361dcf06ec53cb84076b6decdbdda6d2d231",
+      "git_blob_sha": "393770d5991f6eb5b6a56322414df5cf3caf10fb",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/calibration.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/checks.json",
+      "bytes": 174,
+      "sha256": "8b25f82e25b1bff5380fa5379f76baf81c03446138bc037a75d666083f711185",
+      "git_blob_sha": "7e506112e31727e4e993e80741fd568169b02cac",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/checks.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/discrimination_grid.csv",
+      "bytes": 231002,
+      "sha256": "fc78494ad8487465d02d504784a69f4597ab64c16b73f091d746c32c12dd31b2",
+      "git_blob_sha": "4d2d980656ab59eef46b30c7f5cf4168e955b017",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/discrimination_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/discrimination_summary.csv",
+      "bytes": 1464,
+      "sha256": "d12814ed295557d95ac25e12f0e971f85f1d70f20a96967440268950f7ed8d49",
+      "git_blob_sha": "f0061a410365118052bd23b579e040f2b390c0c8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/discrimination_summary.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/dissolved_calibration.csv",
+      "bytes": 407,
+      "sha256": "f6202899c662f2b0a9f30c5bb463e348f84e184dd85d1192f2ce1e2e25eb516f",
+      "git_blob_sha": "8df0573ce7564f150880515372179ee27ace3f76",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/dissolved_calibration.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/dissolved_grid.csv",
+      "bytes": 174307,
+      "sha256": "45be69770d31a217f59a6414080edc52e6764e61af65a0f2486ddcd8e3f02988",
+      "git_blob_sha": "6d4c36caa67d5c99060b8ac66e85c0d74cf0e538",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/dissolved_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/dissolved_summary.csv",
+      "bytes": 494,
+      "sha256": "98a87c0779b6eff84f946d6b3032555f915794d80207197003470058278e0491",
+      "git_blob_sha": "4fa2786dfaae127ddd9ff5c20dcb5c4e5d19e6a2",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/dissolved_summary.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/ranked_grid_states.csv",
+      "bytes": 1184,
+      "sha256": "30d93ce01c2c69c6d5f6ed1b897a2af57202a4edd19c40eae7aa23854c194427",
+      "git_blob_sha": "2486f367f8fbe919b9e94afefffdfc0348388d48",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/ranked_grid_states.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/signed_state_map.csv",
+      "bytes": 93829,
+      "sha256": "ba004b3afcc6ff7cf9cf42a224fc7799adac409dfacb45bf9f064b341c112b28",
+      "git_blob_sha": "c9cbcf234191caf643186d6fae4185311b7ff0f4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/signed_state_map.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/summary.json",
+      "bytes": 819,
+      "sha256": "f4374f7c748d4a45ec9463b8eb91431a419f3c82c9a6bc0711dbd84476c5adf9",
+      "git_blob_sha": "ef5c586f844ed65aa4ba356fdee773c07fbe9203",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/summary.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/common_calibration/results/transfer.csv",
+      "bytes": 5071,
+      "sha256": "c1213a917ae389feab189ca04fc9c5c1206549d631b9b01bf62013513d1f1fce",
+      "git_blob_sha": "b5ef082dea14d2aed8e57a372e6516de3fb16d83",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:common_calibration/results/transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/data/output_and_calibration_dictionary.md",
+      "bytes": 3674,
+      "sha256": "152a0bc6427dee0339ddb74cdfbba018ea43afecd95794a234a43529947ae4dc",
+      "git_blob_sha": "0a8f880d9dde8b57c2db6472966359a4f98241e9",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/data/output_and_calibration_dictionary.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/ablation_matrix.csv",
+      "bytes": 30793,
+      "sha256": "b14075961c7590b605df1848a3a47a256a3aa0c9cfaec6454c40d66fd0927691",
+      "git_blob_sha": "311bdb4ce53ea657675c6eb3bf553b25a76cbe4d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/ablation_matrix.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/common_boundary_comparison.csv",
+      "bytes": 368,
+      "sha256": "5bbdd0faa91fa86b081edc9a5c94c3d059e0e3772ef1df934b1e37110b97ac6b",
+      "git_blob_sha": "adb5e9a02960c0282c176ebc3cc2f3f1e89945d5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/common_boundary_comparison.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/equivalent_conductance.csv",
+      "bytes": 16528,
+      "sha256": "329d86497c2b8a2a7270373ac4dd1ec6353a24d850bb45616658fc19236ee319",
+      "git_blob_sha": "b2abf2a77024ff03ffb34d127e9eb52adef1a890",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/equivalent_conductance.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/independent_endpoint_audit.csv",
+      "bytes": 7600,
+      "sha256": "77fae272a4bd08a16b8d437bb65c7eb423caaf46bb5784f741b53cef00f129e3",
+      "git_blob_sha": "a99b4cdb3aa9cbb1889127a8b0507e707313aa3c",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/independent_endpoint_audit.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/sequential_decomposition.csv",
+      "bytes": 2618,
+      "sha256": "22d2f4b22eacee8d0f342d49d18596b929a5ab4c52c9fcb6676e93ea2eb18fed",
+      "git_blob_sha": "1b5e13617db01d521ab074ecb2dbe1f518dd20ce",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/sequential_decomposition.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/comparison_data/results/source_cells_reextracted.csv",
+      "bytes": 6905,
+      "sha256": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a",
+      "git_blob_sha": "5784b603b5d9f3a605f2d98402a09930b447f123",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:comparison_data/results/source_cells_reextracted.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/code/exchange_models.py",
+      "bytes": 12029,
+      "sha256": "4e65b75f1769f85ed50fa3fbf1d56f4e1a816952cfbf509f9429d4b561854f90",
+      "git_blob_sha": "0d15302706a4980a46c3e507807318f23105154e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/code/exchange_models.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/code/independent_endpoint_functions.py",
+      "bytes": 955,
+      "sha256": "cbf5392729dfeb583c06245838c288aa0fbe111fb3fca45f8838b6d432d11c18",
+      "git_blob_sha": "2e5c238f92f76699d2eb5da64b397f441dd941b9",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/code/independent_endpoint_functions.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/code/reproduce_diagnostic.py",
+      "bytes": 2050,
+      "sha256": "cd9636f050ce93019bf0b96a063d8ea74cfe137fee344bcc205e4ec761030c9a",
+      "git_blob_sha": "cad60a7ccb13cca9e14105c58e928f083dafd5d5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/code/reproduce_diagnostic.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/ablation_matrix.csv",
+      "bytes": 30796,
+      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e",
+      "git_blob_sha": "f2d9923c3ce4b82a619731fd61aa295abf7bd71d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/ablation_matrix.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/audit_and_manifest.json",
+      "bytes": 11323,
+      "sha256": "ff937c9c41c5f101f997f1d41f218462a383838dbc9d5ff89d30e6d8c11e4df8",
+      "git_blob_sha": "61d223bbd19c0bd96d13a2329aa5b455712fb593",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/audit_and_manifest.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/boundary_interactions.csv",
+      "bytes": 467,
+      "sha256": "44ac0d0c96aaaed55e4e8504bcf27fee35977d3814a85fc3d44a1a366d59d5aa",
+      "git_blob_sha": "d52bc368414749de651b11307ca56b7241e6825e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/boundary_interactions.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/diagnostic_rerun_audit.json",
+      "bytes": 323,
+      "sha256": "3d0220b58ab5e52b2cabc4a3e3da124324a743cb937cc0fd478e4390a89bfbed",
+      "git_blob_sha": "4908182ec374618f251a3fb8c4258db3a5f068e1",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/diagnostic_rerun_audit.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/equivalent_conductance.csv",
+      "bytes": 16531,
+      "sha256": "9c174b9eb38ddeac4d696e8f2f0e89e44db230b3f96fc4a0296c33a640e45e80",
+      "git_blob_sha": "abcf108cf735b95894d4d113d6f8497303573034",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/equivalent_conductance.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/operator_decomposition.svg",
+      "bytes": 63190,
+      "sha256": "75348fb23072b0b390088062ac78b06bd18bc33d0fb7b48706dcb9dc135c6ecc",
+      "git_blob_sha": "87108a319766cc23554803f7b7c0dfb81a42ae3b",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/operator_decomposition.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/controlled_exchange/results/sequential_decomposition.csv",
+      "bytes": 2621,
+      "sha256": "94a0861fe21e3d2242399ce96d57da66d7c3f84a3b21b87ee0f32e45a771a307",
+      "git_blob_sha": "3f1052af6061c1abc3860fc5d390d40e9118b5e4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:controlled_exchange/results/sequential_decomposition.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/hydraulic_network/code/build_lung_model.py",
+      "bytes": 20676,
+      "sha256": "b4ae7c78fae8b1fd3b6740cc050c6318e6ad9becafdba5f6fc54fd0cce9e7c10",
+      "git_blob_sha": "bedcd43ca867b80f3b899edc2cedb772ea56e605",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:hydraulic_network/code/build_lung_model.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/identifiability/code/joint_identifiability.py",
+      "bytes": 10111,
+      "sha256": "bc15012a8a7672b0b7e825b4c07f38e5774730adb202e347c496884c8f40ceb0",
+      "git_blob_sha": "f67892d61a1792cf96fbb8ca059c20851aaa5a58",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:identifiability/code/joint_identifiability.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/identifiability/results/audit_and_manifest.json",
+      "bytes": 8938,
+      "sha256": "57e227f3b6114754c86d7b0941579f35c43ae4ff78b4d43ed0e2510e3ae3fb2e",
+      "git_blob_sha": "ff7cd47689199fb575fad131376fee50bc971bfb",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:identifiability/results/audit_and_manifest.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/identifiability/results/joint_results.csv",
+      "bytes": 855,
+      "sha256": "ca74154eefa13a1087ab842b5da8ff1100e5bea5f3e2bae7d94b4d2bb3f08713",
+      "git_blob_sha": "4fc68d303c9229a227aeeb5f83dfcc5a211b6eaa",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:identifiability/results/joint_results.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/identifiability/results/regional_witness.csv",
+      "bytes": 3040,
+      "sha256": "87c5802e47a1ccf40c5cdc2efebeb45500bb6547aa1ffe8f5ced77ffb7e7b343",
+      "git_blob_sha": "734c68334b6cc69543fb1a1c5e28838ca2f14208",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:identifiability/results/regional_witness.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/LICENSE",
+      "bytes": 1083,
+      "sha256": "f09eb8c4213ff5e0e3414d1dd555f379ac254ddfe31ac5599686621755a5b075",
+      "git_blob_sha": "40fa72122b41859267b7b9788527939c3d1a1dc6",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:LICENSE"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/LICENSE_DATA.md",
+      "bytes": 765,
+      "sha256": "0fb40d3185185382461a4604dda9d9876a39ce2893a9dfb7541db320c9f0675e",
+      "git_blob_sha": "9ae665b4be3131d658508769c23201471a964e03",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:LICENSE_DATA.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/network_inputs/reference_flow_states.csv",
+      "bytes": 8330,
+      "sha256": "af8ade77089f3c9000641be16b32c85ce85348d56ad9633c62515ff4cb553a4c",
+      "git_blob_sha": "d3529964e508b396d593baee965f3d0cda2287eb",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:network_inputs/reference_flow_states.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/code/analyze_observations.py",
+      "bytes": 16249,
+      "sha256": "119fa1d7366854a7f503e2fbfbf192b7c0e5a780070260cd0e58a90863c46c64",
+      "git_blob_sha": "e8ffd0971974853a8c2af4b04383f94f056e6072",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/code/analyze_observations.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/code/observations.py",
+      "bytes": 4406,
+      "sha256": "fb433e50843c646cd4e24c384cf449c7a4e867b236698ceaa80e8285d2013ee5",
+      "git_blob_sha": "f700c998417aa7fc61feca9802b17ddd475f7c03",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/code/observations.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/data/Ehnes2026_selected_exercise_cells.csv",
+      "bytes": 950,
+      "sha256": "84d0170ac30e808c39ece9ff3f02d11931c54b5f886724d7d2039afe848aca0d",
+      "git_blob_sha": "427412cc3dd4a1afc4385aa21a1e988d3669829a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/data/Ehnes2026_selected_exercise_cells.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/data/observation_constants.csv",
+      "bytes": 765,
+      "sha256": "d43b960dfaddefade24eb583a8227d69e0fba78344136fb48b1c0655a42c78ab",
+      "git_blob_sha": "4c54582aac886006a11d9095ccd76438938a3916",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/data/observation_constants.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/data/published_operational_oxygen_benchmark.csv",
+      "bytes": 1908,
+      "sha256": "193d894aea593541f5d87a7e2b5a531128ff43295cabf0f020f0c29b43dbbf51",
+      "git_blob_sha": "be537b90bb0e8c6df3a7371d6e6b5692c036f36a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/data/published_operational_oxygen_benchmark.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/additional_observation_rank.csv",
+      "bytes": 566,
+      "sha256": "bd1b76ff79e38ecddf25d6c97822ea11fe50d2b1073a2375914fc4a11bcbd209",
+      "git_blob_sha": "e90ec94d73f55576cea24caf73d4cfb5ffdb6d2f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/additional_observation_rank.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/conditional_functional_response.svg",
+      "bytes": 55967,
+      "sha256": "3e48e7ce6a9b7cf25279ca273b67bd9f4954d30fd11c9cbf53fe21ba63f4a365",
+      "git_blob_sha": "a8c6247e40110d2e4353b7e6449d1b217b777fa8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/conditional_functional_response.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/conditional_oxygen_estimates.csv",
+      "bytes": 4580,
+      "sha256": "6c5def9ebb1867aba2070f016d09e850ee419d387ca18496d33322d7f5ad5ab5",
+      "git_blob_sha": "b6d3ac0a0171db1654767fc25a09789c2abcd135",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/conditional_oxygen_estimates.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/conditional_response_elasticities.csv",
+      "bytes": 381,
+      "sha256": "c6e16d25917921478ed4d73677de75cd48fd90e4a49a351482478cd272c3a7fd",
+      "git_blob_sha": "0eca4eacb8728bc7ee222726b517b4c95bd1cea8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/conditional_response_elasticities.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/direct_exercise_reserve_benchmark.csv",
+      "bytes": 332,
+      "sha256": "8a39cca15651efc8a398780965e7f3ccfe0766eac26e5741a15c5f8251e9b207",
+      "git_blob_sha": "cf0a7019b4b66dbadb17571096e2adfe93a46ac1",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/direct_exercise_reserve_benchmark.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/finite_infinite_same_alpha_comparison.csv",
+      "bytes": 490,
+      "sha256": "3393195ea2e0a7d91ab413ce34e19fada9921cbb989e997a1b621d710412f905",
+      "git_blob_sha": "44dc2599340909fd970bcd4532f5b25bd899d73e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/finite_infinite_same_alpha_comparison.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/numerical_checks.txt",
+      "bytes": 1916,
+      "sha256": "1e07e058efa567e2fe990755f941eb40d9714ba926416dd522f9e02ecb677bb2",
+      "git_blob_sha": "4b55a3c7cabb8fbe09789def6e6baa2a0a00e8d6",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/numerical_checks.txt"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/observation_dependence.svg",
+      "bytes": 62238,
+      "sha256": "d04fbe3f9103076686ea4c92f651b77b7dd00a4dafdde560d623b8c745510d99",
+      "git_blob_sha": "91914019fab28f748b1ea20740c768126a10d7c3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/observation_dependence.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/pressure_challenge_conditional_gain.json",
+      "bytes": 569,
+      "sha256": "fd631035a355cdef6f95cac88b78e4395bc124c900b458b85fb64c92a962a4b0",
+      "git_blob_sha": "2f1583799b724c747040ccfe04ed6f3f996c8333",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/pressure_challenge_conditional_gain.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/pressure_driver_discriminating_protocols.csv",
+      "bytes": 496,
+      "sha256": "9e2345cbfb7d399b602e96b707469e94ac503b56cf9f6f409ef6559ea01bf042",
+      "git_blob_sha": "f7941b9922af4546efb0fd86a5f69d0d9ffb9502",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/pressure_driver_discriminating_protocols.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/run_manifest.json",
+      "bytes": 1210,
+      "sha256": "8b10f0dfd89c2f46860bd1cdcb904d3a13bd13d81c5a3e2181777a1877acba9e",
+      "git_blob_sha": "6855fcb8aff17147c997e0c678571f5061146075",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/run_manifest.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/same_gas_observation_profiles.csv",
+      "bytes": 46763,
+      "sha256": "d4b5909534c5189e6517e8c77258d3a85b1c4de419c27412f62e1f2c90ce90cb",
+      "git_blob_sha": "d1fdbc2c182191934e3b511f88bbc708e789af03",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/same_gas_observation_profiles.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/results/summary.json",
+      "bytes": 1116,
+      "sha256": "fb06d1cd39b4234b08e9e91f23966342830e5cc4bf8f00f99be47caa66db7b9b",
+      "git_blob_sha": "b8d6ae16c6acbb282cc0a689edbee4081a8a9e53",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/results/summary.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/observation_analysis/tests/test_observations.py",
+      "bytes": 5616,
+      "sha256": "044093463d78150bd2f36cd1c39948192c32ca9e2d773d04c8f91d5f957b85cc",
+      "git_blob_sha": "bbacad1ac854f5a702fc596066d1a7da04506c50",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:observation_analysis/tests/test_observations.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/README_REPRODUCE.md",
+      "bytes": 4275,
+      "sha256": "bc0906cba90fb2f2226deb564df3641c5dc3906a9821efc305e9d550b14d441e",
+      "git_blob_sha": "289b7d049d50283e8689f6d3515508d5a66b4838",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:README_REPRODUCE.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/reference_matrix/results/ablation_matrix.csv",
+      "bytes": 30793,
+      "sha256": "b14075961c7590b605df1848a3a47a256a3aa0c9cfaec6454c40d66fd0927691",
+      "git_blob_sha": "311bdb4ce53ea657675c6eb3bf553b25a76cbe4d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:reference_matrix/results/ablation_matrix.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/release_sha256.json",
+      "bytes": 20065,
+      "sha256": "34ac0045b993ffc201c1cee82e641328f11759da926af553a37c9d9e795ac9fc",
+      "git_blob_sha": "277c85ad892c9b0e092187dc2d549af1ba5a7665",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:release_sha256.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/reproduce.py",
+      "bytes": 6829,
+      "sha256": "57812ad691075032475dd4263e87ccc30f8359f579a17aae605cfd2a6b11c47a",
+      "git_blob_sha": "ae991682056bd62abbea0a9a4def59c348e39bb9",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:reproduce.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/reproduction_summary.json",
+      "bytes": 910,
+      "sha256": "ae747dca87dcddd58b1ae27f09c8ff8bde04d44ac0231d03a939b3b9ecb4e4b8",
+      "git_blob_sha": "13e333c789c9c9c69e0de16f8ac567f9ed39b7d2",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:reproduction_summary.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/requirements-lock.txt",
+      "bytes": 80,
+      "sha256": "8e50071534da90c078875a8f3a140c63fa235eccbec4255a964d405815684fec",
+      "git_blob_sha": "d61b5b1db2554ccf3239a8f03de3eb15c273933f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:requirements-lock.txt"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/RESULT_REPRODUCTION_INDEX.md",
+      "bytes": 2868,
+      "sha256": "468dd4a2c33527c8c3d46fdea616b0fcee482e0ec79750a48a61588f1005ea36",
+      "git_blob_sha": "52e1079411dc29ac5d158ad0bcf76958661cf05f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:RESULT_REPRODUCTION_INDEX.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/code/run_experiments.py",
+      "bytes": 16707,
+      "sha256": "e4b49ae505070b4539dfb41e1627beae4433e1f6cf2ca3984e6074df6cc06e43",
+      "git_blob_sha": "f83ef417766d98e23b8081704485e068771b8a32",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/code/run_experiments.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/code/run_native_alvin.ps1",
+      "bytes": 2698,
+      "sha256": "f6b0ec4f0172ab37addbf113efbdb8bf3f34a1b5eb9a6080288f9897afd9395d",
+      "git_blob_sha": "599b36da05079664998d6d1ed7c30f1518824ef0",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/code/run_native_alvin.ps1"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/external_alvin/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/external_alvin/LICENSE"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/external_alvin/PartialPressure.cs",
+      "bytes": 18719,
+      "sha256": "c83fd38f781950dbfa1479db38c5be41829dfe449a734cb0b0f3dad43492a59e",
+      "git_blob_sha": "314a9a5ba623f93dc540abde2cdeac534fa9b8ea",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/external_alvin/PartialPressure.cs"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/external_alvin/PROVENANCE.md",
+      "bytes": 1118,
+      "sha256": "c1475265d040b2c3a6fb9893aec56db53d85bec8230746f6fa2e41bf28d729f2",
+      "git_blob_sha": "349b21d3e0fde0f4546003d53a5f1fb7d61f7266",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/external_alvin/PROVENANCE.md"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/figures/Fig5.svg",
+      "bytes": 91774,
+      "sha256": "54f4aa102e95592d510b6320f7ccb60d93eedfaa2a275a0abcc29c8b7632d82b",
+      "git_blob_sha": "8fe4d08bad22acfa5fa8f78223b4cd69fbb8804f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/figures/Fig5.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/figures/FigS1.svg",
+      "bytes": 63100,
+      "sha256": "eb94e6c862006f8e1104e1c578340e4817e4fef4bc478991bf0602ba85738528",
+      "git_blob_sha": "da51b9c630e4d871c181b10b9e3a27127caff7ba",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/figures/FigS1.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/LICENSE"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/protocol.json",
+      "bytes": 1068,
+      "sha256": "8e95d1c5da241695955b8334f2d86db9236c7d07dd3b0675b6c26bd1115187f3",
+      "git_blob_sha": "bface1215d64bd1ae0722cddedbe64c5b0f3c3ac",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/protocol.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/ablation_matrix.csv",
+      "bytes": 30796,
+      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e",
+      "git_blob_sha": "f2d9923c3ce4b82a619731fd61aa295abf7bd71d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/ablation_matrix.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/allocation_scan.csv",
+      "bytes": 166647,
+      "sha256": "0f1559dafd7c2a426ecff9eb35f17ddde58a1f4342a0e7af2855f9ef800c4abe",
+      "git_blob_sha": "24f2afbae8eda3b51debf0e39f8a2772e1dd251c",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/allocation_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/common_boundary_comparison.csv",
+      "bytes": 368,
+      "sha256": "5bbdd0faa91fa86b081edc9a5c94c3d059e0e3772ef1df934b1e37110b97ac6b",
+      "git_blob_sha": "adb5e9a02960c0282c176ebc3cc2f3f1e89945d5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/common_boundary_comparison.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/common_transfer.csv",
+      "bytes": 5071,
+      "sha256": "c1213a917ae389feab189ca04fc9c5c1206549d631b9b01bf62013513d1f1fce",
+      "git_blob_sha": "b5ef082dea14d2aed8e57a372e6516de3fb16d83",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/common_transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/cross_state_transfer.csv",
+      "bytes": 4870,
+      "sha256": "8c9b85e81aa97dd8def6fbef1ce23c0a9be7585ae4b4ecab80c90118d4b13a85",
+      "git_blob_sha": "ed11257418327232527f5e61fa61c9df51b2f21d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/cross_state_transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/D_scan.csv",
+      "bytes": 5525,
+      "sha256": "e9807a73763e168f79743b6013401004974c1138edbd7a3a9879adf31689a10c",
+      "git_blob_sha": "d7d828faa0b4616b77d2b602c9ffe732ece07c98",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/D_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/demand_path.csv",
+      "bytes": 33521,
+      "sha256": "5c894b7421ef821af8636b8b8655e79660252dd98bc9db34196c624b7862f529",
+      "git_blob_sha": "6addc93b030cd655cc5f528651c4177ebd7a94e5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/demand_path.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/dissolved_calibration.csv",
+      "bytes": 407,
+      "sha256": "f6202899c662f2b0a9f30c5bb463e348f84e184dd85d1192f2ce1e2e25eb516f",
+      "git_blob_sha": "8df0573ce7564f150880515372179ee27ace3f76",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/dissolved_calibration.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/dissolved_grid.csv",
+      "bytes": 174307,
+      "sha256": "45be69770d31a217f59a6414080edc52e6764e61af65a0f2486ddcd8e3f02988",
+      "git_blob_sha": "6d4c36caa67d5c99060b8ac66e85c0d74cf0e538",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/dissolved_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/dissolved_summary.csv",
+      "bytes": 494,
+      "sha256": "98a87c0779b6eff84f946d6b3032555f915794d80207197003470058278e0491",
+      "git_blob_sha": "4fa2786dfaae127ddd9ff5c20dcb5c4e5d19e6a2",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/dissolved_summary.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/equivalent_conductance.csv",
+      "bytes": 16531,
+      "sha256": "9c174b9eb38ddeac4d696e8f2f0e89e44db230b3f96fc4a0296c33a640e45e80",
+      "git_blob_sha": "abcf108cf735b95894d4d113d6f8497303573034",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/equivalent_conductance.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/external_alvin_benchmark.csv",
+      "bytes": 2276,
+      "sha256": "cf702b9c492ba0163927385ed54def83fbcd282d00c43fcdb5a52e9d672eece1",
+      "git_blob_sha": "a185c5485961b7cbac473ae369f7bff24c0059ce",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/external_alvin_benchmark.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/external_alvin_native.csv",
+      "bytes": 11018,
+      "sha256": "bc8dcc5577ea7774e207332f1e445697f9eafbfbe3add1edc00492a8117d26df",
+      "git_blob_sha": "0961d64de21ccd2f720455a65464d422fac82fbd",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/external_alvin_native.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/external_alvin_trajectories.csv",
+      "bytes": 15064,
+      "sha256": "af74f71b8fdb6850c5165b68f88d8475c92357fa435d0c2d167d30ede6da18af",
+      "git_blob_sha": "289167326f71a982a2c2f17f2c508780e6fcf5a1",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/external_alvin_trajectories.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/external_grid_refinement.csv",
+      "bytes": 141,
+      "sha256": "eeb0a0038d1769dbc6a543fdeb23dc312033ff836a85512e6e9635b9b49949e5",
+      "git_blob_sha": "6f92ea560c0e15d0f1343142515eb9bd8305ff16",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/external_grid_refinement.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/extraction_breakpoints.csv",
+      "bytes": 1187,
+      "sha256": "08769bbf49a1e75b148442c9284dfe0ceda292fd30eb8ac60d941f23466e8b30",
+      "git_blob_sha": "aa0b8bfcd2bfc3d9380d08cd6858d579f6bd4ac4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/extraction_breakpoints.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/feedback_grid.csv",
+      "bytes": 8619,
+      "sha256": "7a6eab0ffe85c3867f6cd5c1b89fdf07195a3e1d37fbab7179bc703b4bb724cf",
+      "git_blob_sha": "8bdd7db8ddc300b3dbb6606713b213407d7aff3a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/feedback_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig1.svg",
+      "bytes": 55701,
+      "sha256": "6945f0a1d8ac6a846b616b3f4f876bcb11ad020b41ac00d81043bb91cbc326a2",
+      "git_blob_sha": "76aa6b36459a48da3e6f7d7e97187ee9ecc327ff",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig1.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig2.svg",
+      "bytes": 281267,
+      "sha256": "5a1562b07c68b91f831e5fc5a74e763d9e4de50f74226b995d84d11b616fe19d",
+      "git_blob_sha": "e14223106fc51f1c31217a26b38c3e460b820c59",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig2.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig3.svg",
+      "bytes": 44634,
+      "sha256": "d96fce48e427fda0851bf82d5616a23fd5b7e760de4c4ee907185deb3c4c8d33",
+      "git_blob_sha": "35b04c17104b6da01e0314b2aa46a72cd048fb5a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig3.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig4.svg",
+      "bytes": 61550,
+      "sha256": "1d1d4e158e56e6bf7dbe840689b768d40287340c99d7c522025202579c3a16fc",
+      "git_blob_sha": "fcaace6ff9735ff634e4072c160e862402660589",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig4.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig5.svg",
+      "bytes": 206289,
+      "sha256": "1ffe40321f32fb8294dea304ad9257fe765e06b8161c682ced826954475add7b",
+      "git_blob_sha": "91538d0f6fca92a4099940cf37ff41f748d9777e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig5.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig6.svg",
+      "bytes": 88130,
+      "sha256": "15c8810769c9b14be5045030804ef306dde839bf8c1635eb0e5b438d5be2ed76",
+      "git_blob_sha": "6fe7233fb800c2e3ff9be156a2c24f65223db790",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig6.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/Fig7.svg",
+      "bytes": 68041,
+      "sha256": "bfb54b94d9b7f0955d9d1d03475499ac56d430a72c8739d6f1ea16b74d496e89",
+      "git_blob_sha": "032e64f9de7f6ea49ac1e1184a1e9cc57e34505d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/Fig7.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/FigS1.svg",
+      "bytes": 58561,
+      "sha256": "5600fdbb45203bf2f4af98c25e87caf004a52213b456163da6ba45c76357edbb",
+      "git_blob_sha": "244e899e179dc004134909bd54cd276a54d71b89",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/FigS1.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/figures/FigS2.svg",
+      "bytes": 54418,
+      "sha256": "eb6ee14cf7257a1fe9c3d154ec9dffdd61b786afd0adee6245f01ba1924c8b5f",
+      "git_blob_sha": "f8bed250690be70b35f347dbdbed4eb8de9a195f",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/figures/FigS2.svg"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/fixed_Q_scan.csv",
+      "bytes": 3928,
+      "sha256": "91163370893430f973153dabc9e655a5721174fa32de6615e10b4cfe6a3ca2eb",
+      "git_blob_sha": "39ffa75777f4c0be9377a947cbfb56a0c2ed3c27",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/fixed_Q_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/gas_convention_outputs.csv",
+      "bytes": 3972,
+      "sha256": "8b85ce41587c896262ea8eb070e4c7347852f194a2094295d28640ab60894307",
+      "git_blob_sha": "030ed0fd13f580d59eb4858a3871d3fcc4fb42c0",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/gas_convention_outputs.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/hydraulic_scan.csv",
+      "bytes": 1143,
+      "sha256": "788b519a68b6380349f60e9fc277bab22ea9fb97db79e5a4ea902e508f4f0bca",
+      "git_blob_sha": "14e168dc6aa5a9e557db697a113b935508456ad3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/hydraulic_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/information_singular_values.csv",
+      "bytes": 168,
+      "sha256": "c0bbdc29a169326d269fae39ebeed0ed9d7474ca5feec8762a5c5daaed3ef002",
+      "git_blob_sha": "d7bdc0d538ce8eb745a8e5bab724f153afd1d8af",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/information_singular_values.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/k_scan.csv",
+      "bytes": 9651,
+      "sha256": "a48a571787c765615b15c6daeb41b42208c800197cb7cb3449d6baea476ed449",
+      "git_blob_sha": "17c2f4feded2dc7827ce7421d1c036c1b8e79ff8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/k_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/local_capacity_match.csv",
+      "bytes": 1129,
+      "sha256": "d7eec9fdd27604bb9a7456b9c3ca09546fdf4b024e3a445f1f0d536475b701eb",
+      "git_blob_sha": "82d2c61665de79651611a92ef3df1dab2e451700",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/local_capacity_match.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table1.csv",
+      "bytes": 511,
+      "sha256": "b09cef729b64102306daab4721c55c43158e0e591609a4f723655e2b1c72bf84",
+      "git_blob_sha": "f5ca84044050a1d36d9afaed7fba9c47f23ef0ee",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table1.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table10.csv",
+      "bytes": 1079,
+      "sha256": "5c4fe2eab1bcdeac53b9841ef589183bad5721fc6add8d72e9fd75b797b930c1",
+      "git_blob_sha": "bacf13a38e68255ccb2955b4b4f22809817aa2c5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table10.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table2.csv",
+      "bytes": 689,
+      "sha256": "4d12bdd4aad61b73469b2f569699f7f2bb05846660d379a218b6a6bee6163093",
+      "git_blob_sha": "ed026ddf974d34c0820328fe0a930272ce3875d7",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table2.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table3.csv",
+      "bytes": 942,
+      "sha256": "0e9795d6894cca5c5b515eb7be007905ed32f67a20da8caf39aca92a1dc8fb50",
+      "git_blob_sha": "ec6b59e6d594c335c4d2585753cbd64682da6aad",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table3.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table4.csv",
+      "bytes": 378,
+      "sha256": "3a68b628f38ff24e0d8c755ab16c64383a48863970b2bbdb3edf683da5643cf3",
+      "git_blob_sha": "8725880b5a8bd099a101853ed6e9ffbfce1bcc06",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table4.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table5.csv",
+      "bytes": 270,
+      "sha256": "287194db634b793a674bca3fba4ff385ae81e6c12fdbbfb7f3aaeb7a9c514ca2",
+      "git_blob_sha": "c492c0a3f0056b85288e20d33f24b446d8547aa5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table5.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table6.csv",
+      "bytes": 224,
+      "sha256": "863621c39e8a8149b926da9ec4bfcaceec4ec6f19eaf7df28c8613fa7e8cdc85",
+      "git_blob_sha": "53c6fad68c01d30575e64271987207739d06d886",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table6.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table7.csv",
+      "bytes": 538,
+      "sha256": "d19a6dabc4607522467ee7c72611a4dd05f597be76afb4db79cb6a110a937751",
+      "git_blob_sha": "62662a334fab46038c0a88ec1023351e94a4f361",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table7.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table8.csv",
+      "bytes": 222,
+      "sha256": "1f5ac0c2b36b1426e041df6b4854dba779d683d186fbb10215f72b0c83670143",
+      "git_blob_sha": "5bc0044613f25228818adb46ee5c851f0b11af80",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table8.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/main_table9.csv",
+      "bytes": 742,
+      "sha256": "cc6e9ac112f6f256ce4a21c170c32bb98dc06a18d2678be79bfe6ee96d8fd771",
+      "git_blob_sha": "9e634f7e33a6d17319ab917501664bd563fb1cb3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/main_table9.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/mixing_scan.csv",
+      "bytes": 7865,
+      "sha256": "a556a77f7b5c37b427ef82a8bd2d3b3b9ad72986a3edf69d752b3e5be6e2bfc6",
+      "git_blob_sha": "742a5aec9fc1b9123ca29c9ed1f2cd9fd5c0f21d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/mixing_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/ranked_grid_states.csv",
+      "bytes": 1184,
+      "sha256": "30d93ce01c2c69c6d5f6ed1b897a2af57202a4edd19c40eae7aa23854c194427",
+      "git_blob_sha": "2486f367f8fbe919b9e94afefffdfc0348388d48",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/ranked_grid_states.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/ratio_scan.csv",
+      "bytes": 6705,
+      "sha256": "4a86d85488bb0f87abd0353667f06adc79886c00ac5e27cbc73ece9ae2f3fd00",
+      "git_blob_sha": "a713188f7246e4c104d8b17f53cc8ae20a3bea71",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/ratio_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/sequential_decomposition.csv",
+      "bytes": 2621,
+      "sha256": "94a0861fe21e3d2242399ce96d57da66d7c3f84a3b21b87ee0f32e45a771a307",
+      "git_blob_sha": "3f1052af6061c1abc3860fc5d390d40e9118b5e4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/sequential_decomposition.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/signed_state_map.csv",
+      "bytes": 93829,
+      "sha256": "ba004b3afcc6ff7cf9cf42a224fc7799adac409dfacb45bf9f064b341c112b28",
+      "git_blob_sha": "c9cbcf234191caf643186d6fae4185311b7ff0f4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/signed_state_map.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/table_source_map.json",
+      "bytes": 773,
+      "sha256": "3194931223e93eec1501d0e5adbb82788726f9cbe939e78bb78e2883a9e17722",
+      "git_blob_sha": "c89dce2bffbb0817313bb8bec61f4caf35abb5f8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/table_source_map.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/tools/plot_main_figures.py",
+      "bytes": 5285,
+      "sha256": "a3b61ca873a626629de7cd5e6adf58cf11702708899d5d8be6ab65f19ae6b36f",
+      "git_blob_sha": "61a420bb94be7b574fb08179955eb7324c079791",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/tools/plot_main_figures.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/tools/plot_sensitivity_figures.py",
+      "bytes": 3750,
+      "sha256": "2af48aca5496d2929eb395e18885df5ce3442902f54913748079ddc3c70d4945",
+      "git_blob_sha": "1503d85bef3b51a2b6ede01c4757c4f9038f4990",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/tools/plot_sensitivity_figures.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/tools/plot_v20.py",
+      "bytes": 4321,
+      "sha256": "609e02216c094a903454a80dbc830fcfeb55c5de90751ad9f10c14100dbb033e",
+      "git_blob_sha": "9ca69a5cc4d96f02414744b25ac019737daf0865",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/tools/plot_v20.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/reporting/total_demand_closure.csv",
+      "bytes": 2241,
+      "sha256": "2b9ced5ff516a9ba810495c7128861515860e1674154a3a506401787040a71d6",
+      "git_blob_sha": "43eb5494204a3fa0481eda50f96eb6b935e95a30",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/reporting/total_demand_closure.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/cross_state_transfer.csv",
+      "bytes": 4870,
+      "sha256": "8c9b85e81aa97dd8def6fbef1ce23c0a9be7585ae4b4ecab80c90118d4b13a85",
+      "git_blob_sha": "ed11257418327232527f5e61fa61c9df51b2f21d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/cross_state_transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/D_scan.csv",
+      "bytes": 5525,
+      "sha256": "e9807a73763e168f79743b6013401004974c1138edbd7a3a9879adf31689a10c",
+      "git_blob_sha": "d7d828faa0b4616b77d2b602c9ffe732ece07c98",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/D_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/demand_path.csv",
+      "bytes": 33521,
+      "sha256": "5c894b7421ef821af8636b8b8655e79660252dd98bc9db34196c624b7862f529",
+      "git_blob_sha": "6addc93b030cd655cc5f528651c4177ebd7a94e5",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/demand_path.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/external_alvin_benchmark.csv",
+      "bytes": 2276,
+      "sha256": "cf702b9c492ba0163927385ed54def83fbcd282d00c43fcdb5a52e9d672eece1",
+      "git_blob_sha": "a185c5485961b7cbac473ae369f7bff24c0059ce",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/external_alvin_benchmark.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/external_alvin_native.csv",
+      "bytes": 11018,
+      "sha256": "bc8dcc5577ea7774e207332f1e445697f9eafbfbe3add1edc00492a8117d26df",
+      "git_blob_sha": "0961d64de21ccd2f720455a65464d422fac82fbd",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/external_alvin_native.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/external_alvin_trajectories.csv",
+      "bytes": 15064,
+      "sha256": "af74f71b8fdb6850c5165b68f88d8475c92357fa435d0c2d167d30ede6da18af",
+      "git_blob_sha": "289167326f71a982a2c2f17f2c508780e6fcf5a1",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/external_alvin_trajectories.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/external_grid_refinement.csv",
+      "bytes": 141,
+      "sha256": "eeb0a0038d1769dbc6a543fdeb23dc312033ff836a85512e6e9635b9b49949e5",
+      "git_blob_sha": "6f92ea560c0e15d0f1343142515eb9bd8305ff16",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/external_grid_refinement.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/extraction_breakpoints.csv",
+      "bytes": 1187,
+      "sha256": "08769bbf49a1e75b148442c9284dfe0ceda292fd30eb8ac60d941f23466e8b30",
+      "git_blob_sha": "aa0b8bfcd2bfc3d9380d08cd6858d579f6bd4ac4",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/extraction_breakpoints.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/feedback_grid.csv",
+      "bytes": 8619,
+      "sha256": "7a6eab0ffe85c3867f6cd5c1b89fdf07195a3e1d37fbab7179bc703b4bb724cf",
+      "git_blob_sha": "8bdd7db8ddc300b3dbb6606713b213407d7aff3a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/feedback_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/fixed_Q_scan.csv",
+      "bytes": 3928,
+      "sha256": "91163370893430f973153dabc9e655a5721174fa32de6615e10b4cfe6a3ca2eb",
+      "git_blob_sha": "39ffa75777f4c0be9377a947cbfb56a0c2ed3c27",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/fixed_Q_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/gas_convention_outputs.csv",
+      "bytes": 3972,
+      "sha256": "8b85ce41587c896262ea8eb070e4c7347852f194a2094295d28640ab60894307",
+      "git_blob_sha": "030ed0fd13f580d59eb4858a3871d3fcc4fb42c0",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/gas_convention_outputs.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/hydraulic_scan.csv",
+      "bytes": 1143,
+      "sha256": "788b519a68b6380349f60e9fc277bab22ea9fb97db79e5a4ea902e508f4f0bca",
+      "git_blob_sha": "14e168dc6aa5a9e557db697a113b935508456ad3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/hydraulic_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/information_singular_values.csv",
+      "bytes": 168,
+      "sha256": "c0bbdc29a169326d269fae39ebeed0ed9d7474ca5feec8762a5c5daaed3ef002",
+      "git_blob_sha": "d7bdc0d538ce8eb745a8e5bab724f153afd1d8af",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/information_singular_values.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/k_scan.csv",
+      "bytes": 9651,
+      "sha256": "a48a571787c765615b15c6daeb41b42208c800197cb7cb3449d6baea476ed449",
+      "git_blob_sha": "17c2f4feded2dc7827ce7421d1c036c1b8e79ff8",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/k_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/local_capacity_match.csv",
+      "bytes": 1129,
+      "sha256": "d7eec9fdd27604bb9a7456b9c3ca09546fdf4b024e3a445f1f0d536475b701eb",
+      "git_blob_sha": "82d2c61665de79651611a92ef3df1dab2e451700",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/local_capacity_match.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/mixing_scan.csv",
+      "bytes": 7865,
+      "sha256": "a556a77f7b5c37b427ef82a8bd2d3b3b9ad72986a3edf69d752b3e5be6e2bfc6",
+      "git_blob_sha": "742a5aec9fc1b9123ca29c9ed1f2cd9fd5c0f21d",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/mixing_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/ratio_scan.csv",
+      "bytes": 6705,
+      "sha256": "4a86d85488bb0f87abd0353667f06adc79886c00ac5e27cbc73ece9ae2f3fd00",
+      "git_blob_sha": "a713188f7246e4c104d8b17f53cc8ae20a3bea71",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/ratio_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/run_summary.json",
+      "bytes": 4848,
+      "sha256": "ad419cb20a22ee2fa8d5f026329d4cd3fe1c73e3b8dfc653a798242090f38bf3",
+      "git_blob_sha": "5814dd81255021044ae581dfc99ceffb7bb8664e",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/run_summary.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/sensitivity/results/total_demand_closure.csv",
+      "bytes": 2241,
+      "sha256": "2b9ced5ff516a9ba810495c7128861515860e1674154a3a506401787040a71d6",
+      "git_blob_sha": "43eb5494204a3fa0481eda50f96eb6b935e95a30",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:sensitivity/results/total_demand_closure.csv"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/tests/test_mechanism.py",
+      "bytes": 1714,
+      "sha256": "dfd1e6632f5e57cc226ab35ad5a97f767f782dc7fc4fc85435b3adb11b0bd5ab",
+      "git_blob_sha": "ca2d7c884bce9cf440cd1bf798709a46b842f7e3",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:tests/test_mechanism.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/tests/test_portable_cells.py",
+      "bytes": 969,
+      "sha256": "a43c65923e3939a807c4a3388f68ebf52dd172e486ca850a6b172a6ab41cd859",
+      "git_blob_sha": "65bb231db206ec4c26b507b6276cbece10e33d8a",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:tests/test_portable_cells.py"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/verification/clean_extraction_reproduction.log",
+      "bytes": 22129,
+      "sha256": "cdde43cf0dbe559e6de38df0d30411b9b896674b8dffa693f6fec89fceb0a8bc",
+      "git_blob_sha": "159b10433a040b5ae57c61224f31f05f87232827",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:verification/clean_extraction_reproduction.log"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/verification/dependency_environment.json",
+      "bytes": 350,
+      "sha256": "56f9a0c536c1f469b2aee211e87a86d0843a9fa1d97e63a5be67696cdcffcb76",
+      "git_blob_sha": "c486788a6377586cfb11b3fe35c3656479e1c7d9",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:verification/dependency_environment.json"
+    },
+    {
+      "path": "studies/modelling-v20/numerical/verification/reproduction_success.log",
+      "bytes": 22129,
+      "sha256": "cdde43cf0dbe559e6de38df0d30411b9b896674b8dffa693f6fec89fceb0a8bc",
+      "git_blob_sha": "159b10433a040b5ae57c61224f31f05f87232827",
+      "origin": "Modelling_S2_Numerical_Data_v20.zip:verification/reproduction_success.log"
+    },
+    {
+      "path": "studies/modelling-v20/README.md",
+      "bytes": 2511,
+      "sha256": "2c827ef1288b3530bb1ead047df00e8f7d9ad6de2ea294cc4332b6cdece63036",
+      "git_blob_sha": "bd260620950b584383ab2810ad52414957a1f5fa",
+      "origin": "v20 publication documentation"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/ablation_matrix.csv",
+      "bytes": 30796,
+      "sha256": "b79cf4467173853836d366d4cec51452b5f9ee33d11007ec684849e7f2179e6e",
+      "git_blob_sha": "f2d9923c3ce4b82a619731fd61aa295abf7bd71d",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:ablation_matrix.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/allocation_scan.csv",
+      "bytes": 166647,
+      "sha256": "0f1559dafd7c2a426ecff9eb35f17ddde58a1f4342a0e7af2855f9ef800c4abe",
+      "git_blob_sha": "24f2afbae8eda3b51debf0e39f8a2772e1dd251c",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:allocation_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/common_boundary_comparison.csv",
+      "bytes": 368,
+      "sha256": "5bbdd0faa91fa86b081edc9a5c94c3d059e0e3772ef1df934b1e37110b97ac6b",
+      "git_blob_sha": "adb5e9a02960c0282c176ebc3cc2f3f1e89945d5",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:common_boundary_comparison.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/common_transfer.csv",
+      "bytes": 5071,
+      "sha256": "c1213a917ae389feab189ca04fc9c5c1206549d631b9b01bf62013513d1f1fce",
+      "git_blob_sha": "b5ef082dea14d2aed8e57a372e6516de3fb16d83",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:common_transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/cross_state_transfer.csv",
+      "bytes": 4870,
+      "sha256": "8c9b85e81aa97dd8def6fbef1ce23c0a9be7585ae4b4ecab80c90118d4b13a85",
+      "git_blob_sha": "ed11257418327232527f5e61fa61c9df51b2f21d",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:cross_state_transfer.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/D_scan.csv",
+      "bytes": 5525,
+      "sha256": "e9807a73763e168f79743b6013401004974c1138edbd7a3a9879adf31689a10c",
+      "git_blob_sha": "d7d828faa0b4616b77d2b602c9ffe732ece07c98",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:D_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/demand_path.csv",
+      "bytes": 33521,
+      "sha256": "5c894b7421ef821af8636b8b8655e79660252dd98bc9db34196c624b7862f529",
+      "git_blob_sha": "6addc93b030cd655cc5f528651c4177ebd7a94e5",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:demand_path.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/dissolved_calibration.csv",
+      "bytes": 407,
+      "sha256": "f6202899c662f2b0a9f30c5bb463e348f84e184dd85d1192f2ce1e2e25eb516f",
+      "git_blob_sha": "8df0573ce7564f150880515372179ee27ace3f76",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:dissolved_calibration.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/dissolved_grid.csv",
+      "bytes": 174307,
+      "sha256": "45be69770d31a217f59a6414080edc52e6764e61af65a0f2486ddcd8e3f02988",
+      "git_blob_sha": "6d4c36caa67d5c99060b8ac66e85c0d74cf0e538",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:dissolved_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/dissolved_summary.csv",
+      "bytes": 494,
+      "sha256": "98a87c0779b6eff84f946d6b3032555f915794d80207197003470058278e0491",
+      "git_blob_sha": "4fa2786dfaae127ddd9ff5c20dcb5c4e5d19e6a2",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:dissolved_summary.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/equivalent_conductance.csv",
+      "bytes": 16531,
+      "sha256": "9c174b9eb38ddeac4d696e8f2f0e89e44db230b3f96fc4a0296c33a640e45e80",
+      "git_blob_sha": "abcf108cf735b95894d4d113d6f8497303573034",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:equivalent_conductance.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/external_alvin_benchmark.csv",
+      "bytes": 2276,
+      "sha256": "cf702b9c492ba0163927385ed54def83fbcd282d00c43fcdb5a52e9d672eece1",
+      "git_blob_sha": "a185c5485961b7cbac473ae369f7bff24c0059ce",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:external_alvin_benchmark.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/external_alvin_native.csv",
+      "bytes": 11018,
+      "sha256": "bc8dcc5577ea7774e207332f1e445697f9eafbfbe3add1edc00492a8117d26df",
+      "git_blob_sha": "0961d64de21ccd2f720455a65464d422fac82fbd",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:external_alvin_native.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/external_alvin_trajectories.csv",
+      "bytes": 15064,
+      "sha256": "af74f71b8fdb6850c5165b68f88d8475c92357fa435d0c2d167d30ede6da18af",
+      "git_blob_sha": "289167326f71a982a2c2f17f2c508780e6fcf5a1",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:external_alvin_trajectories.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/external_grid_refinement.csv",
+      "bytes": 141,
+      "sha256": "eeb0a0038d1769dbc6a543fdeb23dc312033ff836a85512e6e9635b9b49949e5",
+      "git_blob_sha": "6f92ea560c0e15d0f1343142515eb9bd8305ff16",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:external_grid_refinement.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/extraction_breakpoints.csv",
+      "bytes": 1187,
+      "sha256": "08769bbf49a1e75b148442c9284dfe0ceda292fd30eb8ac60d941f23466e8b30",
+      "git_blob_sha": "aa0b8bfcd2bfc3d9380d08cd6858d579f6bd4ac4",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:extraction_breakpoints.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/feedback_grid.csv",
+      "bytes": 8619,
+      "sha256": "7a6eab0ffe85c3867f6cd5c1b89fdf07195a3e1d37fbab7179bc703b4bb724cf",
+      "git_blob_sha": "8bdd7db8ddc300b3dbb6606713b213407d7aff3a",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:feedback_grid.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig1.svg",
+      "bytes": 55701,
+      "sha256": "8c639baacf0cc8b3b9eb8d30651c05dad04b5969861357463e859d8639e4f9aa",
+      "git_blob_sha": "9a10cd733f3d5bbc68b186686f28d369c94c3c8d",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig1.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig2.svg",
+      "bytes": 281267,
+      "sha256": "c5f785ae5f826ea2108fbc02c267d1b2a5fbced604f669005521f33879f683e8",
+      "git_blob_sha": "19b9fc02be6ae64321c6185fd7a3c92e31562b1d",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig2.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig3.svg",
+      "bytes": 44634,
+      "sha256": "7d80084d320fce1a57b69ddda9fb581c1d1a295869d1ecbcd9dfa182d8a38c84",
+      "git_blob_sha": "d94fcb11db5b052ab551e22106ea8006cb9508e1",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig3.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig4.svg",
+      "bytes": 61550,
+      "sha256": "6ec8a41e51f9582928c8fe2a5950f38efae0cb97c42140aaf0b0dae9ed4f9123",
+      "git_blob_sha": "7975f81a49a4e7e51646d87ce21bfedc558e8bb5",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig4.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig5.svg",
+      "bytes": 206289,
+      "sha256": "3ce8c5c198e7c40d184ec74e49ad2ac3fb1b2ec7b6020afb1258a0fac609caa8",
+      "git_blob_sha": "bdd65c017423ee033d2a0a1ee264b6f6f2157e62",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig5.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig6.svg",
+      "bytes": 88130,
+      "sha256": "e10329c4f67be289e7ed43e06f0f7813b1bd5bf51b8b7c180188631c765b49a0",
+      "git_blob_sha": "6b06027a793951a59d1858b796d9c6e56386c286",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig6.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/Fig7.svg",
+      "bytes": 68041,
+      "sha256": "48984d8b7ecc802474bdffefe628242132a1bc03ff9a39bb6254cf19c760b394",
+      "git_blob_sha": "e9e1353d63fb3a91e39735afe2b57c7e3c5132a7",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/Fig7.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/FigS1.svg",
+      "bytes": 58561,
+      "sha256": "20dcf2279dd6d0f746beb6e5a5f05ee35601121857a23e14d9acc47feb3f683f",
+      "git_blob_sha": "78d5e11d1d1b5f7b452d8133c290ccc862f07f07",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/FigS1.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/figures/FigS2.svg",
+      "bytes": 54418,
+      "sha256": "115f03ed5e9f81ee5b7ce6523dc66235696e55f6ff099caa581bdac943f6d19d",
+      "git_blob_sha": "ce6795551181373ce547fb6ac4e0e64331d8a9f4",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:figures/FigS2.svg"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/fixed_Q_scan.csv",
+      "bytes": 3928,
+      "sha256": "91163370893430f973153dabc9e655a5721174fa32de6615e10b4cfe6a3ca2eb",
+      "git_blob_sha": "39ffa75777f4c0be9377a947cbfb56a0c2ed3c27",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:fixed_Q_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/gas_convention_outputs.csv",
+      "bytes": 3972,
+      "sha256": "8b85ce41587c896262ea8eb070e4c7347852f194a2094295d28640ab60894307",
+      "git_blob_sha": "030ed0fd13f580d59eb4858a3871d3fcc4fb42c0",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:gas_convention_outputs.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/hydraulic_scan.csv",
+      "bytes": 1143,
+      "sha256": "788b519a68b6380349f60e9fc277bab22ea9fb97db79e5a4ea902e508f4f0bca",
+      "git_blob_sha": "14e168dc6aa5a9e557db697a113b935508456ad3",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:hydraulic_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/information_singular_values.csv",
+      "bytes": 168,
+      "sha256": "c0bbdc29a169326d269fae39ebeed0ed9d7474ca5feec8762a5c5daaed3ef002",
+      "git_blob_sha": "d7bdc0d538ce8eb745a8e5bab724f153afd1d8af",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:information_singular_values.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/k_scan.csv",
+      "bytes": 9651,
+      "sha256": "a48a571787c765615b15c6daeb41b42208c800197cb7cb3449d6baea476ed449",
+      "git_blob_sha": "17c2f4feded2dc7827ce7421d1c036c1b8e79ff8",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:k_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/local_capacity_match.csv",
+      "bytes": 1129,
+      "sha256": "d7eec9fdd27604bb9a7456b9c3ca09546fdf4b024e3a445f1f0d536475b701eb",
+      "git_blob_sha": "82d2c61665de79651611a92ef3df1dab2e451700",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:local_capacity_match.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table1.csv",
+      "bytes": 511,
+      "sha256": "b09cef729b64102306daab4721c55c43158e0e591609a4f723655e2b1c72bf84",
+      "git_blob_sha": "f5ca84044050a1d36d9afaed7fba9c47f23ef0ee",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table1.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table10.csv",
+      "bytes": 1079,
+      "sha256": "5c4fe2eab1bcdeac53b9841ef589183bad5721fc6add8d72e9fd75b797b930c1",
+      "git_blob_sha": "bacf13a38e68255ccb2955b4b4f22809817aa2c5",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table10.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table2.csv",
+      "bytes": 689,
+      "sha256": "4d12bdd4aad61b73469b2f569699f7f2bb05846660d379a218b6a6bee6163093",
+      "git_blob_sha": "ed026ddf974d34c0820328fe0a930272ce3875d7",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table2.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table3.csv",
+      "bytes": 942,
+      "sha256": "0e9795d6894cca5c5b515eb7be007905ed32f67a20da8caf39aca92a1dc8fb50",
+      "git_blob_sha": "ec6b59e6d594c335c4d2585753cbd64682da6aad",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table3.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table4.csv",
+      "bytes": 378,
+      "sha256": "3a68b628f38ff24e0d8c755ab16c64383a48863970b2bbdb3edf683da5643cf3",
+      "git_blob_sha": "8725880b5a8bd099a101853ed6e9ffbfce1bcc06",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table4.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table5.csv",
+      "bytes": 270,
+      "sha256": "287194db634b793a674bca3fba4ff385ae81e6c12fdbbfb7f3aaeb7a9c514ca2",
+      "git_blob_sha": "c492c0a3f0056b85288e20d33f24b446d8547aa5",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table5.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table6.csv",
+      "bytes": 224,
+      "sha256": "863621c39e8a8149b926da9ec4bfcaceec4ec6f19eaf7df28c8613fa7e8cdc85",
+      "git_blob_sha": "53c6fad68c01d30575e64271987207739d06d886",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table6.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table7.csv",
+      "bytes": 538,
+      "sha256": "d19a6dabc4607522467ee7c72611a4dd05f597be76afb4db79cb6a110a937751",
+      "git_blob_sha": "62662a334fab46038c0a88ec1023351e94a4f361",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table7.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table8.csv",
+      "bytes": 222,
+      "sha256": "1f5ac0c2b36b1426e041df6b4854dba779d683d186fbb10215f72b0c83670143",
+      "git_blob_sha": "5bc0044613f25228818adb46ee5c851f0b11af80",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table8.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/main_table9.csv",
+      "bytes": 742,
+      "sha256": "cc6e9ac112f6f256ce4a21c170c32bb98dc06a18d2678be79bfe6ee96d8fd771",
+      "git_blob_sha": "9e634f7e33a6d17319ab917501664bd563fb1cb3",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:main_table9.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/mixing_scan.csv",
+      "bytes": 7865,
+      "sha256": "a556a77f7b5c37b427ef82a8bd2d3b3b9ad72986a3edf69d752b3e5be6e2bfc6",
+      "git_blob_sha": "742a5aec9fc1b9123ca29c9ed1f2cd9fd5c0f21d",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:mixing_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/ranked_grid_states.csv",
+      "bytes": 1184,
+      "sha256": "30d93ce01c2c69c6d5f6ed1b897a2af57202a4edd19c40eae7aa23854c194427",
+      "git_blob_sha": "2486f367f8fbe919b9e94afefffdfc0348388d48",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:ranked_grid_states.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/ratio_scan.csv",
+      "bytes": 6705,
+      "sha256": "4a86d85488bb0f87abd0353667f06adc79886c00ac5e27cbc73ece9ae2f3fd00",
+      "git_blob_sha": "a713188f7246e4c104d8b17f53cc8ae20a3bea71",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:ratio_scan.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/README.md",
+      "bytes": 1763,
+      "sha256": "1485a0705ccbb2bac4f65e479fdbb69acfabc3347d2abae352a9313ef56e2479",
+      "git_blob_sha": "7a07e9633a83d64ef36c4286b562ea328e86e13f",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:README.md"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/README_S3.md",
+      "bytes": 1404,
+      "sha256": "9227e5c04cd15ef64b3fd4d42c53b2deed9d87b791c46ccac67facb797c4961b",
+      "git_blob_sha": "8b9b07713de7efdb736d481e134ac4d8c4a8165e",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:README_S3.md"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/release_sha256.json",
+      "bytes": 5295,
+      "sha256": "3c8d848b0366b48e31df6494c775f633c5cd5ae5fdfb52b474d071f880aee166",
+      "git_blob_sha": "225bd76c9e3a9bd6e54d925d14b4f033c3c7e7c1",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:release_sha256.json"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/reproduce_figures.py",
+      "bytes": 242,
+      "sha256": "fe0f5f1c5ef4943ec382c0373aa069b6e9a85f9139ee4f69001d9e57bcdc2e08",
+      "git_blob_sha": "45a065c8fdc2cd6d26f1ce8fe1d67f15f835a7de",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:reproduce_figures.py"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/RESULT_REPRODUCTION_INDEX.md",
+      "bytes": 2868,
+      "sha256": "468dd4a2c33527c8c3d46fdea616b0fcee482e0ec79750a48a61588f1005ea36",
+      "git_blob_sha": "52e1079411dc29ac5d158ad0bcf76958661cf05f",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:RESULT_REPRODUCTION_INDEX.md"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/sequential_decomposition.csv",
+      "bytes": 2621,
+      "sha256": "94a0861fe21e3d2242399ce96d57da66d7c3f84a3b21b87ee0f32e45a771a307",
+      "git_blob_sha": "3f1052af6061c1abc3860fc5d390d40e9118b5e4",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:sequential_decomposition.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/signed_state_map.csv",
+      "bytes": 93829,
+      "sha256": "ba004b3afcc6ff7cf9cf42a224fc7799adac409dfacb45bf9f064b341c112b28",
+      "git_blob_sha": "c9cbcf234191caf643186d6fae4185311b7ff0f4",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:signed_state_map.csv"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/table_source_map.json",
+      "bytes": 773,
+      "sha256": "3194931223e93eec1501d0e5adbb82788726f9cbe939e78bb78e2883a9e17722",
+      "git_blob_sha": "c89dce2bffbb0817313bb8bec61f4caf35abb5f8",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:table_source_map.json"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/tools/plot_main_figures.py",
+      "bytes": 5285,
+      "sha256": "a3b61ca873a626629de7cd5e6adf58cf11702708899d5d8be6ab65f19ae6b36f",
+      "git_blob_sha": "61a420bb94be7b574fb08179955eb7324c079791",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:tools/plot_main_figures.py"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/tools/plot_sensitivity_figures.py",
+      "bytes": 3750,
+      "sha256": "2af48aca5496d2929eb395e18885df5ce3442902f54913748079ddc3c70d4945",
+      "git_blob_sha": "1503d85bef3b51a2b6ede01c4757c4f9038f4990",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:tools/plot_sensitivity_figures.py"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/tools/plot_v20.py",
+      "bytes": 4321,
+      "sha256": "609e02216c094a903454a80dbc830fcfeb55c5de90751ad9f10c14100dbb033e",
+      "git_blob_sha": "9ca69a5cc4d96f02414744b25ac019737daf0865",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:tools/plot_v20.py"
+    },
+    {
+      "path": "studies/modelling-v20/reporting/total_demand_closure.csv",
+      "bytes": 2241,
+      "sha256": "2b9ced5ff516a9ba810495c7128861515860e1674154a3a506401787040a71d6",
+      "git_blob_sha": "43eb5494204a3fa0481eda50f96eb6b935e95a30",
+      "origin": "Modelling_S3_Reporting_and_Figures_v20.zip:total_demand_closure.csv"
+    }
+  ]
+}

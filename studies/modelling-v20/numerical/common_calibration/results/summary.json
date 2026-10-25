@@ -1,0 +1,26 @@
+{
+  "reference_content": 19.782145319303172,
+  "parameters": {
+    "endpoint": {
+      "saturation": 17.200000000000003,
+      "content": 16.646573881477348,
+      "constant_D": 5.4732913579949605
+    },
+    "inlet_slope": {
+      "saturation": 17.200000000000003,
+      "content": 16.72155509722787,
+      "constant_D": 13.149258280760064
+    }
+  },
+  "refinement_max": 4.2440717606950784e-11,
+  "independent_quadrature_max": 4.277111997907923e-11,
+  "calibration_rows": 6,
+  "transfer_rows": 42,
+  "grid_pair_rows": 2646,
+  "allocation_rows": 1925,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "checks_passed": true,
+  "observation_error": "Illustrative bounded error per endpoint; intervals disjoint only when delta > 2*e + 2e-7; no probability or clinical threshold."
+}

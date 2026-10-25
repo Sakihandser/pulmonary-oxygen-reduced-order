@@ -1,0 +1,9 @@
+{
+  "matrix_rows": 128,
+  "production_checks": 17,
+  "all_checks_pass": true,
+  "reference_matrix_max_difference": 0.0,
+  "independent_max_error": 3.362433886877625e-09,
+  "source_cell_audit": "102 transcribed source cells supplied in aggregate_analysis/data/source_cells.csv",
+  "physiological_validation": false
+}

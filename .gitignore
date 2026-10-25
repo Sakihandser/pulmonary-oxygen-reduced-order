@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 studies/modelling-v16/reporting/Figures_v16/
 studies/modelling-v16/numerical/figures_regenerated/
+studies/modelling-v20/numerical/sensitivity/reporting/figures/*.png
+studies/modelling-v20/numerical/sensitivity/reporting/figures/*.tif
+studies/modelling-v20/reporting/figures/*.png
+studies/modelling-v20/reporting/figures/*.tif

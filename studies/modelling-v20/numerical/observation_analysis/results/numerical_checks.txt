@@ -1,0 +1,19 @@
+test_NO_error_can_induce_opposing_Dm_Vc_changes (test_observations.ObservationChecks.test_NO_error_can_induce_opposing_Dm_Vc_changes) ... ok
+test_additional_oxygen_and_transit_do_not_add_geometry_rank (test_observations.ObservationChecks.test_additional_oxygen_and_transit_do_not_add_geometry_rank) ... ok
+test_gain_threshold_predicts_sign (test_observations.ObservationChecks.test_gain_threshold_predicts_sign) ... ok
+test_infinite_NO_limit (test_observations.ObservationChecks.test_infinite_NO_limit) ... ok
+test_log_sensitivities_match_finite_differences (test_observations.ObservationChecks.test_log_sensitivities_match_finite_differences) ... ok
+test_mechanism_null_leaves_function_unchanged (test_observations.ObservationChecks.test_mechanism_null_leaves_function_unchanged) ... ok
+test_multiple_FiO2_line_unchanged_under_reparameterization (test_observations.ObservationChecks.test_multiple_FiO2_line_unchanged_under_reparameterization) ... ok
+test_oxygen_elasticities (test_observations.ObservationChecks.test_oxygen_elasticities) ... ok
+test_oxygen_series_bounds (test_observations.ObservationChecks.test_oxygen_series_bounds) ... ok
+test_physical_domain_rejections (test_observations.ObservationChecks.test_physical_domain_rejections) ... ok
+test_same_observations_can_have_different_oxygen_estimates (test_observations.ObservationChecks.test_same_observations_can_have_different_oxygen_estimates) ... ok
+test_two_gas_inverse_and_forward_roundtrip (test_observations.ObservationChecks.test_two_gas_inverse_and_forward_roundtrip) ... ok
+test_unit_conversion_to_SI (test_observations.ObservationChecks.test_unit_conversion_to_SI) ... ok
+test_upstream_pressure_is_not_unique_capillary_driver (test_observations.ObservationChecks.test_upstream_pressure_is_not_unique_capillary_driver) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.174s
+
+OK

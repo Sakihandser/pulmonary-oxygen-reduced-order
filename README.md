@@ -1,49 +1,48 @@
 # Pulmonary oxygen reduced-order model
 
-Code and saved results accompanying the manuscript **Oxygen exchange model divergence under matched pulmonary vascular resistance and implications for model development**, by Mingze Hong and Bojun Yang. The current manuscript is an original methodological research Article prepared for **Modelling**, version 16; it has not been formally submitted or accepted.
+Code and saved numerical results for **Calibration-Dependent Transferability of Pulmonary Oxygen Exchange Models in a Controlled Numerical Benchmark**, by Mingze Hong and Bojun Yang. The current study snapshot is **Modelling v20**.
 
-The study compares three exchange laws and four constructions under matched total pulmonary vascular resistance. The diagnostic matrix contains 128 conditions crossing construction, regional capacity allocation, hemoglobin, inlet feedback, synthetic post-exchange admixture and perfusion redistribution. It distinguishes changes in exchange variables, endpoint matching and gas-based capacity calibration. This is not a complete exchange-law by calibration factorial design, and the 128 conditions are not patient observations.
+## Current study and reproduction
 
-## Current manuscript materials
-
-Start in [`studies/modelling-v16/`](studies/modelling-v16/README.md).
-
-- [`numerical/`](studies/modelling-v16/numerical/): English distribution of the numerical supplement, with translated paths and labels and unchanged numerical cells, including production code, independent endpoint functions, archived mathematical checks, source-cell provenance, inputs, outputs, and the offline runner.
-- [`reporting/`](studies/modelling-v16/reporting/): v16 allocation and systemic-use tables, retained figure-source CSV files, provenance and the portable 600 dpi figure export script.
-- [`PUBLICATION_MANIFEST.json`](studies/modelling-v16/PUBLICATION_MANIFEST.json): byte hashes and archive origins for the published snapshot.
-- [`CITATION.cff`](CITATION.cff): citation metadata for this code and data snapshot. No manuscript DOI or journal publication is claimed.
-
-## Reproduction
-
-Use a separate working copy because the numerical runner writes outputs. From the repository root:
+Start in [studies/modelling-v20](studies/modelling-v20/README.md). Its `numerical/` and `reporting/` directories are byte-preserving extractions of the v20 S2 and S3 submission supplements. The paper should cite this directory at a fixed Git commit, rather than relying on the moving main branch.
 
 ```text
-cd studies/modelling-v16/numerical
+cd studies/modelling-v20/numerical
 python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-The runner checks the English-distribution hashes, recomputes the original production matrix and independently checks endpoints. The exact locked dependencies preserve the previously recorded environment; this publication update did not rerun the models, tests or numerical verification, and did not establish a fresh-environment reproduction.
+Run in a fresh working copy because reproduction writes outputs. After dependency installation the calculations run offline. The entry point verifies supplied SHA256 files, regenerates 53 numerical result CSVs, checks numerical main Tables 4–8, and exports seven main figures and two supplementary figures. See [RESULT_REPRODUCTION_INDEX.md](studies/modelling-v20/numerical/RESULT_REPRODUCTION_INDEX.md) for individual scripts, CSVs and commands. The requirements lock records the tested package versions; it does not guarantee availability on every platform.
 
-For figures only, from the repository root:
+For figures only:
 
 ```text
-cd studies/modelling-v16/reporting
-python tools/export_figures_v16.py
+cd studies/modelling-v20/reporting
+python reproduce_figures.py
 ```
 
-This reads saved CSV results and writes `Figures_v16/` without recomputing models. Arial is used; font substitution may alter rendered pixels.
+For tests, from `studies/modelling-v20/numerical`:
 
-## Interpretation and limitations
+```text
+python -m unittest discover -s tests
+python -m unittest discover -s aggregate_analysis/tests
+python -m unittest discover -s observation_analysis/tests
+```
 
-Matched flow follows a prescribed common pressure-flow closure. Total capillary volume 86 mL and relaxation time 0.30 s are diagnostic assumptions, not independent patient estimates. Oxygen content is mixed by flow; synthetic admixture acts after exchange and does not resolve a separate anatomical bypass. Regional allocation effects depend on capacity reserve. The systemic feedback reports actual use subject to assigned extraction ceilings, so unmet demand is a model diagnostic rather than measured organ hypoxia.
+## What v20 adds
 
-Independent physiological oxygenation and PAH validation remain absent. The future research agenda is not a set of completed outcomes. The repository contains no identifiable participant records, restricted imaging, third-party article full text or PVDOMICS materials. Separate later public-data and coupling studies are not included in this manuscript snapshot or claimed as external validation.
+Three exchange laws are matched to a common endpoint or a common inlet content slope; fitted coefficients are frozen before changing states. The results include the 441-state inlet–flow grid for each matching rule, signed state maps with three illustrative output-error bounds, and a dissolved-oxygen ablation explaining the affine limit of saturation/content relaxation. Regional conductance and allocation are studied in 1,925 deterministic states; the historical 128-condition comparison remains available separately.
 
-## Earlier studies
+A clean v20 reproduction recorded 53 CSVs and 76,776 numeric cells with maximum difference zero, exported all nine figures, and passed 33 unit/regression tests. The controlled matrix also reports 17 mathematical checks. These are implementation and reproducibility checks, not independent physiological validation. Run records and exact versions are retained in the numerical supplement.
 
-The original `code/`, `data/`, `tests/` and root `requirements.txt` remain for historical continuity. They belong to earlier manuscript development and are not the current v16 reproduction entry point. The current numerical distribution uses English directory names, category labels and documentation. Imports, data filters and manifests use the same English paths and labels. Original numerical cells and model arithmetic were preserved; historical run hashes are retained as provenance. The previous untranslated snapshot remains in Git history, not in the current manuscript directory. Language editing did not rerun the models or tests.
+## Scope and evidence
+
+The states are synthetic. Grid counts under an assumed bounded error are not clinical success probabilities. The CT inspiratory air-volume shares are allocation proxies, not measured capillary blood volumes. Gas-derived capacity uses unpaired aggregate observations with unresolved normalization. The external Alvin pressure submodule supplies limited numerical qualification, not a validation of the full published model or of patient physiology. No identifiable participant records, restricted source data, third-party article full text, internal reviews or manuscript-authoring scripts are included.
+
+## Earlier snapshots
+
+[Modelling v16](studies/modelling-v16/README.md) and the earlier root `code/`, `data/` and `tests/` are retained for traceability. They are historical entry points and do not reproduce the current v20 results. The addition of v20 does not overwrite the v16 study.
 
 ## License and citation
 
-Project software and original technical documentation retain the MIT license in [`LICENSE`](LICENSE). Published aggregate facts retain study and source-cell attribution; the software license does not sublicense third-party articles or datasets. See the numerical supplement's data provenance notes. Cite the repository together with the fixed commit used; GitHub publication does not itself provide a repository DOI. See CITATION.cff for authors and software version.
+Original project software uses the root MIT license. The adapted external pressure-kernel comparison retains GPL-3.0 terms under [numerical/sensitivity/LICENSE](studies/modelling-v20/numerical/sensitivity/LICENSE), with upstream source, commit and attribution in its provenance record. The root MIT license does not relicense that material or third-party data. See [LICENSE_DATA.md](studies/modelling-v20/numerical/LICENSE_DATA.md) and [CITATION.cff](CITATION.cff). Cite the exact Git commit used. No repository DOI is claimed.
