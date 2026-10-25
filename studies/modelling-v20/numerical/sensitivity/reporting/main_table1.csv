@@ -1,6 +1,0 @@
-Source,Applicable object,Role here
-"Vascular morphometry [8, 9]",Published reference vessels,Rigid steady network geometry
-CT lobar medians [10],Healthy adults inspiratory air volume,Relative allocation proxy only
-Gas means in Section 2.5,Control cohort referred for dyspnea,Unpaired conditional capacity anchor
-"k, Vc/tau, organ fractions",Constructed diagnostic settings,Concentration and boundary stress tests
-P_A=100 and common Hill curve,Shared mathematical boundary,No measured regional ventilation

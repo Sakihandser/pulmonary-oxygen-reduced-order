@@ -1,0 +1,57 @@
+{
+  "status": "conditional_not_physiologically_validated",
+  "calibration": {
+    "predictor": "flow",
+    "eta": 0.4,
+    "reference": 6.5,
+    "intercepts": {
+      "vc": 84.9,
+      "dm": 28.4,
+      "dlco": 16.4
+    },
+    "exponents": {
+      "vc": 0.013121721915533886,
+      "dm": 0.8055614749742712,
+      "dlco": 0.5955674802982913
+    }
+  },
+  "pressure_calibration": {
+    "predictor": "pressure",
+    "eta": 0.4,
+    "reference": 13.2,
+    "intercepts": {
+      "vc": 84.9,
+      "dm": 28.4,
+      "dlco": 16.4
+    },
+    "exponents": {
+      "vc": 0.011312121483420133,
+      "dm": 0.6944674887892789,
+      "dlco": 0.5134335060654717
+    }
+  },
+  "volume_exchange_common_exponent": 0.40934159844490253,
+  "observation_matrix": [
+    [
+      1.0,
+      2.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "observation_rank": 2,
+  "augmented_capillary_conductance_rank": 3,
+  "null_direction": [
+    -2.0,
+    1.0,
+    1.0
+  ],
+  "hydraulic_change_along_null": 2.0,
+  "dynamic_time_constants_identified": false,
+  "independent_oxygen_validation": false,
+  "subject_overlap_between_mayo_studies_verified": false
+}

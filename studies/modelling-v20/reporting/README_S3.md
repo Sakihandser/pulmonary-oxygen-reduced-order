@@ -1,7 +1,0 @@
-# Supplementary Material S3 Figure and table sources
-
-Use Python 3.12 and the dependencies listed in Supplementary Material S2 requirements-lock.txt. From this extracted directory run `python reproduce_figures.py`. After dependencies are installed, no network is used. Figures 1–5 and S1 are exported to figures as PNG, editable SVG and 600 dpi RGB TIFF. Editable SVGs are supplied here; submission TIFFs are supplied separately.
-
-main_table1.csv through main_table10.csv match the article. table_source_map.json identifies numerical sources or the methodological basis of each table. Figure 4 uses common_boundary_comparison.csv; Figure 3 uses equivalent_conductance.csv; Figure 7 uses sequential_decomposition.csv and ablation_matrix.csv. Figure 6 uses k_scan.csv, D_scan.csv, demand_path.csv and hydraulic_scan.csv. Figure S1 uses external_alvin_benchmark.csv and ratio_scan.csv. Figure 1 presents the computational framework. cross_state_transfer.csv supplies the reference fit and four withheld-state tests in main Table 4.
-
-The four constructions use three transfer laws. Dmatch and conditional Dgas differ in calibration within one constant-D law. Ordered scenarios are path dependent, systemic use reflects specified extraction ceilings and stress scans are deterministic slices. The figures do not rank physiological accuracy. Text is UTF-8; the plotting code specifies font fallbacks.

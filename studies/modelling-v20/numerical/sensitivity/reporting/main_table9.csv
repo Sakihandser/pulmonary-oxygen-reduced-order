@@ -1,7 +1,0 @@
-Claim,Range and evidence,External validation
-Endpoint match need not transfer,"Pv=30,40,50; Q=3,3.946,5; frozen fits",Alvin pressure submodule only; no patient data
-Allocation penalty depends on reserve,k=1–25; D=3–30; two allocations,Analytic bound and synthetic scans
-Large feedback loss depends on closure,M=150–350; ceiling scales .8–1.2; s=0–.05,Assigned organ map only
-Relaxation endpoints depend on Vc/tau,0.5–2 times reference; fixed-ratio check,No independent Vc/tau fit
-Gas mapping is convention dependent,"thetaCO=.30,.45,1.00; raw signals fixed",Unresolved source Hb normalization
-Missing direction limits geometry recovery,"Log Jacobian for (v,m), or (v,m,g)","Conditional structural map, not precision study"

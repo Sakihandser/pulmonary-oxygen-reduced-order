@@ -1,8 +1,0 @@
-Step,k 25 content,Loss content,Loss pp,Change from previous row
-Saturation reference,17.8409,1.7173,8.0683,Reference condition
-Content relaxation,17.9255,1.6460,7.7185,Saturation → content variable
-Endpoint matched conductance,12.3155,6.9728,33.9693,Operator after one endpoint match
-Gas mapped conductance,19.6527,0.0032,0.0140,Only constant-D calibration
-Hb and blood coefficient,18.0944,0.0020,0.0091,Hb and blood coefficient
-Fixed inlet,18.1574,0.0003,0.0013,Inlet closure
-No admixture,18.2880,0.0003,0.0012,Mixing fraction
