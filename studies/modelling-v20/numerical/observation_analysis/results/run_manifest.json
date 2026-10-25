@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-13",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "new_fitting_to_oxygen": false,
+  "files": {
+    "observation_analysis\\code\\analyze_observations.py": "119fa1d7366854a7f503e2fbfbf192b7c0e5a780070260cd0e58a90863c46c64",
+    "observation_analysis\\code\\observations.py": "fb433e50843c646cd4e24c384cf449c7a4e867b236698ceaa80e8285d2013ee5",
+    "observation_analysis\\data\\Ehnes2026_selected_exercise_cells.csv": "84d0170ac30e808c39ece9ff3f02d11931c54b5f886724d7d2039afe848aca0d",
+    "observation_analysis\\data\\observation_constants.csv": "d43b960dfaddefade24eb583a8227d69e0fba78344136fb48b1c0655a42c78ab",
+    "observation_analysis\\data\\published_operational_oxygen_benchmark.csv": "193d894aea593541f5d87a7e2b5a531128ff43295cabf0f020f0c29b43dbbf51",
+    "observation_analysis\\tests\\test_observations.py": "044093463d78150bd2f36cd1c39948192c32ca9e2d773d04c8f91d5f957b85cc",
+    "aggregate_analysis\\data\\published_groups.csv": "92d3a6585d9931810f3b6c07a9a7b32a41316506389de0dc3014b422651c309a",
+    "aggregate_analysis\\results\\summary.json": "aee07ee6885f1588d2e62b392de8834395a57430fa52c948358d3f111f130134"
+  }
+}

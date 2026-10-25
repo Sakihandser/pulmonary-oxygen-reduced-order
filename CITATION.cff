@@ -1,20 +1,22 @@
 cff-version: 1.2.0
-message: "Please cite this repository and the fixed commit used when reusing the code or results."
+message: "Please cite this repository with the exact Git commit and the Modelling v20 study path."
 type: software
-title: "Pulmonary oxygen reduced-order model: Modelling v16 diagnostic study"
+title: "Pulmonary oxygen reduced-order model: Modelling v20 controlled numerical benchmark"
 authors:
   - family-names: Hong
     given-names: Mingze
   - family-names: Yang
     given-names: Bojun
-version: "modelling-v16"
-date-released: "2026-10-14"
+version: "modelling-v20"
+date-released: "2026-10-26"
 url: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
 repository-code: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
-license: MIT
-abstract: "Code and saved numerical comparisons of oxygen exchange constructions under matched pulmonary vascular resistance. Diagnostic methodological study; independent physiological validation remains absent."
+license:
+  - MIT
+  - GPL-3.0-only
+abstract: "Common calibration and frozen-state comparisons of simplified pulmonary oxygen exchange laws, dissolved-oxygen controls and allocation sensitivity. Numerical verification does not establish physiological validity. See the per-directory license and provenance records."
 keywords:
   - oxygen exchange
-  - reduced-order model
-  - model comparison
-  - pulmonary vascular resistance
+  - calibration
+  - model discrimination
+  - reproducibility

@@ -1,0 +1,20 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "random_sampling": false,
+  "inputs": {
+    "code\\analyze.py": "936142b7fb0d9b51d18ab97735ade80d52f0a672ebbd70758cc3e05709b48f49",
+    "code\\data_inputs.py": "d4641567d86b9d1ad3dd74dbf7cdae9bb47e10be62ebd17b9b3405a96015c8c6",
+    "code\\microcirculation.py": "b25b04c4e7ab6d435c2a4a2e86eed7526f2ab19ea7784ebdd16257aaba869a6a",
+    "data\\pressure_challenge_summaries.csv": "632cf7f090c2f7aee66e769cbbe9e6b589476f17e91819563a30591e553aa551",
+    "data\\published_groups.csv": "92d3a6585d9931810f3b6c07a9a7b32a41316506389de0dc3014b422651c309a",
+    "data\\source_cells.csv": "d5ca425dc04026a08895dccf128af7839f5f00ec289a15699d947ffce0679e9a",
+    "data\\source_snapshot_manifest.json": "4ffe9dbae33edb05a92cbf1eb9b15fa23e3a822e7030df019bc6232b35cd7e04"
+  },
+  "fitted_studies": [
+    "Fermoyle2021 control rest and 20W"
+  ],
+  "oxygen_endpoints_used_for_fitting": false
+}

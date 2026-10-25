@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-16",
+  "reference": {
+    "Q": 3.9464411557434818,
+    "Pv": 40,
+    "PA": 100,
+    "Hb": 15,
+    "Vc": 86,
+    "tau": 0.3
+  },
+  "k": [
+    1,
+    2,
+    5,
+    10,
+    15,
+    20,
+    25
+  ],
+  "D": [
+    3,
+    4,
+    5.473290260830361,
+    8,
+    12,
+    20,
+    28.09197,
+    30
+  ],
+  "ratio_multipliers": [
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2
+  ],
+  "demands": [
+    150,
+    250,
+    350
+  ],
+  "ceiling_scales": [
+    0.8,
+    1,
+    1.2
+  ],
+  "mixing": [
+    0,
+    0.01,
+    0.03,
+    0.05
+  ],
+  "held_out_Pv": [
+    30,
+    50
+  ],
+  "held_out_Q": [
+    3,
+    5
+  ],
+  "reference_fit_Pv": [
+    30,
+    40,
+    50
+  ],
+  "threshold_rule": "report every scanned value; no clinical failure threshold",
+  "benchmark": "Alvin pressure kernel only; ported recurrence, 50 sections; original Dash saturation replaced by common Hill map; no Unity execution",
+  "evidence": "synthetic sensitivity and external numerical submodel qualification; no patient validation"
+}

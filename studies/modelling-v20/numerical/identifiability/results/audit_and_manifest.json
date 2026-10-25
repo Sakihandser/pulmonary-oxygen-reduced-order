@@ -1,0 +1,321 @@
+{
+  "status": "structural_identifiability_witness_only",
+  "independent_oxygen_validation": false,
+  "dynamically_calibrated_regional_coupling": false,
+  "constants": {
+    "theta_co": 0.45,
+    "theta_no": 4.5,
+    "alpha": 1.97,
+    "lambda_o2_co": 1.23,
+    "theta_o2": 1.6560000000000001,
+    "hb": 13.8,
+    "alveolar_po2": 100.0,
+    "inlet_po2": 40.0,
+    "bypass_flow": 0.0
+  },
+  "gas_anchor": {
+    "study": "Fermoyle2021",
+    "group": "control",
+    "stage": "rest",
+    "cohort_n": "10",
+    "source_doi": "10.1161/JAHA.120.019950",
+    "source_location": "Table 2",
+    "summary_type": "mean",
+    "spread_type": "SEM",
+    "q_method": "direct_Fick",
+    "rer": "0.8",
+    "rer_spread": "0.02",
+    "aado2": "18.4",
+    "aado2_spread": "3.4",
+    "q": "6.5",
+    "q_spread": "0.6",
+    "pap": "18.0",
+    "pap_spread": "1.0",
+    "pw": "10.0",
+    "pw_spread": "1.0",
+    "pvr": "1.5",
+    "pvr_spread": "0.3",
+    "dlco": "16.4",
+    "dlco_spread": "2.3",
+    "dlno": "48.0",
+    "dlno_spread": "6.5",
+    "dm": "28.4",
+    "dm_spread": "3.9",
+    "vc": "84.9",
+    "vc_spread": "11.2",
+    "sao2": "97.0",
+    "sao2_spread": "0.81",
+    "paco2": "36.0",
+    "paco2_spread": "2.14",
+    "pao2": "84.0",
+    "pao2_spread": "4.61"
+  },
+  "hydraulic_source": "Five-lobe steady network; fixed exchange partition witnesses",
+  "assumptions": [
+    "parallel additive gas conductances with shared coefficients",
+    "common regional membrane/volume shares; hydraulic network unchanged",
+    "conditional CO-to-O2 map and prescribed Hill curve",
+    "common alveolar/inlet oxygen; no bypass; no venous feedback"
+  ],
+  "spatial_unidentified_dimensions": 4,
+  "inputs": {
+    "network": {
+      "path": "network_inputs/reference_flow_states.csv",
+      "sha256": "af8ade77089f3c9000641be16b32c85ce85348d56ad9633c62515ff4cb553a4c"
+    },
+    "published": {
+      "path": "aggregate_analysis/data/published_groups.csv",
+      "sha256": "92d3a6585d9931810f3b6c07a9a7b32a41316506389de0dc3014b422651c309a"
+    },
+    "oxygen_code": {
+      "path": "aggregate_analysis/code/microcirculation.py",
+      "sha256": "b25b04c4e7ab6d435c2a4a2e86eed7526f2ab19ea7784ebdd16257aaba869a6a"
+    },
+    "observation_code": {
+      "path": "observation_analysis/code/observations.py",
+      "sha256": "fb433e50843c646cd4e24c384cf449c7a4e867b236698ceaa80e8285d2013ee5"
+    }
+  },
+  "script_sha256": "bc15012a8a7672b0b7e825b4c07f38e5774730adb202e347c496884c8f40ceb0",
+  "checks": [
+    {
+      "name": "flow_fractions_sum_1",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "name": "whole_lung_gas_invariant_1_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "dlco": 16.4,
+        "dlno": 48.0,
+        "effective_d": 27.672451744410736
+      }
+    },
+    {
+      "name": "oxygen_mass_balance_1_CT_fixed",
+      "passed": true,
+      "evidence": 1.4210854715202004e-13
+    },
+    {
+      "name": "content_bounds_1_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "inlet": 13.932677586932293,
+        "min": 18.2882965485752,
+        "max": 18.2882965485752,
+        "equilibrium": 18.2882965485752
+      }
+    },
+    {
+      "name": "concavity_upper_bound_1_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "mixed": 18.288296548575204,
+        "homogeneous": 18.2882965485752
+      }
+    },
+    {
+      "name": "whole_lung_gas_invariant_1_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "dlco": 16.4,
+        "dlno": 48.0,
+        "effective_d": 27.672451744410743
+      }
+    },
+    {
+      "name": "oxygen_mass_balance_1_flow_proportional",
+      "passed": true,
+      "evidence": 1.4210854715202004e-13
+    },
+    {
+      "name": "content_bounds_1_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "inlet": 13.932677586932293,
+        "min": 18.2882965485752,
+        "max": 18.2882965485752,
+        "equilibrium": 18.2882965485752
+      }
+    },
+    {
+      "name": "concavity_upper_bound_1_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "mixed": 18.288296548575204,
+        "homogeneous": 18.2882965485752
+      }
+    },
+    {
+      "name": "uniform_exposure_equality_1",
+      "passed": true,
+      "evidence": 3.552713678800501e-15
+    },
+    {
+      "name": "flow_fractions_sum_25",
+      "passed": true,
+      "evidence": 0.9999999999999999
+    },
+    {
+      "name": "whole_lung_gas_invariant_25_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "dlco": 16.4,
+        "dlno": 48.0,
+        "effective_d": 27.672451744410736
+      }
+    },
+    {
+      "name": "oxygen_mass_balance_25_CT_fixed",
+      "passed": true,
+      "evidence": -1.1368683772161603e-13
+    },
+    {
+      "name": "content_bounds_25_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "inlet": 13.932677586932293,
+        "min": 18.28794997075668,
+        "max": 18.2882965485752,
+        "equilibrium": 18.2882965485752
+      }
+    },
+    {
+      "name": "concavity_upper_bound_25_CT_fixed",
+      "passed": true,
+      "evidence": {
+        "mixed": 18.2880123463433,
+        "homogeneous": 18.2882965485752
+      }
+    },
+    {
+      "name": "whole_lung_gas_invariant_25_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "dlco": 16.4,
+        "dlno": 48.00000000000001,
+        "effective_d": 27.672451744410743
+      }
+    },
+    {
+      "name": "oxygen_mass_balance_25_flow_proportional",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "content_bounds_25_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "inlet": 13.932677586932293,
+        "min": 18.2882965485752,
+        "max": 18.2882965485752,
+        "equilibrium": 18.2882965485752
+      }
+    },
+    {
+      "name": "concavity_upper_bound_25_flow_proportional",
+      "passed": true,
+      "evidence": {
+        "mixed": 18.2882965485752,
+        "homogeneous": 18.2882965485752
+      }
+    },
+    {
+      "name": "uniform_exposure_equality_25",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "spatial_null_across_coefficients",
+      "passed": true,
+      "evidence": 1.4210854715202004e-14
+    },
+    {
+      "name": "matched_hydraulics",
+      "passed": true,
+      "evidence": {
+        "pvr": [
+          4.190000000000001,
+          4.190000000000021
+        ],
+        "q": [
+          3.9464411557434818,
+          3.946441155743476
+        ]
+      }
+    },
+    {
+      "name": "identical_global_observations_distinct_oxygen",
+      "passed": true,
+      "evidence": 0.00028420223189939975
+    },
+    {
+      "name": "oxygen_gap_tolerance_refinement",
+      "passed": true,
+      "evidence": {
+        "original": 0.00028420223189939975,
+        "refined": 0.000284199495876436,
+        "absolute_change": 2.7360229637451994e-09
+      }
+    }
+  ],
+  "results": [
+    {
+      "contrast": 1.0,
+      "allocation": "CT_fixed",
+      "pvr_wu": 4.190000000000001,
+      "q_l_min": 3.9464411557434818,
+      "dlco": 16.4,
+      "dlno": 48.0,
+      "dm_co": 27.66154384736566,
+      "vc_ml": 89.51788597162034,
+      "effective_d_o2": 27.672451744410747,
+      "mixed_content_ml_dl": 18.288296548575204,
+      "uptake_ml_min": 171.89193928964258,
+      "deficit_to_homogeneous_ml_dl": -3.552713678800501e-15
+    },
+    {
+      "contrast": 1.0,
+      "allocation": "flow_proportional",
+      "pvr_wu": 4.190000000000001,
+      "q_l_min": 3.9464411557434818,
+      "dlco": 16.4,
+      "dlno": 48.0,
+      "dm_co": 27.66154384736566,
+      "vc_ml": 89.51788597162034,
+      "effective_d_o2": 27.672451744410747,
+      "mixed_content_ml_dl": 18.288296548575204,
+      "uptake_ml_min": 171.89193928964258,
+      "deficit_to_homogeneous_ml_dl": -3.552713678800501e-15
+    },
+    {
+      "contrast": 25.0,
+      "allocation": "CT_fixed",
+      "pvr_wu": 4.190000000000021,
+      "q_l_min": 3.946441155743476,
+      "dlco": 16.4,
+      "dlno": 48.0,
+      "dm_co": 27.66154384736566,
+      "vc_ml": 89.51788597162034,
+      "effective_d_o2": 27.672451744410747,
+      "mixed_content_ml_dl": 18.2880123463433,
+      "uptake_ml_min": 171.88072341579723,
+      "deficit_to_homogeneous_ml_dl": 0.00028420223189939975
+    },
+    {
+      "contrast": 25.0,
+      "allocation": "flow_proportional",
+      "pvr_wu": 4.190000000000021,
+      "q_l_min": 3.946441155743476,
+      "dlco": 16.4,
+      "dlno": 48.00000000000001,
+      "dm_co": 27.66154384736566,
+      "vc_ml": 89.51788597162034,
+      "effective_d_o2": 27.672451744410747,
+      "mixed_content_ml_dl": 18.2882965485752,
+      "uptake_ml_min": 171.89193928964232,
+      "deficit_to_homogeneous_ml_dl": 0.0
+    }
+  ]
+}
