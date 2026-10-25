@@ -1,0 +1,32 @@
+{
+  "numerical_csv_files_compared": 53,
+  "numeric_cells_compared": 76776,
+  "maximum_absolute_csv_difference": 0.0,
+  "transcribed_source_cells_checked": 102,
+  "numerical_main_tables_verified": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "frozen_transfer_rows_checked": 7,
+  "main_tables_supplied": 10,
+  "figures_exported": 9,
+  "all_checks_passed": true,
+  "mechanism_checks": {
+    "zero_dissolved_identity_passed": true,
+    "identity_max_residual": 3.41740524767431e-15,
+    "grid_rows": 1764,
+    "state_map_rows": 882,
+    "all_checks_passed": true
+  },
+  "native_kernel_check": "comparison with supplied compiled C# nodes; native recompilation is a separate optional command",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "elapsed_seconds": 166.71772019998753,
+  "network_used": false,
+  "physiological_validation": false
+}

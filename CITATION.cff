@@ -1,22 +1,15 @@
 cff-version: 1.2.0
-message: "Please cite this repository with the exact Git commit and the Modelling v20 study path."
+message: "Please cite this research software together with the fixed Git commit used."
 type: software
-title: "Pulmonary oxygen reduced-order model: Modelling v20 controlled numerical benchmark"
+title: "Pulmonary oxygen exchange controlled numerical benchmark"
 authors:
   - family-names: Hong
     given-names: Mingze
   - family-names: Yang
     given-names: Bojun
-version: "modelling-v20"
-date-released: "2026-10-26"
 url: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
 repository-code: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
 license:
   - MIT
   - GPL-3.0-only
-abstract: "Common calibration and frozen-state comparisons of simplified pulmonary oxygen exchange laws, dissolved-oxygen controls and allocation sensitivity. Numerical verification does not establish physiological validity. See the per-directory license and provenance records."
-keywords:
-  - oxygen exchange
-  - calibration
-  - model discrimination
-  - reproducibility
+abstract: "Common calibration, frozen-state prediction, dissolved-oxygen controls and regional allocation sensitivity for simplified pulmonary oxygen exchange laws. Per-directory license and provenance records apply."

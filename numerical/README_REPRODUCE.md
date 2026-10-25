@@ -1,0 +1,26 @@
+# Numerical data and code
+
+This supplement contains the code, aggregate inputs and full-precision results supporting the article. Install the recorded dependencies and run from a clean extraction:
+
+```text
+python -m pip install -r requirements-lock.txt
+python reproduce.py
+```
+
+After dependencies are installed, reproduction uses no network. It verifies the distributed SHA256 manifest, regenerates 53 numerical result CSVs, checks main Tables 4–8 at printed precision and exports Figures 1–7, S1 and S2. Run in a disposable copy because generated results change. Numerical comparisons use absolute tolerance 2e-6 plus relative tolerance 1e-8; scalar and semicolon-separated numeric cells are compared elementwise, and nonnumeric text must match exactly. `reproduction_summary.json` records the checks and software environment.
+
+`RESULT_REPRODUCTION_INDEX.md` maps each principal result to full-precision CSV files, calculation scripts and figure exporters. `common_calibration/code/run.py` generates common endpoint/inlet-slope fits, frozen-state comparisons and allocation scans. `common_calibration/code/mechanism.py` generates the dissolved-oxygen controls and signed state maps. The 128-condition reference matrix and separate convention-based comparisons remain part of the reported study.
+
+Other directories supply the hydraulic model and inputs, attributed aggregate source cells, observation maps, structural identifiability and controlled exchange calculations. Main-table CSVs and figure inputs are in `sensitivity/reporting/`. Figure-only export is `python sensitivity/reporting/reproduce_figures.py` from this directory. Supplementary Material S3 supplies the standalone reporting distribution and editable article figures.
+
+Run the tests from this directory:
+
+```text
+python -m unittest discover -s tests
+python -m unittest discover -s aggregate_analysis/tests
+python -m unittest discover -s observation_analysis/tests
+```
+
+The optional Windows native pressure-kernel check is `powershell -File sensitivity/code/run_native_alvin.ps1`. The pinned upstream C# source, compilation harness, GPL license and 250 native nodes are supplied. Portable reproduction compares the supplied native nodes without compiling C# on other platforms. This is qualification of a harmonized pressure submodule, not the complete Unity model or patient physiology.
+
+Published observations are attributed aggregate transcriptions, with no participant-level records or publisher full text. Source Hb normalization remains unresolved. `LICENSE_DATA.md` and `sensitivity/external_alvin/PROVENANCE.md` record source and license boundaries. Solver checks, assumed output-error bounds and physiological evidence have distinct interpretations.

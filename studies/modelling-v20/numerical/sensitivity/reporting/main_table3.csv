@@ -1,7 +1,0 @@
-Link,Input or operation,Evidence status and unresolved assumptions
-Source signals,DLCO=16.4; DLNO=48.0 mL/min/mmHg; Fermoyle control-rest [14],Group means from noncardiac dyspnea controls; unpaired with this network
-Standardization,Gas signals used as reported; no extra DLCO Hb correction,Source Hb normalization/correction chain unresolved
-Reaction convention,alpha=1.97; thetaNO=4.5; thetaCO=0.45,Alpha is dimensionless; thetaCO/NO units: mL gas/(mL blood·min·mmHg)
-Two-gas inversion,1/DLCO=1/DmCO+1/(thetaCO Vc); 1/DLNO=1/(alpha DmCO)+1/(thetaNO Vc),Conditional DmCO=27.66154 mL/min/mmHg; Vc=89.51789 mL
-Oxygen mapping,M_O2=1.23DmCO; B=(1.8Hb/15)Vc; Dgas=M_O2 B/(M_O2+B),"Operational assumption [19]; M_O2 is membrane conductance, distinct from systemic demand M"
-Conductance anchor,Dgas=28.09197 at Hb=15; 27.67245 at Hb=13.8 g/dL (mL/min/mmHg),Conditional aggregate gas anchor; not patient-specific regional oxygen conductance
