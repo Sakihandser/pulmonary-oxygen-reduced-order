@@ -26,7 +26,7 @@ def reproduce():
     expected={p.relative_to(ROOT).as_posix():read(p) for p in ROOT.rglob('*.csv') if p.parent.name=='results'}
     for code in ['aggregate_analysis/code/analyze.py','observation_analysis/code/analyze_observations.py',
                  'identifiability/code/joint_identifiability.py','controlled_exchange/code/reproduce_diagnostic.py',
-                 'sensitivity/code/run_experiments.py','common_calibration/code/run.py','common_calibration/code/mechanism.py']:execute(code)
+                 'sensitivity/code/run_experiments.py','common_calibration/code/run.py','common_calibration/code/mechanism.py','robustness/code/run.py']:execute(code)
     count=0;maximum=0.
     for name,old in expected.items():
         new=read(ROOT/name);assert len(old)==len(new),name
@@ -83,6 +83,7 @@ def reproduce():
                  numerical_main_tables_verified=[4,5,6,7,8],frozen_transfer_rows_checked=len(display),
                  main_tables_supplied=10,figures_exported=9,all_checks_passed=True,
                  mechanism_checks=json.loads((ROOT/'common_calibration/results/checks.json').read_text()),
+                 robustness_checks=json.loads((ROOT/'robustness/results/summary.json').read_text()),
                  native_kernel_check='comparison with supplied compiled C# nodes; native recompilation is a separate optional command',
                  python=platform.python_version(),numpy=numpy.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__,
                  elapsed_seconds=time.perf_counter()-start,network_used=False,physiological_validation=False)

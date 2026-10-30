@@ -1,6 +1,6 @@
 {
-  "numerical_csv_files_compared": 53,
-  "numeric_cells_compared": 76776,
+  "numerical_csv_files_compared": 58,
+  "numeric_cells_compared": 146994,
   "maximum_absolute_csv_difference": 0.0,
   "transcribed_source_cells_checked": 102,
   "numerical_main_tables_verified": [
@@ -21,12 +21,35 @@
     "state_map_rows": 882,
     "all_checks_passed": true
   },
+  "robustness_checks": {
+    "reference_target": 19.782145319303172,
+    "alveolar_content": 19.851626683233913,
+    "upper_headroom": 0.06948136393074122,
+    "calibration_halfwidths": [
+      0,
+      0.01,
+      0.025,
+      0.05
+    ],
+    "infeasible_symmetric_halfwidth_example": 0.1,
+    "calibration_cases": 21,
+    "envelope_rows": 5292,
+    "verification_states": 882,
+    "maximum_refinement_error": 2.3598545340064447e-10,
+    "maximum_quadrature_error": 2.3645796431992494e-10,
+    "envelope_quadrature_states": 3087,
+    "maximum_envelope_quadrature_error": 7.105427357601002e-13,
+    "interpretation": "Deterministic bounded target and output scenarios; marginal envelope separation is sufficient and conservative for a shared target. No confidence level or clinical power.",
+    "all_checks_passed": true,
+    "python": "3.12.14",
+    "elapsed_seconds": 37.468113200000516
+  },
   "native_kernel_check": "comparison with supplied compiled C# nodes; native recompilation is a separate optional command",
   "python": "3.12.14",
   "numpy": "2.5.4",
   "scipy": "1.18.1",
   "matplotlib": "3.11.2",
-  "elapsed_seconds": 166.71772019998753,
+  "elapsed_seconds": 184.00416419999965,
   "network_used": false,
   "physiological_validation": false
 }

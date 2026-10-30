@@ -12,7 +12,9 @@ python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-Use a fresh working copy because the runner writes outputs. After dependency installation it runs offline, checks file integrity, regenerates 53 result CSVs, verifies numerical main Tables 4–8 and exports seven main and two supplementary figures. See [the result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) for exact scripts, data files and commands. The locked dependencies describe the tested software environment.
+Use a fresh working copy because the runner writes outputs. After dependency installation it runs offline, checks file integrity, regenerates 58 result CSVs, verifies numerical main Tables 4–8 and exports seven main and two supplementary figures. See [the result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) for exact scripts, data files and commands. The locked dependencies describe the tested software environment.
+
+The current distribution also includes the bounded calibration-target envelopes, full-grid independent quadrature checks and 21/41/81 grid-resolution comparisons reported in supplementary Section I. These calculations are implemented in `numerical/robustness/code/run.py` and included in the one-command reproduction. The `numerical/` files match the current Numerical Data and Code submission supplement byte for byte; its SHA256 manifest identifies the supplied files.
 
 For figure-only export, from `numerical/` run `python sensitivity/reporting/reproduce_figures.py`. To run the tests:
 

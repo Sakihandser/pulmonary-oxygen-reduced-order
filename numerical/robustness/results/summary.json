@@ -1,0 +1,23 @@
+{
+  "reference_target": 19.782145319303172,
+  "alveolar_content": 19.851626683233913,
+  "upper_headroom": 0.06948136393074122,
+  "calibration_halfwidths": [
+    0,
+    0.01,
+    0.025,
+    0.05
+  ],
+  "infeasible_symmetric_halfwidth_example": 0.1,
+  "calibration_cases": 21,
+  "envelope_rows": 5292,
+  "verification_states": 882,
+  "maximum_refinement_error": 2.3598545340064447e-10,
+  "maximum_quadrature_error": 2.3645796431992494e-10,
+  "envelope_quadrature_states": 3087,
+  "maximum_envelope_quadrature_error": 7.105427357601002e-13,
+  "interpretation": "Deterministic bounded target and output scenarios; marginal envelope separation is sufficient and conservative for a shared target. No confidence level or clinical power.",
+  "all_checks_passed": true,
+  "python": "3.12.14",
+  "elapsed_seconds": 37.456765499999165
+}
