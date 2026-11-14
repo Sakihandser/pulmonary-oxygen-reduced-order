@@ -1,0 +1,35 @@
+{
+  "primary_law": "equilibrium_admixture",
+  "effective_admixture": 0.14363059964245567,
+  "reference_inputs": {
+    "q": 3.7333333333333294,
+    "hb": 14.0,
+    "pa": 100.40705107350374,
+    "demand": 250.0,
+    "admixture": 0.14363059964245567
+  },
+  "reference_outputs": {
+    "feasible": true,
+    "Pa_mmHg": 65.68799749003236,
+    "Sa_percent": 91.83838816465278,
+    "Ca_ml_dl": 17.432514411907963,
+    "Cv_ml_dl": 10.736085840479383,
+    "Sv_percent": 56.738950654325585,
+    "DO2_ml_min": 650.8138713778966,
+    "mass_balance_error": 5.684341886080802e-14,
+    "Q_min_L_min": 1.5732686339406987,
+    "equilibrium_content_ml_dl": 18.55564194399352
+  },
+  "maximum_mass_balance_error": 5.684341886080802e-14,
+  "exact_partial_DO2": {
+    "Q": 185.5564194399352,
+    "Hb": 48.65168022844171,
+    "PA": 0.6191438448253768,
+    "M": -0.16772037812477675,
+    "s_eff": -340.89272037196787
+  },
+  "observations_added": 0,
+  "design": "Descriptive subgroup audit and specified one-factor scenarios added after initial model selection; no new validation cohort or treatment effect.",
+  "fixed_flow_result": "At fixed Q, Hb, PA, M and s_eff, pressure and regional redistribution have no direct oxygen effect in this closure.",
+  "feasibility": "Q_min is a nonnegative-Cv algebraic boundary, not a safe flow, exercise limit or clinical cutoff."
+}

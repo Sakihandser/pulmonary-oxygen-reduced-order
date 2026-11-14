@@ -1,0 +1,4 @@
+Information,Model A bound,Model B bound,Meets δ=0.2
+"Baseline only, sharp minimax",0.4496,0.4496,Neither
+"Second s exact, sharp minimax",0.0370,0.0344,Both
+"Second s ±0.005, conservative",0.1434,0.1922,Both

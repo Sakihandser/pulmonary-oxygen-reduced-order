@@ -1,0 +1,3 @@
+study,doi,n,conditions,values,role,reason,table
+Stubbs2021,10.1183/23120541.00449-2021,16,2,Rest/exercise Q 3.9/6.3 L/min; mPAP 50/77 mmHg; SpO2 94/89%; SvO2 62/23%; PvO2 4.3/2.4 kPa,Physiological support only,"Missing arterial PO2, Hb, PaCO2/PA. SpO2 is not substituted for arterial blood gas.",Table 1
+Beretta2019,10.1038/s41598-019-52679-4,18,4,Sea-level rest/work and altitude rest/work SpO2 99/98/88/81%; PA 104/103/52/55 mmHg; Hb 14 g/dL,Altitude boundary support only,No measured mixed-venous input; exercise output partly assumed; table does not supply paired complete model inputs.,Table 1 and methods

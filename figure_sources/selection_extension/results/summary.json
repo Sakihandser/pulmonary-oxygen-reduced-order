@@ -1,0 +1,373 @@
+{
+  "additional_records": 15,
+  "additional_direct_Pv": 11,
+  "new_unique_individual_cases": 2,
+  "new_direct_test_conditions": 7,
+  "secondary_exercise_conditions": 3,
+  "total_response_conditions": 21,
+  "primary_PH_conditions": 12,
+  "scenario_count": 108,
+  "folds": [
+    {
+      "held_out_family": "Zurich_early",
+      "training_families": "Melot1983;Zurich2021_2023",
+      "beta": 0.003200814855578512,
+      "training_RMSE": 2.9997153330226403
+    },
+    {
+      "held_out_family": "Zurich2021_2023",
+      "training_families": "Melot1983;Zurich_early",
+      "beta": 1.8550986945833547,
+      "training_RMSE": 14.997294537665686
+    },
+    {
+      "held_out_family": "Melot1983",
+      "training_families": "Zurich2021_2023;Zurich_early",
+      "beta": 2.0,
+      "training_RMSE": 6.691106393363474
+    }
+  ],
+  "nominal_scores": [
+    {
+      "scope": "primary_PH_all",
+      "model": "baseline_Aa",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 43.148201338123776,
+      "equal_family_MAE": 23.633114629942593,
+      "equal_family_bias": -3.1119526262097614,
+      "pooled_RMSE": 47.552436482638356,
+      "infeasible": 2
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "baseline_Pa",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 99.66888133476357,
+      "equal_family_MAE": 35.23597061144,
+      "equal_family_bias": -22.601598267293337,
+      "pooled_RMSE": 111.23505337382052,
+      "infeasible": 4
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "constant_D",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 48.783086648085316,
+      "equal_family_MAE": 22.042817101941793,
+      "equal_family_bias": 2.5945756085966294,
+      "pooled_RMSE": 54.200591605366284,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "content",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 13.567937753877004,
+      "equal_family_MAE": 8.319736679084848,
+      "equal_family_bias": -8.161832456503815,
+      "pooled_RMSE": 14.695034543329049,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "equilibrium_admixture",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 18.530750419886747,
+      "equal_family_MAE": 7.051669878653596,
+      "equal_family_bias": -6.215465479698673,
+      "pooled_RMSE": 20.674795459609197,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "flow_adaptive",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 21.64745995522302,
+      "equal_family_MAE": 12.61024364817989,
+      "equal_family_bias": -12.45233942559886,
+      "pooled_RMSE": 23.482331197192092,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "pressure",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 20.591385261683524,
+      "equal_family_MAE": 12.043366105860228,
+      "equal_family_bias": -12.043366105860228,
+      "pooled_RMSE": 22.635325258865944,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_all",
+      "model": "saturation",
+      "test_conditions": 12,
+      "families": 3,
+      "equal_family_RMSE": 89.95516179946938,
+      "equal_family_MAE": 28.435578597204152,
+      "equal_family_bias": -28.22173986530714,
+      "pooled_RMSE": 100.50304029500072,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "baseline_Aa",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 17.768133770754655,
+      "equal_family_MAE": 14.692495483495764,
+      "equal_family_bias": -14.692495483495764,
+      "pooled_RMSE": 17.70186950490443,
+      "infeasible": 2
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "baseline_Pa",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 12.18637705056504,
+      "equal_family_MAE": 10.3339227458,
+      "equal_family_bias": 3.5005482906666665,
+      "pooled_RMSE": 11.962523764425216,
+      "infeasible": 4
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "constant_D",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 11.704590537734003,
+      "equal_family_MAE": 10.493361658887158,
+      "equal_family_bias": -10.331615425329183,
+      "pooled_RMSE": 11.545740083691925,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "content",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 7.515921175641058,
+      "equal_family_MAE": 5.558968822007999,
+      "equal_family_bias": -5.361588543781707,
+      "pooled_RMSE": 7.803686073911167,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "equilibrium_admixture",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 2.9629480295331145,
+      "equal_family_MAE": 2.503377335977914,
+      "equal_family_bias": -1.6276968813777317,
+      "pooled_RMSE": 3.0433650417149565,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "flow_adaptive",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 11.612113377898256,
+      "equal_family_MAE": 8.067813799370208,
+      "equal_family_bias": -7.870433521143917,
+      "pooled_RMSE": 12.068492026528169,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "pressure",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 8.556859107453063,
+      "equal_family_MAE": 7.577762783405269,
+      "equal_family_bias": -7.577762783405269,
+      "pooled_RMSE": 8.751268946158874,
+      "infeasible": 0
+    },
+    {
+      "scope": "primary_PH_nonhyperoxia",
+      "model": "saturation",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 7.49139719856682,
+      "equal_family_MAE": 5.444888696088498,
+      "equal_family_bias": -5.177590281217233,
+      "pooled_RMSE": 7.785813338748267,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "baseline_Aa",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 15.002294604740719,
+      "equal_family_MAE": 12.139029309596744,
+      "equal_family_bias": -12.139029309596744,
+      "pooled_RMSE": 14.437005222540318,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "baseline_Pa",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 12.67816438731651,
+      "equal_family_MAE": 10.625483181149999,
+      "equal_family_bias": 1.125483181149999,
+      "pooled_RMSE": 12.40918503937952,
+      "infeasible": 2
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "constant_D",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 11.549232837472521,
+      "equal_family_MAE": 10.455974347395337,
+      "equal_family_bias": -10.455974347395337,
+      "pooled_RMSE": 11.272306216583281,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "content",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 9.000260189597753,
+      "equal_family_MAE": 7.127005433189041,
+      "equal_family_bias": -7.127005433189041,
+      "pooled_RMSE": 9.562137344488086,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "equilibrium_admixture",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 2.999892126540556,
+      "equal_family_MAE": 2.4148862853455886,
+      "equal_family_bias": -1.397436020784753,
+      "pooled_RMSE": 3.1288717365604954,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "flow_adaptive",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 14.074598906602333,
+      "equal_family_MAE": 10.761947432709745,
+      "equal_family_bias": -10.761947432709745,
+      "pooled_RMSE": 14.970418677120762,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "pressure",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 9.369512966550875,
+      "equal_family_MAE": 8.437989510871562,
+      "equal_family_bias": -8.437989510871562,
+      "pooled_RMSE": 9.754822413799399,
+      "infeasible": 0
+    },
+    {
+      "scope": "new_direct_Pv",
+      "model": "saturation",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 8.999697551365255,
+      "equal_family_MAE": 7.0006139549676405,
+      "equal_family_bias": -7.0006139549676405,
+      "pooled_RMSE": 9.571623590385691,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "baseline_Aa",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 15.773990133142878,
+      "equal_family_MAE": 14.4292306933825,
+      "equal_family_bias": -8.725011596448995,
+      "pooled_RMSE": 15.773990133142878,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "baseline_Pa",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 20.44978677245074,
+      "equal_family_MAE": 19.00156262839999,
+      "equal_family_bias": 19.00156262839999,
+      "pooled_RMSE": 20.44978677245074,
+      "infeasible": 2
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "constant_D",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 22.799951145062106,
+      "equal_family_MAE": 22.061209929483937,
+      "equal_family_bias": -22.061209929483937,
+      "pooled_RMSE": 22.799951145062106,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "content",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 8.730928226350171,
+      "equal_family_MAE": 6.791127610708981,
+      "equal_family_bias": -6.791127610708981,
+      "pooled_RMSE": 8.730928226350171,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "equilibrium_admixture",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 2.975666592753418,
+      "equal_family_MAE": 2.5533104363116714,
+      "equal_family_bias": 0.0705078887903549,
+      "pooled_RMSE": 2.975666592753418,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "pressure",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 6.5484661508986495,
+      "equal_family_MAE": 6.516622270042873,
+      "equal_family_bias": -6.516622270042873,
+      "pooled_RMSE": 6.5484661508986495,
+      "infeasible": 0
+    },
+    {
+      "scope": "secondary_exercise",
+      "model": "saturation",
+      "test_conditions": 3,
+      "families": 1,
+      "equal_family_RMSE": 8.383469788654764,
+      "equal_family_MAE": 6.309649641466557,
+      "equal_family_bias": -6.309649641466557,
+      "pooled_RMSE": 8.383469788654764,
+      "infeasible": 0
+    }
+  ]
+}

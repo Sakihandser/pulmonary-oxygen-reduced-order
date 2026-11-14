@@ -1,0 +1,15 @@
+condition,boundary,PA_mmHg
+D01,source_reconstruction,118.0
+D02,source_reconstruction,122.0
+D03,source_reconstruction,119.0
+D04,source_reconstruction,107.0
+D05,source_reconstruction,127.0
+D06,source_reconstruction,129.0
+D07,source_reconstruction,123.0
+D01,gas_equation_only,123.364
+D02,gas_equation_only,108.994
+D03,gas_equation_only,120.969
+D04,gas_equation_only,110.1915
+D05,gas_equation_only,114.98150000000001
+D06,gas_equation_only,116.179
+D07,gas_equation_only,120.969

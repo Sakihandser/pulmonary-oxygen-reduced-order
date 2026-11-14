@@ -1,0 +1,9 @@
+{
+  "mass_balance_max": 9.85664883046411e-10,
+  "hydraulic_max": 8.881784197001252e-16,
+  "scenarios": 480,
+  "infeasible": 176,
+  "admixture": 0.14363059964245567,
+  "PA_reference": 100.40705107350374,
+  "interpretation": "Conditional mechanistic scenarios, not outcome-validated PAH predictions. Regional V/Q and cardiac adaptation are unmeasured."
+}

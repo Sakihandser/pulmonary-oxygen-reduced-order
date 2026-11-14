@@ -1,0 +1,7 @@
+{
+  "result_csv_files": 4,
+  "numeric_cells_compared": 9732,
+  "maximum_absolute_difference": 0.0,
+  "tests": 8,
+  "network_used": false
+}

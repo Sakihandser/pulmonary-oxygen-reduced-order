@@ -1,0 +1,5 @@
+design,unknowns,rank,singular_values,rank_tolerance
+arterial_only,3,1,0.1048367906011106,1e-10
+arterial_and_independent_Q,3,2,1.001843563585213;0.0854413644929925,1e-10
+arterial_and_venous,3,2,0.6059955868140352;0.05097601517960954,1e-10
+arterial_venous_independent_Q,3,3,1.101832640635698;0.3914449534902059;0.05064470138615654,1e-10

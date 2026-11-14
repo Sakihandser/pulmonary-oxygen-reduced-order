@@ -1,0 +1,3 @@
+# Preserve the exact bytes recorded in the submitted SHA-256 manifests.
+numerical/** -text
+figure_sources/** -text

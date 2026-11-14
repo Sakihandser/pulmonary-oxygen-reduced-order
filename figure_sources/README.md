@@ -1,0 +1,17 @@
+# Final article figure and table sources
+
+Install requirements-lock.txt, then run `python reproduce_final_figures.py` in a clean extraction. This redraws all 25 submitted TIFFs into submission_figures/: main Figures 1–11, supporting B1–B12 and S1–S2. It uses frozen CSV inputs without network access. Full numerical recalculation and tests are in Numerical_Data_and_Code.zip.
+
+Final main Figures 1–2 use review_extension/code/figures_review.py; Figures 3–5 use selection_extension/code/figures.py; Figure 6 uses coupling_extension/code/figures_coupling.py; Figure 7 uses heterogeneity_extension/code/figures_heterogeneity.py. The selection extension also emits two original-comparison diagnostic plots; these are not the submitted Figures 1–2. Editable SVGs are supplied in the corresponding figures directories.
+
+Supporting B1–B7 use the root tools (original executable filenames Fig1–Fig7). B8–B11 use experimental_validation/code/figures.py; B12 uses experimental_validation/code/review_figures.py. S1 and S2 keep their names. The wrapper copies the appropriate outputs to their submitted names.
+
+article_table_1.csv through article_table_12.csv reproduce all twelve printed main tables. benchmark_table_B1.csv through benchmark_table_B10.csv and their native XML describe supporting benchmarks. Older main_table*.csv filenames are preserved computational inputs for those benchmarks, not the current main tables.
+
+The release manifest records all supplied files. Run in a disposable copy because generated SVG metadata may change. TIFF reproduction is checked against the submitted files in the recorded environment.
+
+Figure 8 uses adequacy_extension/code/figures_adequacy.py. The final wrapper applies lossless LZW compression; decoded pixels and 300 dpi are preserved.
+
+Figure 9 uses applicability_extension/code/figures_applicability.py; main Table 10 reports the observed-state compatibility audit.
+
+Figures 10–11 use certainty_extension/code/figures_certainty.py; Tables 11–12 report conditional decisions and capacity-exclusion bounds.

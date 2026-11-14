@@ -1,0 +1,68 @@
+{
+  "reference": {
+    "Q": 5.0,
+    "M": 250.0,
+    "Ce": 18.548851571018318,
+    "s0": 0.15,
+    "sstar": 0.2,
+    "Ca0": 17.666498629841847,
+    "DO20": 883.3249314920923
+  },
+  "beta_critical_s015": 0.44804757040769383,
+  "beta_critical_s020": 0.4970679476476895,
+  "recovery": [
+    {
+      "beta": 0.0,
+      "Qa_ratio": 1.4166666666666914,
+      "Qd_ratio": 1.0198204755381168,
+      "arterial_root_in_display": true,
+      "delivery_root_in_display": true,
+      "s_at_arterial_root": 0.2,
+      "s_at_delivery_root": 0.2,
+      "fixed_s_ratio_identity_residual": -1.231653667943533e-15
+    },
+    {
+      "beta": 0.25,
+      "Qa_ratio": 1.9526391514241368,
+      "Qd_ratio": 1.020511109974443,
+      "arterial_root_in_display": true,
+      "delivery_root_in_display": true,
+      "s_at_arterial_root": 0.25627520381028834,
+      "s_at_delivery_root": 0.20163638682018442,
+      "fixed_s_ratio_identity_residual": -0.024805116419447826
+    },
+    {
+      "beta": 0.5,
+      "Qa_ratio": 6.31485637456203,
+      "Qd_ratio": 1.0212569570495702,
+      "arterial_root_in_display": false,
+      "delivery_root_in_display": true,
+      "s_at_arterial_root": 0.5270495539534051,
+      "s_at_delivery_root": 0.2033960922742858,
+      "fixed_s_ratio_identity_residual": -0.23156619677589696
+    },
+    {
+      "beta": 0.75,
+      "Qa_ratio": 142.08021791856834,
+      "Qd_ratio": 1.0220655239208463,
+      "arterial_root_in_display": false,
+      "delivery_root_in_display": true,
+      "s_at_arterial_root": 0.9616461173947964,
+      "s_at_delivery_root": 0.20529503263460389,
+      "fixed_s_ratio_identity_residual": -6.688999295680395
+    },
+    {
+      "beta": 1.0,
+      "Qa_ratio": Infinity,
+      "Qd_ratio": 1.022945844570862,
+      "arterial_root_in_display": false,
+      "delivery_root_in_display": true,
+      "s_at_arterial_root": NaN,
+      "s_at_delivery_root": 0.20735222112390556,
+      "fixed_s_ratio_identity_residual": NaN
+    }
+  ],
+  "conditional_derivative_max_abs_error": 9.089171371101656e-08,
+  "flow_grid_feasible": true,
+  "interpretation": "Analytic and numerical consequences of the imposed capacity-flow law, not patient response estimates"
+}

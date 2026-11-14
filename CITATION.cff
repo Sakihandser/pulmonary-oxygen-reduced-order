@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this research software together with the fixed Git commit used."
 type: software
-title: "Pulmonary oxygen exchange controlled numerical benchmark"
+title: "Decision Consistency and Mechanistic Ambiguity in Pulmonary Oxygen Models"
 authors:
   - family-names: Hong
     given-names: Mingze
@@ -12,4 +12,4 @@ repository-code: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
 license:
   - MIT
   - GPL-3.0-only
-abstract: "Common calibration, frozen-state prediction, dissolved-oxygen controls and regional allocation sensitivity for simplified pulmonary oxygen exchange laws. Per-directory license and provenance records apply."
+abstract: "Software and data for conditional decision consistency, multi-state model constraints and finite mechanistic ambiguity in pulmonary oxygen models."

@@ -1,0 +1,18 @@
+{
+  "all_checks_passed": true,
+  "input_files_checked": 4,
+  "csv_files_compared": 23,
+  "numeric_cells_compared": 27464,
+  "maximum_absolute_difference": 0.0,
+  "python": "3.12.14",
+  "figures": [
+    "Fig8",
+    "Fig9",
+    "Fig10",
+    "Fig11",
+    "Fig12"
+  ],
+  "elapsed_seconds": 23.77704640000593,
+  "network_used": false,
+  "interpretation": "Exploratory conditional endpoint comparison; not clinical validation."
+}

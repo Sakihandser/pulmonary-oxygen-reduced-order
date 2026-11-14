@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="405pt" height="369.216pt" viewBox="0 0 405 369.216" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-14T13:05:24.056812</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 369.216 
+L 405 369.216 
+L 405 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 18.918 68.228352 
+L 386.082 68.228352 
+Q 390.7692 68.228352 390.7692 63.97056 
+L 390.7692 21.39264 
+Q 390.7692 17.134848 386.082 17.134848 
+L 18.918 17.134848 
+Q 14.2308 17.134848 14.2308 21.39264 
+L 14.2308 63.97056 
+Q 14.2308 68.228352 18.918 68.228352 
+z
+" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 18.918 153.384192 
+L 194.688 153.384192 
+Q 199.3752 153.384192 199.3752 149.1264 
+L 199.3752 88.80768 
+Q 199.3752 84.549888 194.688 84.549888 
+L 18.918 84.549888 
+Q 14.2308 84.549888 14.2308 88.80768 
+L 14.2308 149.1264 
+Q 14.2308 153.384192 18.918 153.384192 
+z
+" clip-path="url(#p261ed302f6)" style="fill: #ddf0eb; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 218.124 153.384192 
+L 386.082 153.384192 
+Q 390.7692 153.384192 390.7692 149.1264 
+L 390.7692 88.80768 
+Q 390.7692 84.549888 386.082 84.549888 
+L 218.124 84.549888 
+Q 213.4368 84.549888 213.4368 88.80768 
+L 213.4368 149.1264 
+Q 213.4368 153.384192 218.124 153.384192 
+z
+" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 18.918 245.636352 
+L 386.082 245.636352 
+Q 390.7692 245.636352 390.7692 241.37856 
+L 390.7692 177.51168 
+Q 390.7692 173.253888 386.082 173.253888 
+L 18.918 173.253888 
+Q 14.2308 173.253888 14.2308 177.51168 
+L 14.2308 241.37856 
+Q 14.2308 245.636352 18.918 245.636352 
+z
+" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 18.918 341.436672 
+L 386.082 341.436672 
+Q 390.7692 341.436672 390.7692 337.17888 
+L 390.7692 273.312 
+Q 390.7692 269.054208 386.082 269.054208 
+L 18.918 269.054208 
+Q 14.2308 269.054208 14.2308 273.312 
+L 14.2308 337.17888 
+Q 14.2308 341.436672 18.918 341.436672 
+z
+" clip-path="url(#p261ed302f6)" style="fill: #e8eef6; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(92.769609 34.217381)">37 published quantitative records from 8 studies</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(63.866953 45.019842)">Primary response set: 11 changes and 6 baseline calibrations</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(83.946094 55.822303)">No new patient data in the matched-scaling analysis</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(50.057375 101.841102)">Primary nonhyperoxic strata</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(27.441125 111.44329)">Early Zurich: 4 changes, thermodilution</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(32.816125 121.045477)">Recent Zurich: 3 changes, direct Fick</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(41.26175 130.647665)">Historical: 4 changes in 2 people</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(44.14425 140.249852)">3 source families; measured Pv</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'" transform="translate(248.381008 100.770731)">Separate evidence strata</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'" transform="translate(250.267609 110.973056)">1 pure-oxygen condition</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'" transform="translate(224.314055 121.17538)">3 exercise checks using Sv inversion</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'" transform="translate(259.001359 131.377704)">6 COPD/IPF changes</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'" transform="translate(255.109953 141.580028)">7 cross-sectional rows</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 104.85 65.968566 
+Q 104.85 76.388633 104.85 85.690666 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+    <path d="M 106.65 82.090666 
+L 104.85 85.690666 
+L 103.05 82.090666 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 300.15 65.968566 
+Q 300.15 76.388633 300.15 85.690666 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+    <path d="M 301.95 82.090666 
+L 300.15 85.690666 
+L 298.35 82.090666 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(101.014844 194.039065)">Calibrate once at the permitted baseline</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(67.507812 206.0418)">Compare 4 exchange maps × 2 capacity-scaling rules</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(75.657031 218.044534)">Keep the original 5-law and 2-baseline comparison</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(62.021094 230.047268)">Current Q cancels in every proportional-capacity control</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 104.85 151.125705 
+Q 104.85 163.318589 104.85 174.39344 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+    <path d="M 106.65 170.79344 
+L 104.85 174.39344 
+L 103.05 170.79344 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(56.784102 290.609688)">Evaluate conditional predictions and explicit model scenarios</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(43.584297 302.012286)">Equal-family RMSE; modern and historical strata; 108 assumptions</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(48.011445 313.414883)">State-dependent curve shifts and compensation-boundary stress</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(56.944414 324.817481)">Fick-Q dependence and aggregate-data limits remain explicit</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 202.5 243.378298 
+Q 202.5 257.345776 202.5 270.195219 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+    <path d="M 204.3 266.595219 
+L 202.5 270.195219 
+L 200.7 266.595219 
+" style="fill: none; stroke: #516578; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p261ed302f6">
+   <rect x="7.2" y="7.2" width="390.6" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>

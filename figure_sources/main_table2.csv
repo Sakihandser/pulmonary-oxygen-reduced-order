@@ -1,0 +1,5 @@
+Contrast,Held fixed,Changed,Supported inference and limit
+A: saturation / content,Vc/tau; flow; Hb; inlet and P_A,Relaxation variable,Conditional variable effect; equivalent physical D is not held fixed
+B: saturation / Dmatch,One homogeneous endpoint; blood map and boundaries,Operator and its capacity trajectory,Frozen-state transfer; no all-state or axial capacity equivalence
+C: Dmatch / Dgas,Constant-D law; shares; flow and boundaries,Total D calibration,Calibration sensitivity only; no physiological accuracy ranking
+D: fixed / feedback inlet,"Construction; demand, ceilings and mixing as specified",Inlet closure,Closure effect in that setting; not a universal organ deficit

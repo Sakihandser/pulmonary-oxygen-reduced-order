@@ -1,0 +1,8 @@
+{
+  "result_csv_files": 10,
+  "numeric_cells_compared": 43208,
+  "maximum_absolute_difference": 0.0,
+  "tests": 9,
+  "network_used": false,
+  "interpretation": "Deterministic computational verification, not prospective physiological validation"
+}

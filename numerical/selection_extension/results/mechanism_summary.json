@@ -1,0 +1,117 @@
+{
+  "nonhyperoxia_nested_score": {
+    "scope": "primary_PH_nonhyperoxia",
+    "model": "flow_adaptive_nonhyperoxia",
+    "test_conditions": 11,
+    "families": 3,
+    "equal_family_RMSE": 3.0809422263538115,
+    "equal_family_MAE": 2.494773675632227,
+    "equal_family_bias": -1.2294830460818902,
+    "pooled_RMSE": 3.168345197150091,
+    "infeasible": 0
+  },
+  "nonhyperoxia_beta_folds": [
+    {
+      "held_out": "Zurich_early",
+      "beta": 0.003200814855578512,
+      "training_RMSE": 2.9997153330226403
+    },
+    {
+      "held_out": "Zurich2021_2023",
+      "beta": 0.010250823564359949,
+      "training_RMSE": 3.380076218329836
+    },
+    {
+      "held_out": "Melot1983",
+      "beta": -0.09377151928159212,
+      "training_RMSE": 2.426575405905233
+    }
+  ],
+  "decomposition_max_abs": 2.388855779855703e-11,
+  "compensation_examples": [
+    {
+      "s_before": 0.15,
+      "s_after": 0.2,
+      "flow_ratio": 1.2,
+      "demand_ratio": 1,
+      "Pa_before": 69.91854273458253,
+      "Pa_after": 66.9507821162643,
+      "Sa_before": 93.01573106271131,
+      "Sa_after": 92.21555159803427,
+      "DO2_before": 883.3249314920923,
+      "DO2_after": 1050.431094261099,
+      "DO2_percent": 18.917858741599723,
+      "Q_ratio_Pa_preserved": 1.416666666666666,
+      "Q_ratio_DO2_preserved": 1.0198204755381168
+    },
+    {
+      "s_before": 0.15,
+      "s_after": 0.2,
+      "flow_ratio": 1.5,
+      "demand_ratio": 1,
+      "Pa_before": 69.91854273458253,
+      "Pa_after": 70.91757475024335,
+      "Sa_before": 93.01573106271131,
+      "Sa_after": 93.2605210872073,
+      "DO2_before": 883.3249314920923,
+      "DO2_after": 1328.663867826374,
+      "DO2_percent": 50.416208176307805,
+      "Q_ratio_Pa_preserved": 1.416666666666666,
+      "Q_ratio_DO2_preserved": 1.0198204755381168
+    },
+    {
+      "s_before": 0.15,
+      "s_after": 0.25,
+      "flow_ratio": 1.2,
+      "demand_ratio": 1,
+      "Pa_before": 69.91854273458253,
+      "Pa_after": 61.63309932080597,
+      "Sa_before": 93.01573106271131,
+      "Sa_after": 90.45255903111104,
+      "DO2_before": 883.3249314920923,
+      "DO2_after": 1029.5977609277656,
+      "DO2_percent": 16.559345742522247,
+      "Q_ratio_Pa_preserved": 1.888888888888888,
+      "Q_ratio_DO2_preserved": 1.0422836811479828
+    },
+    {
+      "s_before": 0.15,
+      "s_after": 0.25,
+      "flow_ratio": 2.0,
+      "demand_ratio": 1,
+      "Pa_before": 69.91854273458253,
+      "Pa_after": 70.91757475024335,
+      "Sa_before": 93.01573106271131,
+      "Sa_after": 93.2605210872073,
+      "DO2_before": 883.3249314920923,
+      "DO2_after": 1771.5518237684985,
+      "DO2_percent": 100.55494423507704,
+      "Q_ratio_Pa_preserved": 1.888888888888888,
+      "Q_ratio_DO2_preserved": 1.0422836811479828
+    },
+    {
+      "s_before": 0.15,
+      "s_after": 0.15,
+      "flow_ratio": 1.2,
+      "demand_ratio": 1.5,
+      "Pa_before": 69.91854273458253,
+      "Pa_after": 65.90911878739412,
+      "Sa_before": 93.01573106271131,
+      "Sa_after": 91.90614139822392,
+      "DO2_before": 883.3249314920923,
+      "DO2_after": 1046.7546236728638,
+      "DO2_percent": 18.50165056529196,
+      "Q_ratio_Pa_preserved": 1.4999999999999996,
+      "Q_ratio_DO2_preserved": 1.02378457064574
+    }
+  ],
+  "reference": {
+    "Q": 5.0,
+    "M": 250.0,
+    "s": 0.15,
+    "Hb": 14.0,
+    "PA": 100.0,
+    "Ce": 18.548851571018318
+  },
+  "warning": "Mechanistic boundaries are model consequences; source Fick Q and outcome-reconstructed s are not independent validation."
+}

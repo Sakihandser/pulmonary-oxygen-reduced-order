@@ -1,0 +1,7 @@
+Structure and information,Ca outer bounds,Conclusion
+A or B baseline only,16.4881–17.9338,Opposite
+"A two extra states, ±0.001",17.6801–17.7922,All recover
+"A two extra states, ±0.005",17.5889–17.8436,Opposite
+A ±0.001 plus Ce and M bounds,17.4933–17.9679,Not certified
+"B one extra state, ±0.001",16.6590–17.0208,None recover
+B one extra plus Ce and M bounds,16.3700–17.2736,None recover

@@ -1,33 +1,33 @@
-# Pulmonary oxygen exchange benchmark
+# Decision Consistency and Mechanistic Ambiguity in Pulmonary Oxygen Models
 
-Code and numerical data accompanying **Calibration-Dependent Transferability of Pulmonary Oxygen Exchange Models in a Controlled Numerical Benchmark**, by Mingze Hong and Bojun Yang.
+Research software, numerical data and figure sources for the study by Mingze Hong and Bojun Yang. The current snapshot accompanies the v31 manuscript. It examines when pulmonary oxygen models that fit the same observations agree on a specified decision and when different mechanisms remain compatible with the data.
 
-The study compares saturation relaxation, content relaxation and constant conductance after common endpoint or inlet-slope calibration. Fitted parameters are frozen for synthetic inlet, flow and alveolar tests. Additional calculations explain the dissolved-oxygen limit and regional allocation sensitivity.
+## Reproduce the numerical results
 
-## Reproduce the results
+From a fresh checkout:
 
-```text
+```sh
 cd numerical
 python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-Use a fresh working copy because the runner writes outputs. After dependency installation it runs offline, checks file integrity, regenerates 58 result CSVs, verifies numerical main Tables 4–8 and exports seven main and two supplementary figures. See [the result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) for exact scripts, data files and commands. The locked dependencies describe the tested software environment.
+The runner verifies the release SHA-256 manifest, compares 142 result CSVs, regenerates 25 figures and runs 131 tests across 11 suites. It runs offline after dependency installation and writes generated outputs to the working copy. The [result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) links results to their inputs and scripts. The [multi-state analysis protocol](numerical/certainty_extension/PROTOCOL.md) describes the common-model constraints, finite counterexamples and capacity bounds added in this snapshot.
 
-The current distribution also includes the bounded calibration-target envelopes, full-grid independent quadrature checks and 21/41/81 grid-resolution comparisons reported in supplementary Section I. These calculations are implemented in `numerical/robustness/code/run.py` and included in the one-command reproduction. The `numerical/` files match the current Numerical Data and Code submission supplement byte for byte; its SHA256 manifest identifies the supplied files.
+## Regenerate the figures
 
-For figure-only export, from `numerical/` run `python sensitivity/reporting/reproduce_figures.py`. To run the tests:
+From a fresh checkout:
 
-```text
-python -m unittest discover -s tests
-python -m unittest discover -s aggregate_analysis/tests
-python -m unittest discover -s observation_analysis/tests
+```sh
+cd figure_sources
+python -m pip install -r requirements-lock.txt
+python reproduce_final_figures.py
 ```
 
-## Interpretation
+This regenerates 25 submission TIFFs in `submission_figures/` from the frozen plotting data. The directory also contains editable SVGs and CSVs for all 12 main tables. See the [figure and table source guide](figure_sources/README_S3.md).
 
-These are controlled numerical comparisons. Synthetic states and grid counts under assumed bounded errors are not patient observations or clinical discrimination probabilities. CT inspiratory air-volume shares are regional allocation proxies. Gas-derived capacity uses unpaired aggregate observations with unresolved normalization. The external Alvin pressure submodule supplies numerical qualification, not validation of the full physiological model. Source cells, assumptions and provenance are retained with the code.
+## Data, licensing and citation
 
-## License and citation
+The observed-state audit uses attributed published data. Its decision conclusions are conditional on the specified observations, model class and error bounds. See [data provenance](numerical/LICENSE_DATA.md) for the sources and redistribution scope.
 
-Original project software is MIT-licensed. The external pressure-kernel comparison retains GPL-3.0 terms in [its license](numerical/sensitivity/LICENSE), with attribution and upstream commit in [its provenance](numerical/sensitivity/external_alvin/PROVENANCE.md). The MIT license does not relicense third-party material. See [data provenance](numerical/LICENSE_DATA.md) and [citation metadata](CITATION.cff). Cite the fixed Git commit used so the calculations can be traced to the same files.
+Original project software is MIT-licensed. The external pressure-kernel comparison retains its [GPL-3.0 license](numerical/sensitivity/LICENSE) and [upstream attribution](numerical/sensitivity/external_alvin/PROVENANCE.md). When citing the software, include the specific Git commit and use the [citation metadata](CITATION.cff).

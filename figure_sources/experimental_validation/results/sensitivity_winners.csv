@@ -1,0 +1,21 @@
+study,law,winning_scenarios,total_scenarios,interpretation
+Carta2022,saturation,0,27,Deterministic assumption counts; not probabilities
+Carta2022,content,14,27,Deterministic assumption counts; not probabilities
+Carta2022,constant_D,0,27,Deterministic assumption counts; not probabilities
+Carta2022,pressure,9,27,Deterministic assumption counts; not probabilities
+Carta2022,equilibrium_admixture,4,27,Deterministic assumption counts; not probabilities
+Lichtblau2021,saturation,27,27,Deterministic assumption counts; not probabilities
+Lichtblau2021,content,0,27,Deterministic assumption counts; not probabilities
+Lichtblau2021,constant_D,0,27,Deterministic assumption counts; not probabilities
+Lichtblau2021,pressure,0,27,Deterministic assumption counts; not probabilities
+Lichtblau2021,equilibrium_admixture,0,27,Deterministic assumption counts; not probabilities
+Blanco2010,saturation,0,81,Deterministic assumption counts; not probabilities
+Blanco2010,content,0,81,Deterministic assumption counts; not probabilities
+Blanco2010,constant_D,0,81,Deterministic assumption counts; not probabilities
+Blanco2010,pressure,0,81,Deterministic assumption counts; not probabilities
+Blanco2010,equilibrium_admixture,81,81,Deterministic assumption counts; not probabilities
+Blanco2011,saturation,0,81,Deterministic assumption counts; not probabilities
+Blanco2011,content,0,81,Deterministic assumption counts; not probabilities
+Blanco2011,constant_D,0,81,Deterministic assumption counts; not probabilities
+Blanco2011,pressure,81,81,Deterministic assumption counts; not probabilities
+Blanco2011,equilibrium_admixture,0,81,Deterministic assumption counts; not probabilities

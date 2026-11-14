@@ -1,0 +1,8 @@
+study,authors,doi,primary_url,location,role,limitations
+Carta2022,Carta AF et al.,10.3389/fmed.2022.791423,https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2022.791423/full,Table 2 and methods,quantitative,149 source participants; 3 condition means; available-case measurements
+Lichtblau2021,Lichtblau M et al.,10.3389/fmed.2021.681473,https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2021.681473/full,Tables 2 and 3,quantitative,24 source participants; 4 condition means; possible overlap with Carta
+Dantzker1979,Dantzker DR; Bower JS,10.1172/JCI109542,https://jci.org/articles/view/109542,Table II p1052,quantitative,7 individual published observations; recoded labels
+Blanco2010,Blanco I et al.,10.1164/rccm.200907-0988OC,https://diposit.ub.edu/bitstreams/edcf8748-24c1-46cd-865c-3fdc24b95c8f/download,Tables 2-3 pp272-273; thesis PDF pp72-73,quantitative external disease domain,20 COPD-PH; 4 condition means; Hb assumed
+Blanco2011,Blanco I et al.,10.1152/japplphysiol.01104.2010,https://diposit.ub.edu/bitstreams/edcf8748-24c1-46cd-865c-3fdc24b95c8f/download,Tables 3-4; thesis PDF pp92 and 94,quantitative external disease domain,7 IPF; 4 condition means; Hb assumed; not all resting PH
+Stubbs2021,Stubbs H; Church C; Johnson M; Thomson S,10.1183/23120541.00449-2021,https://pmc.ncbi.nlm.nih.gov/articles/PMC8405871/,Table 1,context only,16 precapillary PH; 2 conditions; arterial inputs incomplete
+Beretta2019,Beretta E; Grasso GS; Forcaia G; Sancini G; Miserocchi G,10.1038/s41598-019-52679-4,https://www.nature.com/articles/s41598-019-52679-4,Table 1 and methods,context only,18 healthy; 4 conditions; venous input missing

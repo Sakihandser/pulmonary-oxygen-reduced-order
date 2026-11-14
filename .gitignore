@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 numerical/sensitivity/reporting/figures/*.png
 numerical/sensitivity/reporting/figures/*.tif
+
+figure_sources/raw_submission_figures/
+figure_sources/submission_figures/

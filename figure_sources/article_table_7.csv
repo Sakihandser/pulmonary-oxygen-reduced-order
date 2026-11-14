@@ -1,0 +1,5 @@
+β,Path residual support,Ca range (mL/dL),Recovery
+0.25,"[0,1]",17.6779–17.9239,Guaranteed
+1,"[0,1]",16.5263–17.9239,Unresolved
+1,"[0.001,0.8]",16.5263–17.7309,Unresolved
+1,"[0.05,0.5]",16.5263–16.9853,Impossible

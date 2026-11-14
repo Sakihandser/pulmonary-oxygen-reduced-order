@@ -1,0 +1,4 @@
+study,doi,url,location,records,source_people,role,overlap
+Haefliger2025,10.3390/jcm14238407,https://www.mdpi.com/2077-0383/14/23/8407,Table 2,4,22,new_direct_Pv_condition_check,Same BASEC2020-02163 trial family as Lichtblau2025; supine vs semi-supine; do not pool participants
+Lichtblau2025,10.1164/rccm.202409-1737RL,https://pmc.ncbi.nlm.nih.gov/articles/PMC12005039/,Table 1,4,23,secondary_exercise_check_with_Sv_inverse,Same trial family as Haefliger2025; omit from primary Pa score because Pv not reported
+Melot1983,10.1378/chest.83.2.203,https://doi.org/10.1378/chest.83.2.203,Table 1 p204; author-uploaded full text,7,2,new_individual_perturbation_stress_test,M01 visits same patient; all grouped as one source; M01 has atrial right-to-left shunt

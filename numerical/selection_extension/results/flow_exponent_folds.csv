@@ -1,0 +1,4 @@
+held_out_family,training_families,beta,training_RMSE
+Zurich_early,Melot1983;Zurich2021_2023,0.003200814855578512,2.9997153330226403
+Zurich2021_2023,Melot1983;Zurich_early,1.8550986945833547,14.997294537665686
+Melot1983,Zurich2021_2023;Zurich_early,2.0,6.691106393363474

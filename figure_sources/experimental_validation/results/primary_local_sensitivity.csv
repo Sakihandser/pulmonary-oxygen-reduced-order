@@ -1,0 +1,6 @@
+parameter,derivative,unit,illustrative_step,linearized_DO2_change_ml_min
+Q,185.5564194399352,mL_O2/min per L/min,0.01,1.8555641943993522
+Hb,48.65168022844171,mL_O2/min per g/dL,0.1,4.865168022844172
+PA,0.6191438448253768,mL_O2/min per mmHg,1.0,0.6191438448253768
+M,-0.16772037812477675,mL_O2/min per mL_O2/min,10.0,-1.6772037812477674
+s_eff,-340.89272037196787,mL_O2/min per fraction,0.01,-3.4089272037196787

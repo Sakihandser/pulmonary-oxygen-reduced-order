@@ -1,0 +1,7 @@
+Candidate,Map or implicit definition
+Saturation relaxation,Sa = S(PA) − [S(PA) − Sv] exp(−K/Q)
+Content relaxation,Ca = Ce − (Ce − Cv) exp(−K/Q)
+Fixed conductance,D/(10Q) = integral from Pv to Pa of C′(P)/(PA−P) dP
+Pressure relaxation,Pa = PA − (PA−Pv) exp(−K/Q)
+Effective admixture,Ca = (1−s) Ce + s Cv
+Baseline comparators,"Hold baseline Pa, or baseline PA−Pa, fixed"

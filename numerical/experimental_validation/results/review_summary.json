@@ -1,0 +1,229 @@
+{
+  "added_observations": 0,
+  "exact_resampling": true,
+  "calibration_refitted_in_bootstrap": false,
+  "design": "Retrospective post-selection diagnostics; empirical resampling quantiles have no asserted population coverage.",
+  "rank_assumptions": "Known Hb, blood curve and PA; interior s and positive M,Q. Independent Q adds rank; Fick-derived Q from the same oxygen observations does not.",
+  "reference": {
+    "q": 3.7333333333333294,
+    "m": 250.0,
+    "s": 0.14363059964245567,
+    "ce": 18.55564194399352,
+    "ca": 17.432514411907963,
+    "cv": 10.736085840479383
+  },
+  "bootstrap": [
+    {
+      "subset": "all_pulmonary_vascular",
+      "law": "saturation",
+      "n": 7,
+      "RMSE_mmHg": 27.35540217288913,
+      "admixture_minus_law_RMSE_mmHg": -15.888587812987245,
+      "empirical_delta_q025": -35.79103359592365,
+      "empirical_delta_q975": 3.532450639083045,
+      "empirical_best_share": 0.19275374813458437,
+      "unique_count_vectors": 1716,
+      "ordered_resamples": 823543
+    },
+    {
+      "subset": "all_pulmonary_vascular",
+      "law": "content",
+      "n": 7,
+      "RMSE_mmHg": 27.825294853486923,
+      "admixture_minus_law_RMSE_mmHg": -16.35848049358504,
+      "empirical_delta_q025": -36.33185890144868,
+      "empirical_delta_q975": 3.0982649879733213,
+      "empirical_best_share": 0.00020521089973444008,
+      "unique_count_vectors": 1716,
+      "ordered_resamples": 823543
+    },
+    {
+      "subset": "all_pulmonary_vascular",
+      "law": "constant_D",
+      "n": 7,
+      "RMSE_mmHg": 40.49674543863259,
+      "admixture_minus_law_RMSE_mmHg": -29.029931078730705,
+      "empirical_delta_q025": -46.001907538515084,
+      "empirical_delta_q975": -11.099984617636853,
+      "empirical_best_share": 0.0,
+      "unique_count_vectors": 1716,
+      "ordered_resamples": 823543
+    },
+    {
+      "subset": "all_pulmonary_vascular",
+      "law": "pressure",
+      "n": 7,
+      "RMSE_mmHg": 26.33824966849084,
+      "admixture_minus_law_RMSE_mmHg": -14.871435308588955,
+      "empirical_delta_q025": -32.65859458098754,
+      "empirical_delta_q975": 1.9043264982645862,
+      "empirical_best_share": 0.04617245244024902,
+      "unique_count_vectors": 1716,
+      "ordered_resamples": 823543
+    },
+    {
+      "subset": "all_pulmonary_vascular",
+      "law": "equilibrium_admixture",
+      "n": 7,
+      "RMSE_mmHg": 11.466814359901884,
+      "admixture_minus_law_RMSE_mmHg": 0.0,
+      "empirical_delta_q025": 0.0,
+      "empirical_delta_q975": 0.0,
+      "empirical_best_share": 0.7608685885254333,
+      "unique_count_vectors": 1716,
+      "ordered_resamples": 823543
+    },
+    {
+      "subset": "historical_primary_PH",
+      "law": "saturation",
+      "n": 4,
+      "RMSE_mmHg": 13.786504561084492,
+      "admixture_minus_law_RMSE_mmHg": 0.1731847590194775,
+      "empirical_delta_q025": -5.97905518653336,
+      "empirical_delta_q975": 4.6423163693293645,
+      "empirical_best_share": 0.51171875,
+      "unique_count_vectors": 35,
+      "ordered_resamples": 256
+    },
+    {
+      "subset": "historical_primary_PH",
+      "law": "content",
+      "n": 4,
+      "RMSE_mmHg": 14.38030075849493,
+      "admixture_minus_law_RMSE_mmHg": -0.42061143839096005,
+      "empirical_delta_q025": -6.870240905680841,
+      "empirical_delta_q975": 4.478322228119886,
+      "empirical_best_share": 0.00390625,
+      "unique_count_vectors": 35,
+      "ordered_resamples": 256
+    },
+    {
+      "subset": "historical_primary_PH",
+      "law": "constant_D",
+      "n": 4,
+      "RMSE_mmHg": 33.22557228089323,
+      "admixture_minus_law_RMSE_mmHg": -19.265882960789263,
+      "empirical_delta_q025": -37.03249844125986,
+      "empirical_delta_q975": -2.646456529733303,
+      "empirical_best_share": 0.0,
+      "unique_count_vectors": 35,
+      "ordered_resamples": 256
+    },
+    {
+      "subset": "historical_primary_PH",
+      "law": "pressure",
+      "n": 4,
+      "RMSE_mmHg": 15.544373304883075,
+      "admixture_minus_law_RMSE_mmHg": -1.5846839847791063,
+      "empirical_delta_q025": -9.339718271185543,
+      "empirical_delta_q975": 4.428561782455798,
+      "empirical_best_share": 0.18359375,
+      "unique_count_vectors": 35,
+      "ordered_resamples": 256
+    },
+    {
+      "subset": "historical_primary_PH",
+      "law": "equilibrium_admixture",
+      "n": 4,
+      "RMSE_mmHg": 13.95968932010397,
+      "admixture_minus_law_RMSE_mmHg": 0.0,
+      "empirical_delta_q025": 0.0,
+      "empirical_delta_q975": 0.0,
+      "empirical_best_share": 0.30078125,
+      "unique_count_vectors": 35,
+      "ordered_resamples": 256
+    },
+    {
+      "subset": "recurrent_emboli",
+      "law": "saturation",
+      "n": 3,
+      "RMSE_mmHg": 38.63485198725945,
+      "admixture_minus_law_RMSE_mmHg": -31.781066724212835,
+      "empirical_delta_q025": -60.29769773109304,
+      "empirical_delta_q975": 9.256008710130672,
+      "empirical_best_share": 0.25925925925925924,
+      "unique_count_vectors": 10,
+      "ordered_resamples": 27
+    },
+    {
+      "subset": "recurrent_emboli",
+      "law": "content",
+      "n": 3,
+      "RMSE_mmHg": 39.126108232080036,
+      "admixture_minus_law_RMSE_mmHg": -32.27232296903342,
+      "empirical_delta_q025": -61.02264546165658,
+      "empirical_delta_q975": 8.82834273854317,
+      "empirical_best_share": 0.0,
+      "unique_count_vectors": 10,
+      "ordered_resamples": 27
+    },
+    {
+      "subset": "recurrent_emboli",
+      "law": "constant_D",
+      "n": 3,
+      "RMSE_mmHg": 48.52542331698722,
+      "admixture_minus_law_RMSE_mmHg": -41.671638053940605,
+      "empirical_delta_q025": -64.5091649100052,
+      "empirical_delta_q975": -8.344515737207402,
+      "empirical_best_share": 0.0,
+      "unique_count_vectors": 10,
+      "ordered_resamples": 27
+    },
+    {
+      "subset": "recurrent_emboli",
+      "law": "pressure",
+      "n": 3,
+      "RMSE_mmHg": 36.00654386558115,
+      "admixture_minus_law_RMSE_mmHg": -29.152758602534533,
+      "empirical_delta_q025": -54.702577370800185,
+      "empirical_delta_q975": -1.0058534409585036,
+      "empirical_best_share": 0.0,
+      "unique_count_vectors": 10,
+      "ordered_resamples": 27
+    },
+    {
+      "subset": "recurrent_emboli",
+      "law": "equilibrium_admixture",
+      "n": 3,
+      "RMSE_mmHg": 6.853785263046617,
+      "admixture_minus_law_RMSE_mmHg": 0.0,
+      "empirical_delta_q025": 0.0,
+      "empirical_delta_q975": 0.0,
+      "empirical_best_share": 0.7407407407407407,
+      "unique_count_vectors": 10,
+      "ordered_resamples": 27
+    }
+  ],
+  "ranks": [
+    {
+      "design": "arterial_only",
+      "unknowns": 3,
+      "rank": 1,
+      "singular_values": "0.1048367906011106",
+      "rank_tolerance": 1e-10
+    },
+    {
+      "design": "arterial_and_independent_Q",
+      "unknowns": 3,
+      "rank": 2,
+      "singular_values": "1.001843563585213;0.0854413644929925",
+      "rank_tolerance": 1e-10
+    },
+    {
+      "design": "arterial_and_venous",
+      "unknowns": 3,
+      "rank": 2,
+      "singular_values": "0.6059955868140352;0.05097601517960954",
+      "rank_tolerance": 1e-10
+    },
+    {
+      "design": "arterial_venous_independent_Q",
+      "unknowns": 3,
+      "rank": 3,
+      "singular_values": "1.101832640635698;0.3914449534902059;0.05064470138615654",
+      "rank_tolerance": 1e-10
+    }
+  ],
+  "maximum_same_arterial_Pa_difference": 0.0,
+  "maximum_same_pair_Pv_content_difference": 0.0
+}

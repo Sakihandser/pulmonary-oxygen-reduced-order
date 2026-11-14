@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "csv_files_compared": 19,
+  "numeric_cells_compared": 134482,
+  "maximum_absolute_difference": 0.0,
+  "input_files_checked": 2,
+  "tests": 14,
+  "main_figures": 5,
+  "flowchart_text_inside_boxes": true,
+  "network_used": false,
+  "elapsed_seconds": 12.156730700022308
+}

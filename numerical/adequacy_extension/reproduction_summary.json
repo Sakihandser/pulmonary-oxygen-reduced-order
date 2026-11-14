@@ -1,0 +1,9 @@
+{
+  "csv_files": 7,
+  "numeric_cells": 21461,
+  "maximum_absolute_difference": 0.0,
+  "tests": 12,
+  "all_checks_passed": true,
+  "elapsed_seconds": 7.069328099983977,
+  "interpretation": "Numerical verification only"
+}

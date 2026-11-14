@@ -1,0 +1,10 @@
+{
+  "primary_law": "equilibrium_admixture",
+  "calibration_study": "Carta2022",
+  "blood": {"p50_mmHg": 26.8, "hill_exponent": 2.7, "binding_ml_g": 1.34, "dissolved_ml_dl_mmHg": 0.0031},
+  "alveolar": {"respiratory_quotient": 0.8},
+  "reference": {"PVR_WU": 5.0, "Hb_g_dl": 14.0, "VO2_ml_min": 250.0},
+  "pvr_grid_WU": [1.0, 3.0, 5.0, 8.0, 12.0, 16.0],
+  "counterfactuals": {"flow_fraction": 0.75, "Hb_g_dl": 10.0, "PA_mmHg": 150.0, "effective_admixture": 0.3, "VO2_ml_min": 500.0},
+  "interpretation": "Model assumptions and illustrative perturbations, not patient distributions or treatment targets. Mixing and PA are computed from the named air baseline; no external outcome is refitted."
+}

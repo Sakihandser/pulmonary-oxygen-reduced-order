@@ -1,0 +1,360 @@
+{
+  "matched_metrics": [
+    {
+      "scope": "air_hypoxia",
+      "model": "constant_D_beta0",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 14.62072904737193,
+      "equal_family_MAE": 12.22947516330445,
+      "equal_family_bias": -1.9459055226689916,
+      "pooled_RMSE": 14.781430471021762,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "constant_D_beta1",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 11.704590537734003,
+      "equal_family_MAE": 10.493361658887158,
+      "equal_family_bias": -10.331615425329183,
+      "pooled_RMSE": 11.545740083691925,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "content_beta0",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 2.962948029533117,
+      "equal_family_MAE": 2.503377335977928,
+      "equal_family_bias": -1.6276968813777455,
+      "pooled_RMSE": 3.043365041714959,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "content_beta1",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 7.515921175641058,
+      "equal_family_MAE": 5.558968822007999,
+      "equal_family_bias": -5.361588543781707,
+      "pooled_RMSE": 7.803686073911167,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "pressure_beta0",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 5.833170922771775,
+      "equal_family_MAE": 4.966390872749641,
+      "equal_family_bias": -4.85905912776392,
+      "pooled_RMSE": 5.850783912203081,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "pressure_beta1",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 8.556859107453063,
+      "equal_family_MAE": 7.577762783405269,
+      "equal_family_bias": -7.577762783405269,
+      "pooled_RMSE": 8.751268946158874,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "saturation_beta0",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 2.84545058341425,
+      "equal_family_MAE": 2.3731980620660056,
+      "equal_family_bias": -1.524909156705106,
+      "pooled_RMSE": 2.9350805957009727,
+      "infeasible": 0
+    },
+    {
+      "scope": "air_hypoxia",
+      "model": "saturation_beta1",
+      "test_conditions": 11,
+      "families": 3,
+      "equal_family_RMSE": 7.49139719856682,
+      "equal_family_MAE": 5.444888696088498,
+      "equal_family_bias": -5.177590281217233,
+      "pooled_RMSE": 7.785813338748267,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "constant_D_beta0",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 12.368612897495114,
+      "equal_family_MAE": 10.631535514480081,
+      "equal_family_bias": -10.631535514480081,
+      "pooled_RMSE": 12.31763903636241,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "constant_D_beta1",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 12.685558357636527,
+      "equal_family_MAE": 11.510861597533268,
+      "equal_family_bias": -11.268242247196305,
+      "pooled_RMSE": 12.5911709756692,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "content_beta0",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 2.429447601358489,
+      "equal_family_MAE": 2.066022146773088,
+      "equal_family_bias": -1.7699517294336502,
+      "pooled_RMSE": 2.5000506115408827,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "content_beta1",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 2.7797499954242753,
+      "equal_family_MAE": 2.5063454440018367,
+      "equal_family_bias": -2.2102750266623987,
+      "pooled_RMSE": 2.7728249292218767,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "pressure_beta0",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 6.1914020007256685,
+      "equal_family_MAE": 5.380325421496226,
+      "equal_family_bias": -5.380325421496226,
+      "pooled_RMSE": 6.266754342967513,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "pressure_beta1",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 6.336017300452047,
+      "equal_family_MAE": 5.691613937863286,
+      "equal_family_bias": -5.691613937863286,
+      "pooled_RMSE": 6.380267104612954,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "saturation_beta0",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 2.1971116650406164,
+      "equal_family_MAE": 1.8701897407812398,
+      "equal_family_bias": -1.4692421184743436,
+      "pooled_RMSE": 2.274737291371549,
+      "infeasible": 0
+    },
+    {
+      "scope": "modern",
+      "model": "saturation_beta1",
+      "test_conditions": 7,
+      "families": 2,
+      "equal_family_RMSE": 2.551331511602104,
+      "equal_family_MAE": 2.3078685441051494,
+      "equal_family_bias": -1.906920921798253,
+      "pooled_RMSE": 2.547540517567824,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "constant_D_beta0",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 18.312072073193434,
+      "equal_family_MAE": 15.425354460953187,
+      "equal_family_bias": 15.425354460953187,
+      "pooled_RMSE": 18.312072073193434,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "constant_D_beta1",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 9.441691441581494,
+      "equal_family_MAE": 8.458361781594936,
+      "equal_family_bias": -8.458361781594936,
+      "pooled_RMSE": 9.441691441581494,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "content_beta0",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 3.8121846468461515,
+      "equal_family_MAE": 3.3780877143876076,
+      "equal_family_bias": -1.3431871852659363,
+      "pooled_RMSE": 3.8121846468461515,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "content_beta1",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 12.41020520705546,
+      "equal_family_MAE": 11.664215578020324,
+      "equal_family_bias": -11.664215578020324,
+      "pooled_RMSE": 12.41020520705546,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "pressure_beta0",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 5.0409058286810655,
+      "equal_family_MAE": 4.138521775256471,
+      "equal_family_bias": -3.816526540299307,
+      "pooled_RMSE": 5.0409058286810655,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "pressure_beta1",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 11.805476817611053,
+      "equal_family_MAE": 11.35006047448924,
+      "equal_family_bias": -11.35006047448924,
+      "pooled_RMSE": 11.805476817611053,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "saturation_beta0",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 3.8255937749116,
+      "equal_family_MAE": 3.3792147046355367,
+      "equal_family_bias": -1.6362432331666312,
+      "pooled_RMSE": 3.8255937749116,
+      "infeasible": 0
+    },
+    {
+      "scope": "historical",
+      "model": "saturation_beta1",
+      "test_conditions": 4,
+      "families": 1,
+      "equal_family_RMSE": 12.463727812973799,
+      "equal_family_MAE": 11.718929000055192,
+      "equal_family_bias": -11.718929000055192,
+      "pooled_RMSE": 12.463727812973799,
+      "infeasible": 0
+    }
+  ],
+  "air_hypoxia_wins": {
+    "saturation": 77,
+    "content": 31,
+    "pressure": 0,
+    "constant_D": 0
+  },
+  "boundary_stress": [
+    {
+      "radius": 0.0,
+      "s0": 0.15,
+      "s1": 0.2,
+      "Qa_ratio": 1.416666666666666,
+      "Qd_ratio": 1.0198204755381168,
+      "Qf_ratio": 0.33694808414798694,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.29411764705882326
+    },
+    {
+      "radius": 0.01,
+      "s0": 0.13999999999999999,
+      "s1": 0.19,
+      "Qa_ratio": 1.4409171075837748,
+      "Qd_ratio": 1.0193481529800739,
+      "Qf_ratio": 0.332788231257271,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.3059975520195841
+    },
+    {
+      "radius": 0.01,
+      "s0": 0.13999999999999999,
+      "s1": 0.21000000000000002,
+      "Qa_ratio": 1.6329113924050642,
+      "Qd_ratio": 1.0277731714929161,
+      "Qf_ratio": 0.34121324977011336,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.38759689922480656
+    },
+    {
+      "radius": 0.01,
+      "s0": 0.16,
+      "s1": 0.19,
+      "Qa_ratio": 1.2314814814814814,
+      "Qd_ratio": 1.011885293973474,
+      "Qf_ratio": 0.332788231257271,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.18796992481203
+    },
+    {
+      "radius": 0.01,
+      "s0": 0.16,
+      "s1": 0.21000000000000002,
+      "Qa_ratio": 1.3955696202531644,
+      "Qd_ratio": 1.0203103124863162,
+      "Qf_ratio": 0.34121324977011336,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.28344671201814053
+    },
+    {
+      "radius": 0.02,
+      "s0": 0.13,
+      "s1": 0.18000000000000002,
+      "Qa_ratio": 1.4690431519699803,
+      "Qd_ratio": 1.0188925194363885,
+      "Qf_ratio": 0.32872983819315804,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.31928480204342236
+    },
+    {
+      "radius": 0.02,
+      "s0": 0.13,
+      "s1": 0.22,
+      "Qa_ratio": 1.8875739644970402,
+      "Qd_ratio": 1.0357504598565503,
+      "Qf_ratio": 0.34558777861331985,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.4702194357366768
+    },
+    {
+      "radius": 0.02,
+      "s0": 0.16999999999999998,
+      "s1": 0.18000000000000002,
+      "Qa_ratio": 1.0717360114777617,
+      "Qd_ratio": 1.0039606004601587,
+      "Qf_ratio": 0.32872983819315804,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.06693440428380171
+    },
+    {
+      "radius": 0.02,
+      "s0": 0.16999999999999998,
+      "s1": 0.22,
+      "Qa_ratio": 1.3770739064856707,
+      "Qd_ratio": 1.0208185408803205,
+      "Qf_ratio": 0.34558777861331985,
+      "Pa_PVR_reduction_fixed_driving_pressure": 0.2738225629791893
+    }
+  ],
+  "dimensionless_rule_max_residual": 2.7755575615628914e-16,
+  "reference_epsilon": 0.04756914129148051,
+  "interpretation": "Exploratory comparison; no independent cohort or sampling uncertainty added."
+}

@@ -23,7 +23,7 @@ def reproduce():
     manifest=json.loads((ROOT/'release_sha256.json').read_text(encoding='utf-8'))
     for name,digest in manifest.items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,('File integrity',name)
-    expected={p.relative_to(ROOT).as_posix():read(p) for p in ROOT.rglob('*.csv') if p.parent.name=='results'}
+    expected={p.relative_to(ROOT).as_posix():read(p) for p in ROOT.rglob('*.csv') if p.parent.name=='results' and not {'experimental_validation','selection_extension','review_extension','coupling_extension','heterogeneity_extension','adequacy_extension','applicability_extension','certainty_extension'}.intersection(p.parts)}
     for code in ['aggregate_analysis/code/analyze.py','observation_analysis/code/analyze_observations.py',
                  'identifiability/code/joint_identifiability.py','controlled_exchange/code/reproduce_diagnostic.py',
                  'sensitivity/code/run_experiments.py','common_calibration/code/run.py','common_calibration/code/mechanism.py','robustness/code/run.py']:execute(code)
@@ -77,16 +77,35 @@ def reproduce():
         shutil.copy2(ROOT/'common_calibration/results'/name,report/name)
     execute('sensitivity/reporting/tools/plot_calibration_maps.py')
     assert len(list((report/'figures').glob('*.tif')))==9
+    for suite in ['tests','aggregate_analysis/tests','observation_analysis/tests']:
+        subprocess.run([sys.executable,'-m','unittest','discover','-s',str(ROOT/suite),'-v'],cwd=ROOT,check=True)
+    execute('experimental_validation/code/reproduce_empirical.py')
+    execute('selection_extension/code/reproduce_selection.py')
+    execute('review_extension/code/reproduce_review.py')
+    execute('coupling_extension/code/reproduce_coupling.py')
+    execute('heterogeneity_extension/code/reproduce_heterogeneity.py')
+    execute('adequacy_extension/code/reproduce_adequacy.py')
+    execute('applicability_extension/code/reproduce_applicability.py')
+    execute('certainty_extension/code/reproduce_certainty.py')
     import numpy,scipy,matplotlib
     summary=dict(numerical_csv_files_compared=len(expected),numeric_cells_compared=count,
                  maximum_absolute_csv_difference=maximum,transcribed_source_cells_checked=len(source),
                  numerical_main_tables_verified=[4,5,6,7,8],frozen_transfer_rows_checked=len(display),
-                 main_tables_supplied=10,figures_exported=9,all_checks_passed=True,
+                 benchmark_tables_supplied=10,benchmark_figures_exported=14,total_figures_exported=25,
+                 test_suites=['tests','aggregate_analysis/tests','observation_analysis/tests','experimental_validation/tests','selection_extension/tests','review_extension/tests','coupling_extension/tests','heterogeneity_extension/tests','adequacy_extension/tests','applicability_extension/tests','certainty_extension/tests'],all_checks_passed=True,
                  mechanism_checks=json.loads((ROOT/'common_calibration/results/checks.json').read_text()),
                  robustness_checks=json.loads((ROOT/'robustness/results/summary.json').read_text()),
                  native_kernel_check='comparison with supplied compiled C# nodes; native recompilation is a separate optional command',
                  python=platform.python_version(),numpy=numpy.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__,
-                 elapsed_seconds=time.perf_counter()-start,network_used=False,physiological_validation=False)
+                 empirical_extension=json.loads((ROOT/'experimental_validation/reproduction_summary.json').read_text()),
+                 selection_extension=json.loads((ROOT/'selection_extension/reproduction_summary.json').read_text()),
+                 review_extension=json.loads((ROOT/'review_extension/reproduction_summary.json').read_text()),
+                 coupling_extension=json.loads((ROOT/'coupling_extension/reproduction_summary.json').read_text()),
+                 heterogeneity_extension=json.loads((ROOT/'heterogeneity_extension/reproduction_summary.json').read_text()),
+                 adequacy_extension=json.loads((ROOT/'adequacy_extension/reproduction_summary.json').read_text()),
+                 applicability_extension=json.loads((ROOT/'applicability_extension/reproduction_summary.json').read_text()),
+                 certainty_extension=json.loads((ROOT/'certainty_extension/reproduction_summary.json').read_text()),
+                 elapsed_seconds=time.perf_counter()-start,network_used=False,physiological_validation='Exploratory conditional comparison; no prospective clinical validation')
     (ROOT/'reproduction_summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
 if __name__=='__main__':reproduce()

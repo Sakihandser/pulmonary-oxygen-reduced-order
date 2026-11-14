@@ -1,0 +1,17 @@
+{
+  "observation_rows": 22,
+  "studies": 5,
+  "supporting_studies": 2,
+  "supporting_conditions": 6,
+  "distinct_within_cohort_test_conditions": 11,
+  "individual_LOPO_test_rows": 7,
+  "independent_external_Carta_to_Dantzker_rows": 7,
+  "checks": {
+    "baseline_fit_max_abs": 2.3888446776254568e-11,
+    "predictions_within_inlet_equilibrium": true,
+    "independent_content_ODE_max_ml_dl": 3.448157315233402e-10
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "warning": "No independent pooled participant N; conditional aggregate predictions, possible Zurich overlap; no globally validated best physiological law."
+}

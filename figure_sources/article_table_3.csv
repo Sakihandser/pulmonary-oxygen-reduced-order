@@ -1,0 +1,9 @@
+Model,Air/hypoxia 11,Häfliger and Mélot 7,Including pure O₂ 12
+Effective admixture,2.96,3.00,18.53
+Saturation relaxation,7.49,9.00,89.96
+Content relaxation,7.52,9.00,13.57
+Pressure relaxation,8.56,9.37,20.59
+Fixed conductance,11.70,11.55,48.78
+Baseline Pa held,12.19,12.68,99.67
+Baseline A−a held,17.77,15.00,43.15
+Fitted β for air/hypoxia,3.08,Not separately tuned,Separate inclusive fit: 21.65

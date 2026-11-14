@@ -1,0 +1,8 @@
+Task or condition,Candidate or calculation,Supported conclusion
+Conditional Pa under represented air–hypoxia conditions,Compare proportional saturation and content predictors,Lowest pooled errors in this dataset; not a validated scaling mechanism
+"Closed balance, delivery, changing Hb or high oxygen",Content balance including dissolved oxygen,Conserves oxygen; does not establish a best fitted capacity law
+"Every path has proportional capacity, fixed weights",Fixed content admixture,Exact aggregate relation for any heterogeneity in this class
+Known residual interval; endpoint error W≤δ,An endpoint approximation; homogeneous if using upper residual,Entire class lies within δ of that endpoint
+Sharp interval with δ<W≤2δ,Midpoint of the selected output interval,Meets δ; either extremal endpoint fails
+Sharp interval with W>2δ,Report interval and acquire additional information,No point prediction from this information can guarantee δ
+Regional alveolar differences or changing flow weights,Expand to regional ventilation–perfusion model and obtain constraints,Current certificate does not cover these mechanisms

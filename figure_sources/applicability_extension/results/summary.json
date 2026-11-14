@@ -1,0 +1,191 @@
+{
+  "nonhyperoxic_pairs": 11,
+  "nominal_incompatible": 10,
+  "compatible_pairs": [
+    "M02:nifedipine"
+  ],
+  "thermodilution_separations": [
+    0.0,
+    1.0298553503866117,
+    0.0,
+    0.0
+  ],
+  "reported_saturation_nonhyperoxic_pairs": 7,
+  "reported_saturation_incompatible": 7,
+  "sensitivity_summary": [
+    {
+      "unit": "Carta2022",
+      "condition": "hypoxia",
+      "FiO2": 0.15,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0010872917587116532,
+      "max_residual_halfwidth": 0.039567249413295605
+    },
+    {
+      "unit": "Carta2022",
+      "condition": "hyperoxia",
+      "FiO2": 1.0,
+      "compatible_scenarios": 9,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0,
+      "max_residual_halfwidth": 0.04290601341228042
+    },
+    {
+      "unit": "Haefliger2025",
+      "condition": "H",
+      "FiO2": 0.15,
+      "compatible_scenarios": 3,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0,
+      "max_residual_halfwidth": 0.04598677216175241
+    },
+    {
+      "unit": "Haefliger2025",
+      "condition": "NS",
+      "FiO2": 0.21,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0006428986029979392,
+      "max_residual_halfwidth": 0.0014534277313725114
+    },
+    {
+      "unit": "Haefliger2025",
+      "condition": "HS",
+      "FiO2": 0.15,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0029722305245535744,
+      "max_residual_halfwidth": 0.02870538172779504
+    },
+    {
+      "unit": "Lichtblau2021",
+      "condition": "acetazolamide_air",
+      "FiO2": 0.21,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0038512592967530207,
+      "max_residual_halfwidth": 0.007737923933009469
+    },
+    {
+      "unit": "Lichtblau2021",
+      "condition": "placebo_hypoxia",
+      "FiO2": 0.15,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.014981119963710697,
+      "max_residual_halfwidth": 0.05607784875233592
+    },
+    {
+      "unit": "Lichtblau2021",
+      "condition": "acetazolamide_hypoxia",
+      "FiO2": 0.15,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.006955656192783114,
+      "max_residual_halfwidth": 0.053581607232079734
+    },
+    {
+      "unit": "M01_visit1",
+      "condition": "PGE1",
+      "FiO2": 0.21,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0017449919842880413,
+      "max_residual_halfwidth": 0.020842086073736305
+    },
+    {
+      "unit": "M01_visit1",
+      "condition": "hydralazine",
+      "FiO2": 0.21,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.027917714502515265,
+      "max_residual_halfwidth": 0.05476010557983755
+    },
+    {
+      "unit": "M01_visit2",
+      "condition": "nifedipine",
+      "FiO2": 0.21,
+      "compatible_scenarios": 0,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.01189966812696061,
+      "max_residual_halfwidth": 0.026604447987699426
+    },
+    {
+      "unit": "M02",
+      "condition": "nifedipine",
+      "FiO2": 0.21,
+      "compatible_scenarios": 108,
+      "scenarios": 108,
+      "min_residual_halfwidth": 0.0,
+      "max_residual_halfwidth": 0.0
+    }
+  ],
+  "secondary": [
+    {
+      "unit": "Lichtblau2025",
+      "study": "Lichtblau2025",
+      "condition": "hypoxia_rest",
+      "FiO2": 0.15,
+      "primary": 0,
+      "flow_method": "direct_Fick",
+      "granularity": "condition_mean",
+      "r": 0.9361702127659575,
+      "s0": 0.11762779166812556,
+      "s1": 0.060396889685819105,
+      "s_lower": 0.10165660970274351,
+      "s_upper": 0.11762779166812556,
+      "compatible": 0,
+      "residual_halfwidth": 0.02152274232932324,
+      "homogeneous_beta": 4.110770444182011,
+      "convention": "hill",
+      "changed_P50_shift": 0.0,
+      "Pa_halfwidth_mmHg": 1.8179350666538383,
+      "compatible_Qratio_plusminus_10percent": 0
+    },
+    {
+      "unit": "Lichtblau2025",
+      "study": "Lichtblau2025",
+      "condition": "air_exercise",
+      "FiO2": 0.21,
+      "primary": 0,
+      "flow_method": "direct_Fick",
+      "granularity": "condition_mean",
+      "r": 1.5319148936170213,
+      "s0": 0.11762779166812556,
+      "s1": 0.11498930491161073,
+      "s_lower": 0.11762779166812556,
+      "s_upper": 0.2473144811354911,
+      "compatible": 0,
+      "residual_halfwidth": 0.0013192433777574133,
+      "homogeneous_beta": -0.024721336491482657,
+      "convention": "hill",
+      "changed_P50_shift": 0.0,
+      "Pa_halfwidth_mmHg": 0.2035768620663918,
+      "compatible_Qratio_plusminus_10percent": 0
+    },
+    {
+      "unit": "Lichtblau2025",
+      "study": "Lichtblau2025",
+      "condition": "hypoxia_exercise",
+      "FiO2": 0.15,
+      "primary": 0,
+      "flow_method": "direct_Fick",
+      "granularity": "condition_mean",
+      "r": 1.4893617021276595,
+      "s0": 0.11762779166812556,
+      "s1": 0.17570407534128876,
+      "s_lower": 0.11762779166812556,
+      "s_upper": 0.23763686772634698,
+      "compatible": 1,
+      "residual_halfwidth": 0.0,
+      "homogeneous_beta": 0.5212267379720553,
+      "convention": "hill",
+      "changed_P50_shift": 0.0,
+      "Pa_halfwidth_mmHg": 0.0,
+      "compatible_Qratio_plusminus_10percent": 1
+    }
+  ],
+  "interpretation": "Exploratory aggregate compatibility audit; not statistical rejection, independent validation or new physiological mechanism."
+}

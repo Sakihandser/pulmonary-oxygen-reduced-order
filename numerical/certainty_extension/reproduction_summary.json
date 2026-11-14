@@ -1,0 +1,9 @@
+{
+  "csv_files": 9,
+  "numeric_cells": 42873,
+  "maximum_absolute_difference": 0.0,
+  "tests": 13,
+  "all_checks_passed": true,
+  "elapsed_seconds": 12.881334600009723,
+  "interpretation": "Numerical verification of specified classes, not clinical validation"
+}
