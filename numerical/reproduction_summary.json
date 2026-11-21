@@ -20,7 +20,7 @@
   "frozen_transfer_rows_checked": 7,
   "benchmark_tables_supplied": 10,
   "benchmark_figures_exported": 14,
-  "total_figures_exported": 26,
+  "total_figures_exported": 27,
   "test_suites": [
     "tests",
     "aggregate_analysis/tests",
@@ -64,7 +64,7 @@
     "interpretation": "Deterministic bounded target and output scenarios; marginal envelope separation is sufficient and conservative for a shared target. No confidence level or clinical power.",
     "all_checks_passed": true,
     "python": "3.12.14",
-    "elapsed_seconds": 40.64495950000128
+    "elapsed_seconds": 42.03650790001848
   },
   "native_kernel_check": "comparison with supplied compiled C# nodes; native recompilation is a separate optional command",
   "python": "3.12.14",
@@ -85,7 +85,7 @@
       "Fig11",
       "Fig12"
     ],
-    "elapsed_seconds": 16.474543799995445,
+    "elapsed_seconds": 18.375619200000074,
     "network_used": false,
     "interpretation": "Exploratory conditional endpoint comparison; not clinical validation."
   },
@@ -99,7 +99,7 @@
     "main_figures": 5,
     "flowchart_text_inside_boxes": true,
     "network_used": false,
-    "elapsed_seconds": 9.427203200000804
+    "elapsed_seconds": 10.71707910002442
   },
   "review_extension": {
     "result_csv_files": 10,
@@ -129,7 +129,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 12,
     "all_checks_passed": true,
-    "elapsed_seconds": 5.6586835000198334,
+    "elapsed_seconds": 5.276667400001315,
     "interpretation": "Numerical verification only"
   },
   "applicability_extension": {
@@ -138,7 +138,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 10,
     "all_checks_passed": true,
-    "elapsed_seconds": 3.3363327000115532,
+    "elapsed_seconds": 3.4248772999853827,
     "interpretation": "Numerical verification only"
   },
   "certainty_extension": {
@@ -147,12 +147,12 @@
     "maximum_absolute_difference": 0.0,
     "tests": 13,
     "all_checks_passed": true,
-    "elapsed_seconds": 11.65495940000983,
+    "elapsed_seconds": 11.017225400020834,
     "interpretation": "Numerical verification of specified classes, not clinical validation"
   },
-  "elapsed_seconds": 298.6565498000127,
+  "elapsed_seconds": 310.410138599982,
   "network_used": false,
   "physiological_validation": "Exploratory conditional comparison; no prospective clinical validation",
-  "oxygen_decision_csvs": 9,
+  "oxygen_decision_csvs": 10,
   "oxygen_decision_checks_passed": true
 }

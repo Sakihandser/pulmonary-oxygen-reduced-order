@@ -1,6 +1,6 @@
 # Arterial oxygenation in pulmonary hypertension
 
-Run `python reproduce.py` from a fresh extraction with requirements-lock.txt installed. The runner checks 146 legacy result CSVs and nine oxygen-analysis CSVs, runs 137 legacy unit tests plus the oxygen-decision regression checks, and exports 26 submitted figures. Tables 1–12 are supplied in Figure_Sources.zip. Figure 12 and Supplement V use oxygen_decisions/verify.py and the nine CSVs documented in oxygen_decisions/README.md. Figures 10–11 use certainty_extension. The distributed manifest identifies the exact analysis.
+Run `python reproduce.py` from a fresh extraction with requirements-lock.txt installed. The runner checks 146 legacy result CSVs and ten oxygen-analysis CSVs, runs 137 legacy unit tests plus the oxygen-decision regression checks, and exports 27 submitted figures. Tables 1–12 are supplied in Figure_Sources.zip. Figures 12–13 and Supplement V use oxygen_decisions/verify.py and the ten CSVs documented in oxygen_decisions/README.md. Figures 10–11 use certainty_extension. The distributed manifest identifies the exact analysis.
 
 ## Archived module descriptions and historical numbering
 

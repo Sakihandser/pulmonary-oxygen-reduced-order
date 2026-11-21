@@ -2,6 +2,8 @@
 
 Numerical analysis, attributed study summaries and figure sources for the manuscript by Mingze Hong and Bojun Yang. This release adds external exercise and drug challenges to tests of arterial oxygenation, metabolic demand and perfusion redistribution. The new studies, conditional predictions, comparison rules and failed comparisons are documented in [External validation](numerical/oxygen_decisions/EXTERNAL_VALIDATION.md).
 
+Across 324 gas-conversion settings in an external primary pulmonary hypertension cohort, every admissible fixed-share model predicted a fall in arterial oxygen pressure during exercise. The dobutamine range spanned the resting pressure at every setting. These comparisons use group means and the measured intervention mixed-venous oxygen. The [direction and comparator table](numerical/oxygen_decisions/external_direction_summary.csv) contains the estimates, counts and leave-one-intervention-out errors behind Figure 13.
+
 ## Reproduce the numerical results
 
 From a fresh checkout:
@@ -12,7 +14,7 @@ python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-The runner verifies the release SHA-256 manifest, compares 146 prior result CSVs plus nine oxygen-analysis outputs, regenerates the figures and runs 137 unit tests plus additional regression and allocation-bound checks. It runs offline after dependency installation and writes generated outputs to the working copy. The [result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) links results to their inputs and scripts. The [multi-state analysis protocol](numerical/certainty_extension/PROTOCOL.md) describes the common-model constraints, finite counterexamples and capacity bounds underlying the synthetic examples.
+The runner verifies the release SHA-256 manifest, compares 146 prior result CSVs plus ten oxygen-analysis outputs, regenerates the figures and runs 137 unit tests plus additional regression and allocation-bound checks. It runs offline after dependency installation and writes generated outputs to the working copy. The [result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) links results to their inputs and scripts. The [multi-state analysis protocol](numerical/certainty_extension/PROTOCOL.md) describes the common-model constraints, finite counterexamples and capacity bounds underlying the synthetic examples.
 
 ## Regenerate the figures
 
@@ -24,7 +26,7 @@ python -m pip install -r requirements-lock.txt
 python reproduce_final_figures.py
 ```
 
-This regenerates 26 submission TIFFs at 600 dpi in `submission_figures/` from the frozen plotting data. The directory also contains editable SVGs and CSVs for all 12 main tables. See the [figure and table source guide](figure_sources/README_S3.md).
+This regenerates 27 submission TIFFs at 600 dpi in `submission_figures/` from the frozen plotting data. The directory also contains editable SVGs and CSVs for all 12 main tables. See the [figure and table source guide](figure_sources/README_S3.md).
 
 ## Data, licensing and citation
 

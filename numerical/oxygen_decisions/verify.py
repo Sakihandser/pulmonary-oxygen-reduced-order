@@ -49,7 +49,7 @@ def tests():
 
 if __name__=='__main__':
     # Compare output rows using the full archived schema and numeric tolerances.
-    files=['observed.csv','witnesses.csv','redistribution.csv','margin_grid.csv','allocation_bound.csv','pah_exercise_budget.csv','external_pressure_scores.csv','external_saturation_scores.csv','external_partition_scores.csv']
+    files=['observed.csv','witnesses.csv','redistribution.csv','margin_grid.csv','allocation_bound.csv','pah_exercise_budget.csv','external_pressure_scores.csv','external_saturation_scores.csv','external_partition_scores.csv','external_direction_summary.csv']
     expected={f:read(HERE/f) for f in files if (HERE/f).exists()}
     observed()
     synthetic()
@@ -58,6 +58,7 @@ if __name__=='__main__':
     baseline = float(exercise[0]["Cav_ml_dL"])
     write("pah_exercise_budget.csv", [dict(stage=r["stage"], fixed_endpoint_odds_ratio_ceiling=baseline/float(r["Cav_ml_dL"])) for r in exercise])
     subprocess.run([sys.executable, str(HERE / "external_validation.py")], check=True)
+    subprocess.run([sys.executable, str(HERE / "external_direction.py")], check=True)
     tests()
     for filename,old in expected.items():
         new=read(HERE/filename)

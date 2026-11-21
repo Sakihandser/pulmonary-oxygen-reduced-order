@@ -25,4 +25,6 @@ for path in D.glob('*.tif'):
 
 subprocess.run([sys.executable,str(R/'oxygen_decisions/plot_decisions.py')],check=True)
 shutil.copy2(R/'oxygen_decisions/Fig12.tif',C/'Fig12.tif')
-print('Reproduced all 26 figures')
+subprocess.run([sys.executable,str(R/'oxygen_decisions/external_direction.py')],check=True)
+shutil.copy2(R/'oxygen_decisions/Fig13.tif',C/'Fig13.tif')
+print('Reproduced all 27 figures')
