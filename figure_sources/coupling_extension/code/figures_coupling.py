@@ -19,5 +19,5 @@ s=np.linspace(.01,.8,160);crit=(1-s)/(-np.log(s));ax=axs[2];ax.fill_between(s,0,
 ax.scatter([.2],[(1-.2)/-np.log(.2)],s=18,color='black');ax.annotate('s = 0.20\nβcrit = 0.497',xy=(.2,(1-.2)/-np.log(.2)),xytext=(.32,.36),fontsize=8,arrowprops={'arrowstyle':'-','lw':.7})
 ax.text(.16,.12,'Content rises',fontsize=8);ax.text(.12,.91,'Content falls',fontsize=8)
 ax.set(title='C  Local response to flow',xlabel='Current effective fraction s',ylabel='Scaling exponent β',xlim=(.01,.8),ylim=(0,1))
-fig.savefig(F/'Fig6.png',dpi=180,bbox_inches='tight');fig.savefig(F/'Fig6.tif',dpi=300,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'});fig.savefig(F/'Fig6.svg',bbox_inches='tight');plt.close(fig)
+fig.savefig(F/'Fig6.png',dpi=180,bbox_inches='tight');fig.savefig(F/'Fig6.tif',dpi=600,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'});fig.savefig(F/'Fig6.svg',bbox_inches='tight');plt.close(fig)
 print('Exported final Figure 6')

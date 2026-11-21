@@ -42,6 +42,6 @@ def main():
     dest=R/'figures';dest.mkdir(exist_ok=True)
     for ext in ['png','tif','svg']:
         kwargs={'pil_kwargs':{'compression':'tiff_lzw'}} if ext=='tif' else {}
-        fig.savefig(dest/f'Fig8.{ext}',dpi=300,**kwargs)
+        fig.savefig(dest/f'Fig8.{ext}',dpi=600,**kwargs)
     plt.close(fig)
 if __name__=='__main__':main()

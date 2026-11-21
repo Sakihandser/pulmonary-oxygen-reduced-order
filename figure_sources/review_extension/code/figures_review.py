@@ -12,7 +12,7 @@ def read(n):
  with (R/'results'/n).open(encoding='utf-8') as f:return list(csv.DictReader(f))
 def save(fig,n):
  fig.savefig(F/f'Fig{n}.png',dpi=180,bbox_inches='tight')
- fig.savefig(F/f'Fig{n}.tif',dpi=300,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'})
+ fig.savefig(F/f'Fig{n}.tif',dpi=600,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'})
  fig.savefig(F/f'Fig{n}.svg',bbox_inches='tight');plt.close(fig)
 def fig1():
  fig,ax=plt.subplots(figsize=(7,6.4));ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')

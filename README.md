@@ -1,6 +1,6 @@
-# Decision Consistency and Mechanistic Ambiguity in Pulmonary Oxygen Models
+# Arterial Oxygenation in Pulmonary Hypertension: Decision Margins and Mechanistic Ambiguity in Reduced Models
 
-Research software, numerical data and figure sources for the study by Mingze Hong and Bojun Yang. The current snapshot accompanies the v31 manuscript. It examines when pulmonary oxygen models that fit the same observations agree on a specified decision and when different mechanisms remain compatible with the data.
+Numerical analysis, attributed study summaries and figure sources for the manuscript by Mingze Hong and Bojun Yang. This release adds external exercise and drug challenges to tests of arterial oxygenation, metabolic demand and perfusion redistribution. The new studies, conditional predictions, comparison rules and failed comparisons are documented in [External validation](numerical/oxygen_decisions/EXTERNAL_VALIDATION.md).
 
 ## Reproduce the numerical results
 
@@ -12,7 +12,7 @@ python -m pip install -r requirements-lock.txt
 python reproduce.py
 ```
 
-The runner verifies the release SHA-256 manifest, compares 142 result CSVs, regenerates 25 figures and runs 131 tests across 11 suites. It runs offline after dependency installation and writes generated outputs to the working copy. The [result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) links results to their inputs and scripts. The [multi-state analysis protocol](numerical/certainty_extension/PROTOCOL.md) describes the common-model constraints, finite counterexamples and capacity bounds added in this snapshot.
+The runner verifies the release SHA-256 manifest, compares 146 prior result CSVs plus nine oxygen-analysis outputs, regenerates the figures and runs 137 unit tests plus additional regression and allocation-bound checks. It runs offline after dependency installation and writes generated outputs to the working copy. The [result-to-code index](numerical/RESULT_REPRODUCTION_INDEX.md) links results to their inputs and scripts. The [multi-state analysis protocol](numerical/certainty_extension/PROTOCOL.md) describes the common-model constraints, finite counterexamples and capacity bounds underlying the synthetic examples.
 
 ## Regenerate the figures
 
@@ -24,7 +24,7 @@ python -m pip install -r requirements-lock.txt
 python reproduce_final_figures.py
 ```
 
-This regenerates 25 submission TIFFs in `submission_figures/` from the frozen plotting data. The directory also contains editable SVGs and CSVs for all 12 main tables. See the [figure and table source guide](figure_sources/README_S3.md).
+This regenerates 26 submission TIFFs at 600 dpi in `submission_figures/` from the frozen plotting data. The directory also contains editable SVGs and CSVs for all 12 main tables. See the [figure and table source guide](figure_sources/README_S3.md).
 
 ## Data, licensing and citation
 

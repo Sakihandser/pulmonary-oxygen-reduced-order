@@ -1,0 +1,5 @@
+doi,table,n,condition,baseline_CI,baseline_Pa,baseline_Pv,baseline_PaCO2,query_CI,query_Pv,query_PaCO2,observed_Pa
+10.1016/S0735-1097(98)00091-6,1,11,exercise,2.2,64,35,28,3.1,28,26,60
+10.1016/S0735-1097(98)00091-6,1,11,dobutamine,2.2,64,35,28,2.8,37,26,68
+10.1016/S0735-1097(98)00091-6,1,11,nitric_oxide,2.2,64,35,28,2.2,34,28,61
+10.1016/S0735-1097(98)00091-6,2,6,prostacyclin,1.8,57,34,27,2.5,34,24,56

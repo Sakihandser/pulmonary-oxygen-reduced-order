@@ -20,5 +20,5 @@ fig.tight_layout(pad=1.1,w_pad=1.7)
 out=R/'figures';out.mkdir(exist_ok=True)
 for ext in ['png','tif','svg']:
     kwargs={'metadata':{'Date':None}} if ext=='svg' else {}
-    fig.savefig(out/f'Fig7.{ext}',dpi=300,**kwargs)
+    fig.savefig(out/f'Fig7.{ext}',dpi=600,**kwargs)
 plt.close(fig)

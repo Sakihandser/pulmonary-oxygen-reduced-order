@@ -11,7 +11,7 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1];FIG=ROOT/'figures';FIG.mkdir(exist_ok=True)
 def read(n):return list(csv.DictReader((ROOT/n).open(encoding='utf-8-sig')))
 def save(fig,n):
-    fig.savefig(FIG/f'Fig{n}.png',dpi=300);fig.savefig(FIG/f'Fig{n}.svg')
+    fig.savefig(FIG/f'Fig{n}.png',dpi=600);fig.savefig(FIG/f'Fig{n}.svg')
     import io
     buf=io.BytesIO();fig.savefig(buf,format='png',dpi=600);buf.seek(0)
     with Image.open(buf) as im:im.convert('RGB').save(FIG/f'Fig{n}.tif',compression='tiff_lzw',dpi=(600,600))

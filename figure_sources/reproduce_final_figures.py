@@ -21,4 +21,8 @@ for path in D.glob('*.tif'):
     with Image.open(path) as im:
         im.load();copy=im.copy();dpi=im.info.get('dpi',(300,300))
     copy.save(C/path.name,compression='tiff_lzw',dpi=dpi)
-print('Regenerated 25 submitted figures with lossless TIFF compression')
+
+
+subprocess.run([sys.executable,str(R/'oxygen_decisions/plot_decisions.py')],check=True)
+shutil.copy2(R/'oxygen_decisions/Fig12.tif',C/'Fig12.tif')
+print('Reproduced all 26 figures')

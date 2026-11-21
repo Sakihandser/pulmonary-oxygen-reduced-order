@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-26T07:05:01.211023</dc:date>
+    <dc:date>2026-11-21T22:41:03.651100</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 13.16016 23.2128 13.16016 24.3072
 L 13.16016 109.6704 
 Q 13.16016 110.7648 15.74424 110.7648 
 z
-" clip-path="url(#p2df2795d71)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
+" clip-path="url(#p600703030f)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 191.46168 110.7648 
@@ -53,7 +53,7 @@ Q 188.8776 23.2128 188.8776 24.3072
 L 188.8776 109.6704 
 Q 188.8776 110.7648 191.46168 110.7648 
 z
-" clip-path="url(#p2df2795d71)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
+" clip-path="url(#p600703030f)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 367.17912 110.7648 
@@ -66,7 +66,7 @@ Q 364.59504 23.2128 364.59504 24.3072
 L 364.59504 109.6704 
 Q 364.59504 110.7648 367.17912 110.7648 
 z
-" clip-path="url(#p2df2795d71)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
+" clip-path="url(#p600703030f)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 191.46168 215.8272 
@@ -79,7 +79,7 @@ Q 188.8776 145.7856 188.8776 146.88
 L 188.8776 214.7328 
 Q 188.8776 215.8272 191.46168 215.8272 
 z
-" clip-path="url(#p2df2795d71)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
+" clip-path="url(#p600703030f)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 367.17912 215.8272 
@@ -92,7 +92,7 @@ Q 364.59504 145.7856 364.59504 146.88
 L 364.59504 214.7328 
 Q 364.59504 215.8272 367.17912 215.8272 
 z
-" clip-path="url(#p2df2795d71)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
+" clip-path="url(#p600703030f)" style="fill: #edf2f6; stroke: #315b78; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- Fixed five-lobe flows -->
@@ -1584,7 +1584,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p2df2795d71">
+  <clipPath id="p600703030f">
    <rect x="7.992" y="4.608" width="516.816" height="218.88"/>
   </clipPath>
  </defs>

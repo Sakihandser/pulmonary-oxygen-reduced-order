@@ -1,0 +1,4 @@
+doi,source_table,stage,Sa_percent,Sv_percent,VO2_ml_min,Q_fick_L_min,Cav_ml_dL
+10.1161/JAHA.122.026890,2,rest_leg_raise,96,74,239,6.4,3.7
+10.1161/JAHA.122.026890,2,submaximal,96,58,690,11.0,6.7
+10.1161/JAHA.122.026890,2,peak,95,50,974,13.0,7.9

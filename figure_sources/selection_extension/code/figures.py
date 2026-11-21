@@ -19,7 +19,7 @@ def save(fig,n):
   for patch,label in fig._label_boxes:
    bounds=patch.get_window_extent(renderer);text_bounds=label.get_window_extent(renderer)
    assert bounds.x0+4<=text_bounds.x0 and bounds.x1-4>=text_bounds.x1 and bounds.y0+4<=text_bounds.y0 and bounds.y1-4>=text_bounds.y1,('Flowchart text overflow',label.get_text())
- fig.savefig(F/f'Fig{n}.png',dpi=180,bbox_inches='tight');fig.savefig(F/f'Fig{n}.tif',dpi=300,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'});fig.savefig(F/f'Fig{n}.svg',bbox_inches='tight');plt.close(fig)
+ fig.savefig(F/f'Fig{n}.png',dpi=180,bbox_inches='tight');fig.savefig(F/f'Fig{n}.tif',dpi=600,bbox_inches='tight',pil_kwargs={'compression':'tiff_lzw'});fig.savefig(F/f'Fig{n}.svg',bbox_inches='tight');plt.close(fig)
 def box(ax,x,y,w,h,text,color='#ECF2F5',fontsize=9):
  patch=FancyBboxPatch((x,y),w,h,boxstyle='round,pad=.012',facecolor=color,edgecolor='#98A9B6',linewidth=.7);ax.add_patch(patch)
  label=ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=fontsize)

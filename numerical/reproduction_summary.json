@@ -1,4 +1,11 @@
 {
+  "measurement_extension": {
+    "csv_files": 4,
+    "numeric_cells": 404,
+    "max_absolute_difference": 0,
+    "tests": 6,
+    "all_checks_passed": true
+  },
   "numerical_csv_files_compared": 58,
   "numeric_cells_compared": 146994,
   "maximum_absolute_csv_difference": 0.0,
@@ -13,7 +20,7 @@
   "frozen_transfer_rows_checked": 7,
   "benchmark_tables_supplied": 10,
   "benchmark_figures_exported": 14,
-  "total_figures_exported": 25,
+  "total_figures_exported": 26,
   "test_suites": [
     "tests",
     "aggregate_analysis/tests",
@@ -25,7 +32,8 @@
     "heterogeneity_extension/tests",
     "adequacy_extension/tests",
     "applicability_extension/tests",
-    "certainty_extension/tests"
+    "certainty_extension/tests",
+    "measurement_extension/tests"
   ],
   "all_checks_passed": true,
   "mechanism_checks": {
@@ -56,7 +64,7 @@
     "interpretation": "Deterministic bounded target and output scenarios; marginal envelope separation is sufficient and conservative for a shared target. No confidence level or clinical power.",
     "all_checks_passed": true,
     "python": "3.12.14",
-    "elapsed_seconds": 43.19333760000882
+    "elapsed_seconds": 40.64495950000128
   },
   "native_kernel_check": "comparison with supplied compiled C# nodes; native recompilation is a separate optional command",
   "python": "3.12.14",
@@ -77,7 +85,7 @@
       "Fig11",
       "Fig12"
     ],
-    "elapsed_seconds": 22.861933699983638,
+    "elapsed_seconds": 16.474543799995445,
     "network_used": false,
     "interpretation": "Exploratory conditional endpoint comparison; not clinical validation."
   },
@@ -91,7 +99,7 @@
     "main_figures": 5,
     "flowchart_text_inside_boxes": true,
     "network_used": false,
-    "elapsed_seconds": 11.87378369999351
+    "elapsed_seconds": 9.427203200000804
   },
   "review_extension": {
     "result_csv_files": 10,
@@ -121,7 +129,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 12,
     "all_checks_passed": true,
-    "elapsed_seconds": 6.8980124999943655,
+    "elapsed_seconds": 5.6586835000198334,
     "interpretation": "Numerical verification only"
   },
   "applicability_extension": {
@@ -130,7 +138,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 10,
     "all_checks_passed": true,
-    "elapsed_seconds": 4.762993899988942,
+    "elapsed_seconds": 3.3363327000115532,
     "interpretation": "Numerical verification only"
   },
   "certainty_extension": {
@@ -139,10 +147,12 @@
     "maximum_absolute_difference": 0.0,
     "tests": 13,
     "all_checks_passed": true,
-    "elapsed_seconds": 12.353721799998311,
+    "elapsed_seconds": 11.65495940000983,
     "interpretation": "Numerical verification of specified classes, not clinical validation"
   },
-  "elapsed_seconds": 288.3583010000002,
+  "elapsed_seconds": 298.6565498000127,
   "network_used": false,
-  "physiological_validation": "Exploratory conditional comparison; no prospective clinical validation"
+  "physiological_validation": "Exploratory conditional comparison; no prospective clinical validation",
+  "oxygen_decision_csvs": 9,
+  "oxygen_decision_checks_passed": true
 }

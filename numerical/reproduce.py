@@ -23,7 +23,7 @@ def reproduce():
     manifest=json.loads((ROOT/'release_sha256.json').read_text(encoding='utf-8'))
     for name,digest in manifest.items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,('File integrity',name)
-    expected={p.relative_to(ROOT).as_posix():read(p) for p in ROOT.rglob('*.csv') if p.parent.name=='results' and not {'experimental_validation','selection_extension','review_extension','coupling_extension','heterogeneity_extension','adequacy_extension','applicability_extension','certainty_extension'}.intersection(p.parts)}
+    expected={p.relative_to(ROOT).as_posix():read(p) for p in ROOT.rglob('*.csv') if p.parent.name=='results' and not {'experimental_validation','selection_extension','review_extension','coupling_extension','heterogeneity_extension','adequacy_extension','applicability_extension','certainty_extension','measurement_extension'}.intersection(p.parts)}
     for code in ['aggregate_analysis/code/analyze.py','observation_analysis/code/analyze_observations.py',
                  'identifiability/code/joint_identifiability.py','controlled_exchange/code/reproduce_diagnostic.py',
                  'sensitivity/code/run_experiments.py','common_calibration/code/run.py','common_calibration/code/mechanism.py','robustness/code/run.py']:execute(code)
@@ -87,12 +87,14 @@ def reproduce():
     execute('adequacy_extension/code/reproduce_adequacy.py')
     execute('applicability_extension/code/reproduce_applicability.py')
     execute('certainty_extension/code/reproduce_certainty.py')
+    execute('measurement_extension/code/reproduce_measurement.py')
+    execute('oxygen_decisions/verify.py')
     import numpy,scipy,matplotlib
-    summary=dict(numerical_csv_files_compared=len(expected),numeric_cells_compared=count,
+    summary=dict(measurement_extension=json.loads((ROOT/'measurement_extension/reproduction_summary.json').read_text()),numerical_csv_files_compared=len(expected),numeric_cells_compared=count,
                  maximum_absolute_csv_difference=maximum,transcribed_source_cells_checked=len(source),
                  numerical_main_tables_verified=[4,5,6,7,8],frozen_transfer_rows_checked=len(display),
                  benchmark_tables_supplied=10,benchmark_figures_exported=14,total_figures_exported=25,
-                 test_suites=['tests','aggregate_analysis/tests','observation_analysis/tests','experimental_validation/tests','selection_extension/tests','review_extension/tests','coupling_extension/tests','heterogeneity_extension/tests','adequacy_extension/tests','applicability_extension/tests','certainty_extension/tests'],all_checks_passed=True,
+                 test_suites=['tests','aggregate_analysis/tests','observation_analysis/tests','experimental_validation/tests','selection_extension/tests','review_extension/tests','coupling_extension/tests','heterogeneity_extension/tests','adequacy_extension/tests','applicability_extension/tests','certainty_extension/tests','measurement_extension/tests'],all_checks_passed=True,
                  mechanism_checks=json.loads((ROOT/'common_calibration/results/checks.json').read_text()),
                  robustness_checks=json.loads((ROOT/'robustness/results/summary.json').read_text()),
                  native_kernel_check='comparison with supplied compiled C# nodes; native recompilation is a separate optional command',
@@ -106,6 +108,7 @@ def reproduce():
                  applicability_extension=json.loads((ROOT/'applicability_extension/reproduction_summary.json').read_text()),
                  certainty_extension=json.loads((ROOT/'certainty_extension/reproduction_summary.json').read_text()),
                  elapsed_seconds=time.perf_counter()-start,network_used=False,physiological_validation='Exploratory conditional comparison; no prospective clinical validation')
+    summary.update(oxygen_decision_csvs=9, oxygen_decision_checks_passed=True, total_figures_exported=26)
     (ROOT/'reproduction_summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
 if __name__=='__main__':reproduce()

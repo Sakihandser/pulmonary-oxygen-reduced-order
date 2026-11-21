@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T13:05:24.056812</dc:date>
+    <dc:date>2026-11-21T22:41:33.890509</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 14.2308 17.134848 14.2308 21.39264
 L 14.2308 63.97056 
 Q 14.2308 68.228352 18.918 68.228352 
 z
-" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pdf685f38b4)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 18.918 153.384192 
@@ -53,7 +53,7 @@ Q 14.2308 84.549888 14.2308 88.80768
 L 14.2308 149.1264 
 Q 14.2308 153.384192 18.918 153.384192 
 z
-" clip-path="url(#p261ed302f6)" style="fill: #ddf0eb; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pdf685f38b4)" style="fill: #ddf0eb; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 218.124 153.384192 
@@ -66,7 +66,7 @@ Q 213.4368 84.549888 213.4368 88.80768
 L 213.4368 149.1264 
 Q 213.4368 153.384192 218.124 153.384192 
 z
-" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pdf685f38b4)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 18.918 245.636352 
@@ -79,7 +79,7 @@ Q 14.2308 173.253888 14.2308 177.51168
 L 14.2308 241.37856 
 Q 14.2308 245.636352 18.918 245.636352 
 z
-" clip-path="url(#p261ed302f6)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pdf685f38b4)" style="fill: #ecf2f5; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 18.918 341.436672 
@@ -92,7 +92,7 @@ Q 14.2308 269.054208 14.2308 273.312
 L 14.2308 337.17888 
 Q 14.2308 341.436672 18.918 341.436672 
 z
-" clip-path="url(#p261ed302f6)" style="fill: #e8eef6; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pdf685f38b4)" style="fill: #e8eef6; stroke: #98a9b6; stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(92.769609 34.217381)">37 published quantitative records from 8 studies</text>
@@ -164,7 +164,7 @@ L 200.7 266.595219
   </g>
  </g>
  <defs>
-  <clipPath id="p261ed302f6">
+  <clipPath id="pdf685f38b4">
    <rect x="7.2" y="7.2" width="390.6" height="354.816"/>
   </clipPath>
  </defs>

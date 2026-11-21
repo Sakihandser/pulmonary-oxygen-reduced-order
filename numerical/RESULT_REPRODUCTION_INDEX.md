@@ -1,3 +1,9 @@
+# Arterial oxygenation in pulmonary hypertension
+
+Run `python reproduce.py` from a fresh extraction with requirements-lock.txt installed. The runner checks 146 legacy result CSVs and nine oxygen-analysis CSVs, runs 137 legacy unit tests plus the oxygen-decision regression checks, and exports 26 submitted figures. Tables 1–12 are supplied in Figure_Sources.zip. Figure 12 and Supplement V use oxygen_decisions/verify.py and the nine CSVs documented in oxygen_decisions/README.md. Figures 10–11 use certainty_extension. The distributed manifest identifies the exact analysis.
+
+## Archived module descriptions and historical numbering
+
 # Current observed-state audit
 
 Sections 2.8 and 3.8, Figure 9, Table 10 and Supplement S use applicability_extension/results: pair_compatibility.csv, prediction_separation.csv, reported_saturation_audit.csv, input_sensitivity.csv, state_curve_sensitivity.csv, sensitivity_summary.csv and measurement_separation.csv. Root reproduction checks 142 result CSVs and 131 tests. The audit does not add observations or independently validate the structural model.
@@ -75,3 +81,5 @@ Sections 2.10, 3.11, 4.7 and Supplement L (Tables S33–S36) use `experimental_v
 The applicability_extension adds seven diagnostic CSVs, 10 tests and Figure 9. It is an exploratory audit of observed PH states, not new patients or independent clinical validation. See its PROTOCOL.md and README.md.
 
 The certainty_extension adds nine CSVs, 13 tests and Figures 10–11. It evaluates common multi-state model constraints, finite countermodels and capacity exclusion. Older section counts refer to their individual modules. No new patients or independent clinical validation are claimed.
+
+Measurement extension: run `python measurement_extension/code/reproduce_measurement.py`. Four additional CSV outputs and six tests are included in the full runner. The preceding 142-result-CSV and 131-test totals become 146 and 137. Measurement error boxes are stipulated and do not establish clinical coverage.

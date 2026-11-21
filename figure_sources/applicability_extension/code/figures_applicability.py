@@ -19,6 +19,6 @@ ax.axvline(0,color='.5',lw=.8);ax.set_xlabel('Residual change from baseline');ax
 bx.set_yticks(range(len(rows)),['']*len(rows));bx.set_xlabel('Required common Pa halfwidth (mmHg)');bx.set_title('(b) Margin to compatibility',loc='left',fontsize=11);bx.set_xlim(0,3.1)
 for aa in [ax,bx]:
  aa.set_ylim(len(rows)-.4,-.6);aa.spines[['top','right']].set_visible(False);aa.grid(axis='x',alpha=.2)
-fig.savefig(F/'Fig9.png',dpi=300);fig.savefig(F/'Fig9.svg')
-with Image.open(F/'Fig9.png') as im:im.convert('RGB').save(F/'Fig9.tif',compression='tiff_lzw',dpi=(300,300))
+fig.savefig(F/'Fig9.png',dpi=600);fig.savefig(F/'Fig9.svg')
+with Image.open(F/'Fig9.png') as im:im.convert('RGB').save(F/'Fig9.tif',compression='tiff_lzw',dpi=(600,600))
 plt.close(fig)

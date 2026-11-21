@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this research software together with the fixed Git commit used."
 type: software
-title: "Decision Consistency and Mechanistic Ambiguity in Pulmonary Oxygen Models"
+title: "Arterial Oxygenation in Pulmonary Hypertension: Decision Margins and Mechanistic Ambiguity in Reduced Models"
 authors:
   - family-names: Hong
     given-names: Mingze
@@ -12,4 +12,4 @@ repository-code: "https://github.com/Sakihandser/pulmonary-oxygen-reduced-order"
 license:
   - MIT
   - GPL-3.0-only
-abstract: "Software and data for conditional decision consistency, multi-state model constraints and finite mechanistic ambiguity in pulmonary oxygen models."
+abstract: "Software and data for external oxygenation checks in pulmonary hypertension, perfusion redistribution bounds and decisions under metabolic and flow uncertainty."

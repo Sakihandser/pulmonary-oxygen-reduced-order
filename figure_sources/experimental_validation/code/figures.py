@@ -12,7 +12,7 @@ labels=['Saturation','Content','Constant D','Pressure','Equilibrium + mixing']
 colors=['#386cb0','#66a61e','#d95f02','#7570b3','#1b9e77']
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.spines.top':False,'axes.spines.right':False,'savefig.facecolor':'white'})
 def save(fig,name):
-    for ext in ['png','tif','svg']:fig.savefig(FIG/(name+'.'+ext),dpi=300,bbox_inches='tight')
+    for ext in ['png','tif','svg']:fig.savefig(FIG/(name+'.'+ext),dpi=600,bbox_inches='tight')
     plt.close(fig)
 
 def main():

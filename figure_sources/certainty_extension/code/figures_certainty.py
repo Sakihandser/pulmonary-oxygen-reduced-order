@@ -9,7 +9,7 @@ def read(n):
  with (HERE/'results'/n).open(encoding='utf-8') as f:return list(csv.DictReader(f))
 def save(fig,n):
  (HERE/'figures').mkdir(exist_ok=True)
- for ext in ['png','tif','svg']:fig.savefig(HERE/'figures'/f'{n}.{ext}',dpi=300,bbox_inches='tight',facecolor='white')
+ for ext in ['png','tif','svg']:fig.savefig(HERE/'figures'/f'{n}.{ext}',dpi=600,bbox_inches='tight',facecolor='white')
  plt.close(fig)
 plt.rcParams.update({'font.size':9,'font.family':'DejaVu Sans','svg.fonttype':'none'})
 rows=read('decision_bounds.csv');fig,ax=plt.subplots(1,2,figsize=(9.4,4.1),sharex=True,sharey=True)

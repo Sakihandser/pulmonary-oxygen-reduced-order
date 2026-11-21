@@ -1,0 +1,195 @@
+{
+  "content_margin": 0.013647144017525648,
+  "relative_consumption_margin": 0.015709742080872353,
+  "precision": [
+    {
+      "model": "A",
+      "r": 1.0,
+      "s": 0.19999999999999993,
+      "Ce": 18.548851571018318,
+      "Ca": 17.298851571018318,
+      "Cv": 12.298851571018318,
+      "endpoint_gap": 6.25,
+      "equal_content_error_for_001": 0.003125,
+      "arterial_only_error_for_001": 0.00625
+    },
+    {
+      "model": "A",
+      "r": 1.25,
+      "s": 0.21133224004487064,
+      "Ce": 18.548851571018318,
+      "Ca": 17.477007376160426,
+      "Cv": 13.477007376160426,
+      "endpoint_gap": 5.071844194857892,
+      "equal_content_error_for_001": 0.002535922097428946,
+      "arterial_only_error_for_001": 0.005071844194857892
+    },
+    {
+      "model": "A",
+      "r": 1.5,
+      "s": 0.22214393157263818,
+      "Ce": 18.548851571018318,
+      "Ca": 17.596901972674416,
+      "Cv": 14.263568639341083,
+      "endpoint_gap": 4.285282931677235,
+      "equal_content_error_for_001": 0.002142641465838618,
+      "arterial_only_error_for_001": 0.004285282931677236
+    },
+    {
+      "model": "B",
+      "r": 1.0,
+      "s": 0.20000000000000004,
+      "Ce": 18.548851571018318,
+      "Ca": 17.298851571018318,
+      "Cv": 12.298851571018318,
+      "endpoint_gap": 6.25,
+      "equal_content_error_for_001": 0.003125,
+      "arterial_only_error_for_001": 0.00625
+    },
+    {
+      "model": "B",
+      "r": 1.25,
+      "s": 0.26339849777613233,
+      "Ce": 18.548851571018318,
+      "Ca": 17.11850695737901,
+      "Cv": 13.118506957379012,
+      "endpoint_gap": 5.430344613639306,
+      "equal_content_error_for_001": 0.002715172306819653,
+      "arterial_only_error_for_001": 0.005430344613639306
+    },
+    {
+      "model": "B",
+      "r": 1.5,
+      "s": 0.31647243622687904,
+      "Ce": 18.548851571018318,
+      "Ca": 17.005522264833363,
+      "Cv": 13.67218893150003,
+      "endpoint_gap": 4.876662639518289,
+      "equal_content_error_for_001": 0.0024383313197591443,
+      "arterial_only_error_for_001": 0.0048766626395182885
+    }
+  ],
+  "decisions": [
+    {
+      "model": "A",
+      "content_halfwidth": 0.001,
+      "cells": 32768,
+      "s_lower": 0.23601735713978247,
+      "s_upper": 0.25207427822216766,
+      "Ca_lower": 17.706273655583807,
+      "Ca_upper": 17.77652591890607,
+      "target": 17.666498629841847,
+      "decision": "all_recover",
+      "enclosure_gap": 0.0009140066723447582
+    },
+    {
+      "model": "A",
+      "content_halfwidth": 0.003,
+      "cells": 32768,
+      "s_lower": 0.23114015737464033,
+      "s_upper": 0.26016445904128793,
+      "Ca_lower": 17.669722208348894,
+      "Ca_upper": 17.79728365005178,
+      "target": 17.666498629841847,
+      "decision": "all_recover",
+      "enclosure_gap": 0.0007978393334109324
+    },
+    {
+      "model": "A",
+      "content_halfwidth": 0.005,
+      "cells": 32768,
+      "s_lower": 0.22929942577680654,
+      "s_upper": 0.2644211371435863,
+      "Ca_lower": 17.650167723181863,
+      "Ca_upper": 17.80504965414573,
+      "target": 17.666498629841847,
+      "decision": "opposite_witnesses",
+      "enclosure_gap": 0.00041846942099116324
+    },
+    {
+      "model": "A",
+      "content_halfwidth": 0.01,
+      "cells": 32768,
+      "s_lower": 0.22476750515345612,
+      "s_upper": 0.2709943326518156,
+      "Ca_lower": 17.619522949892577,
+      "Ca_upper": 17.824012549667863,
+      "target": 17.666498629841847,
+      "decision": "opposite_witnesses",
+      "enclosure_gap": 0.0002824651025817304
+    },
+    {
+      "model": "A",
+      "content_halfwidth": 0.02,
+      "cells": 32768,
+      "s_lower": 0.21587788474421293,
+      "s_upper": 0.28252592491366485,
+      "Ca_lower": 17.564405112518518,
+      "Ca_upper": 17.860572664760866,
+      "target": 17.666498629841847,
+      "decision": "opposite_witnesses",
+      "enclosure_gap": 0.0002743190846218879
+    },
+    {
+      "model": "B",
+      "content_halfwidth": 0.001,
+      "cells": 32768,
+      "s_lower": 0.3966183448488479,
+      "s_upper": 0.4050924928562243,
+      "Ca_lower": 16.846517645190406,
+      "Ca_upper": 16.905537006087222,
+      "target": 17.666498629841847,
+      "decision": "none_recover",
+      "enclosure_gap": 0.001202256008987601
+    },
+    {
+      "model": "B",
+      "content_halfwidth": 0.003,
+      "cells": 32768,
+      "s_lower": 0.394445812326811,
+      "s_upper": 0.4115576772852426,
+      "Ca_lower": 16.800346826379386,
+      "Ca_upper": 16.920401878339085,
+      "target": 17.666498629841847,
+      "decision": "none_recover",
+      "enclosure_gap": 0.0008456415698797071
+    },
+    {
+      "model": "B",
+      "content_halfwidth": 0.005,
+      "cells": 32768,
+      "s_lower": 0.3922831874848582,
+      "s_upper": 0.4153108397410887,
+      "Ca_lower": 16.77307536389152,
+      "Ca_upper": 16.9350934051823,
+      "target": 17.666498629841847,
+      "decision": "none_recover",
+      "enclosure_gap": 0.00043524532377170466
+    },
+    {
+      "model": "B",
+      "content_halfwidth": 0.01,
+      "cells": 32768,
+      "s_lower": 0.386919527857342,
+      "s_upper": 0.41958161928862353,
+      "Ca_lower": 16.741613752436603,
+      "Ca_upper": 16.97108345802862,
+      "target": 17.666498629841847,
+      "decision": "none_recover",
+      "enclosure_gap": 0.0003780746013626324
+    },
+    {
+      "model": "B",
+      "content_halfwidth": 0.02,
+      "cells": 32768,
+      "s_lower": 0.3763727347866839,
+      "s_upper": 0.42668830382658435,
+      "Ca_lower": 16.688221887922165,
+      "Ca_upper": 17.040046729644267,
+      "target": 17.666498629841847,
+      "decision": "none_recover",
+      "enclosure_gap": 0.0003677692943251931
+    }
+  ],
+  "assumptions": "Content boxes are stipulated, not measured. Exact flow, fixed target, fixed structure class. Query Ce and M uncertainty is separate from observation error propagation. No probability coverage is assigned."
+}

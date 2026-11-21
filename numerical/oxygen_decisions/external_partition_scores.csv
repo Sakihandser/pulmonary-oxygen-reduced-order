@@ -1,0 +1,5 @@
+workload_percent,frozen_share_shunt_L_min,reported_shunt_L_min,difference_L_min,reported_share_change_pp,saturation_change_pp
+0,1.05,1.05,0.0,0.0,0.0
+20,1.3762345679012344,1.02,0.3562345679012344,-6.0,0.0
+40,1.6657407407407405,1.68,-0.014259259259259416,-1.0,-1.0
+60,2.0330246913580248,2.21,-0.1769753086419752,1.0,-1.0
