@@ -83,3 +83,5 @@ The applicability_extension adds seven diagnostic CSVs, 10 tests and Figure 9. I
 The certainty_extension adds nine CSVs, 13 tests and Figures 10–11. It evaluates common multi-state model constraints, finite countermodels and capacity exclusion. Older section counts refer to their individual modules. No new patients or independent clinical validation are claimed.
 
 Measurement extension: run `python measurement_extension/code/reproduce_measurement.py`. Four additional CSV outputs and six tests are included in the full runner. The preceding 142-result-CSV and 131-test totals become 146 and 137. Measurement error boxes are stipulated and do not establish clinical coverage.
+
+Supplement V4 is reproduced by oxygen_decisions/transfer_checks.py. Source populations, extracted fields, equation attribution and paired-stage selection are documented in oxygen_decisions/TRANSFER.md.

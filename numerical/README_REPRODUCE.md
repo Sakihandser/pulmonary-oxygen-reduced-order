@@ -1,6 +1,6 @@
 # Arterial oxygenation in pulmonary hypertension
 
-Run `python reproduce.py` from a fresh extraction with requirements-lock.txt installed. The runner checks 146 legacy result CSVs and ten oxygen-analysis CSVs, runs 137 legacy unit tests plus the oxygen-decision regression checks, and exports 27 submitted figures. Tables 1–12 are supplied in Figure_Sources.zip. Figures 12–13 and Supplement V use oxygen_decisions/verify.py and the ten CSVs documented in oxygen_decisions/README.md. Figures 10–11 use certainty_extension. The distributed manifest identifies the exact analysis.
+Run `python reproduce.py` from a fresh extraction with requirements-lock.txt installed. The runner checks 146 legacy result CSVs and 14 oxygen-analysis CSVs, runs 137 legacy unit tests plus the oxygen-decision regression checks, and exports 27 submitted figures. Tables 1–12 are supplied in Figure_Sources.zip. Figures 12–13 and Supplement V use oxygen_decisions/verify.py and the oxygen outputs documented in oxygen_decisions/README.md and oxygen_decisions/TRANSFER.md. Figures 10–11 use certainty_extension. The distributed manifest identifies the exact analysis.
 
 ## Archived module descriptions and historical numbering
 
@@ -59,3 +59,5 @@ The applicability_extension adds seven diagnostic CSVs, 10 tests and Figure 9. I
 The certainty_extension adds nine CSVs, 13 tests and Figures 10–11. It evaluates common multi-state model constraints, finite countermodels and capacity exclusion. Older section counts refer to their individual modules. No new patients or independent clinical validation are claimed.
 
 Measurement extension: run `python measurement_extension/code/reproduce_measurement.py`. Four additional CSV outputs and six tests are included in the full runner. The preceding 142-result-CSV and 131-test totals become 146 and 137. Measurement error boxes are stipulated and do not establish clinical coverage.
+
+Supplement V4 is reproduced by oxygen_decisions/transfer_checks.py. Source populations, extracted fields, equation attribution and paired-stage selection are documented in oxygen_decisions/TRANSFER.md.

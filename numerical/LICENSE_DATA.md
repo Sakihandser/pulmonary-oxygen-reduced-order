@@ -8,3 +8,5 @@ Published aggregate source cells are factual extractions attributed by study, gr
 Additional selected numerical observations are attributed to Häfliger 2025 (10.3390/jcm14238407), Lichtblau 2025 (10.1164/rccm.202409-1737RL) and Mélot 1983 (10.1378/chest.83.2.203). Source articles and patient records are not redistributed. See selection_extension/data/additional_sources.csv for exact extraction locations and cohort dependencies.
 
 The oxygen_decisions directory contains newly transcribed numerical summaries attributed in EXTERNAL_VALIDATION.md and README.md. Cite the original investigations when using their observations. Project software licensing applies to our analysis code.
+
+Supplement V4 is reproduced by oxygen_decisions/transfer_checks.py. Source populations, extracted fields, equation attribution and paired-stage selection are documented in oxygen_decisions/TRANSFER.md.

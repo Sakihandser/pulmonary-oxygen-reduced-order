@@ -108,7 +108,7 @@ def reproduce():
                  applicability_extension=json.loads((ROOT/'applicability_extension/reproduction_summary.json').read_text()),
                  certainty_extension=json.loads((ROOT/'certainty_extension/reproduction_summary.json').read_text()),
                  elapsed_seconds=time.perf_counter()-start,network_used=False,physiological_validation='Exploratory conditional comparison; no prospective clinical validation')
-    summary.update(oxygen_decision_csvs=10, oxygen_decision_checks_passed=True, total_figures_exported=27)
+    summary.update(oxygen_decision_csvs=14, oxygen_decision_checks_passed=True, total_figures_exported=27)
     (ROOT/'reproduction_summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
 if __name__=='__main__':reproduce()

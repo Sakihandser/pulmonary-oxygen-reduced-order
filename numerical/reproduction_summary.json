@@ -64,7 +64,7 @@
     "interpretation": "Deterministic bounded target and output scenarios; marginal envelope separation is sufficient and conservative for a shared target. No confidence level or clinical power.",
     "all_checks_passed": true,
     "python": "3.12.14",
-    "elapsed_seconds": 42.03650790001848
+    "elapsed_seconds": 40.89231299998937
   },
   "native_kernel_check": "comparison with supplied compiled C# nodes; native recompilation is a separate optional command",
   "python": "3.12.14",
@@ -85,7 +85,7 @@
       "Fig11",
       "Fig12"
     ],
-    "elapsed_seconds": 18.375619200000074,
+    "elapsed_seconds": 16.42782869999064,
     "network_used": false,
     "interpretation": "Exploratory conditional endpoint comparison; not clinical validation."
   },
@@ -99,7 +99,7 @@
     "main_figures": 5,
     "flowchart_text_inside_boxes": true,
     "network_used": false,
-    "elapsed_seconds": 10.71707910002442
+    "elapsed_seconds": 9.326965299987933
   },
   "review_extension": {
     "result_csv_files": 10,
@@ -129,7 +129,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 12,
     "all_checks_passed": true,
-    "elapsed_seconds": 5.276667400001315,
+    "elapsed_seconds": 5.061140600009821,
     "interpretation": "Numerical verification only"
   },
   "applicability_extension": {
@@ -138,7 +138,7 @@
     "maximum_absolute_difference": 0.0,
     "tests": 10,
     "all_checks_passed": true,
-    "elapsed_seconds": 3.4248772999853827,
+    "elapsed_seconds": 3.329987800010713,
     "interpretation": "Numerical verification only"
   },
   "certainty_extension": {
@@ -147,12 +147,12 @@
     "maximum_absolute_difference": 0.0,
     "tests": 13,
     "all_checks_passed": true,
-    "elapsed_seconds": 11.017225400020834,
+    "elapsed_seconds": 11.119138999987626,
     "interpretation": "Numerical verification of specified classes, not clinical validation"
   },
-  "elapsed_seconds": 310.410138599982,
+  "elapsed_seconds": 297.86957019998226,
   "network_used": false,
   "physiological_validation": "Exploratory conditional comparison; no prospective clinical validation",
-  "oxygen_decision_csvs": 10,
+  "oxygen_decision_csvs": 14,
   "oxygen_decision_checks_passed": true
 }

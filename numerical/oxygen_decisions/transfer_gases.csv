@@ -1,0 +1,4 @@
+study,doi,location,case_mix,n,statistic,condition,baseline_Pa,baseline_Pv,baseline_PaCO2,query_Pv,query_PaCO2,observed_Pa
+Dantzker1986,10.1164/arrd.1986.134.6.1135,abstract,severe COPD with PH,7,mean,exercise,76,38,56,32,62,63
+Alotaibi2024,10.1186/s12931-024-02746-w,Table 2,suspected pulmonary vascular disease,36,marginal median,anaerobic_threshold,86,39,38,30.5,38,79
+Alotaibi2024,10.1186/s12931-024-02746-w,Table 2,suspected pulmonary vascular disease,36,marginal median,peak,86,39,38,28,36,79

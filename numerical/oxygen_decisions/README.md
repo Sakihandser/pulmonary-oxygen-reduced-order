@@ -11,3 +11,5 @@ Figure 12 is regenerated in SVG and 600 dpi TIFF. The finite random allocation c
 pah_exercise.csv transcribes published stage medians from Tobita et al., Table 2 (https://doi.org/10.1161/JAHA.122.026890). The three rows are summaries of exercise in PAH. pah_exercise_budget.csv divides the baseline arteriovenous oxygen-content difference by each stage value. This gives the maximum ratio of residual odds consistent with maintaining baseline arterial content under a shared endpoint. Group medians cannot identify individual responses.
 
 Three external result files report model checks in mmHg, percentage points, and L/min. See EXTERNAL_VALIDATION.md for all source tables, model comparators, numerical conventions and independence limitations.
+
+Supplement V4 adds four outputs: transfer_pressure_scores.csv, transfer_hill_grid.csv, transfer_rounding_bounds.csv and exercise_saturation_changes.csv. See TRANSFER.md for sources and units.
